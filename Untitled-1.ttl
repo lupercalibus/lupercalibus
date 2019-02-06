@@ -1,0 +1,28 @@
+@prefix : <https://w3id.org/arco/test/CQ/giocattolo/>.
+@prefix arcodd: <https://w3id.org/arco/denotative-description/>.
+
+
+:bencult1 arcodd:hasAffixedElement :ele1.
+
+:ele1 a arcodd:Dedication;
+     arcodd:hasDedicatee "Pippo Baudo".
+
+
+:bencult2 arcodd:hasAffixedElement :ele2.
+
+:ele2 a arcodd:Dedication;
+     arcodd:hasDedicatee "Jerry Scotti".
+
+
+
+:bencult3 arcodd:hasAffixedElement :ele3.
+
+:ele3 a arcodd:Dedication;
+     arcodd:hasDedicatee "Michelle Hunzicher".
+
+
+
+:bencult4 arcodd:hasAffixedElement :ele4.
+
+:ele4 a arcodd:Dedication;
+     arcodd:hasDedicatee "Caterina Balivo".
