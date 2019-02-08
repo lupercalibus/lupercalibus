@@ -5,24 +5,24 @@
 :bencult1 arcodd:hasAffixedElement :ele1.
 
 :ele1 a arcodd:Dedication;
-     arcodd:hasDedicatee "Pippo Baudo".
+     arcodd:hasDedicatee "dedicatee1".
 
 
 :bencult2 arcodd:hasAffixedElement :ele2.
 
 :ele2 a arcodd:Dedication;
-     arcodd:hasDedicatee "Jerry Scotti".
+     arcodd:hasDedicatee "dedicatee2".
 
 
 
 :bencult3 arcodd:hasAffixedElement :ele3.
 
 :ele3 a arcodd:Dedication;
-     arcodd:hasDedicatee "Michelle Hunzicher".
+     arcodd:hasDedicatee "dedicatee3".
 
 
 
 :bencult4 arcodd:hasAffixedElement :ele4.
 
 :ele4 a arcodd:Dedication;
-     arcodd:hasDedicatee "Caterina Balivo".
+     arcodd:hasDedicatee "dedicatee4".
