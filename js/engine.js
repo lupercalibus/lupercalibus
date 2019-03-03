@@ -45,8 +45,9 @@ $.ajax({
         var timeline = new vis.Timeline(container, items, options);
 
         var actualid = 1
+        
+        timeline.zoomIn(50)
         timeline.setSelection(1, {focus: true})
-
 
         $('#carouselTitle').on('slid.bs.carousel', function () {
             actualid= $( ".active" ).find( ".actualcard").attr('id')
