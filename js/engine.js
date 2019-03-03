@@ -45,18 +45,9 @@ $.ajax({
         var actualid = 1
 
 
-        $('.dietro').click(function() {
-            if (actualid != 1){
-                actualid = actualid-1
-            }
-        })
-        $('.avanti').click(function() {
-            if (actualid != datesarray.length){
-                actualid = actualid+1
-            }
-        })
-        $('.controllo').click(function() {
+        $('#carouselTitle').on('slid.bs.carousel', function () {
+            var actualid = actualid+1
             timeline.setSelection(actualid, {focus: true})
-        })
+          })
     }})
 })
