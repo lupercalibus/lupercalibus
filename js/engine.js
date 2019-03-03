@@ -1,5 +1,6 @@
+$(document).ready(function(data1) {
 var data1 = (function () {
-    var json = null;
+    var data1 = null;
     $.ajax({
         'async': false,
         'global': false,
@@ -15,7 +16,6 @@ var data1 = (function () {
 
 
 
-$(document).ready(function(data1) {
 var map = L.map('map', {
  maxZoom: 18,
  minZoom: 12,
@@ -25,7 +25,7 @@ var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-data1.forEach(function(arrayItem) {
+jQuery.each(data1, function() {
     if (arrayItem["number"] == 1) {
         $('.TitlesContainer').html('<div class="carousel-item active"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>');
     }
