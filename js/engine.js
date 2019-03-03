@@ -46,10 +46,14 @@ $.ajax({
 
 
         $('.carousel-control-prev').click(function() {
-            var actualid = actualid-1
+            if (actualid != 1){
+                var actualid = actualid-1
+            }
         })
-        $('.carousel-control-next').click(function() {
-            var actualid = actualid+1
+        $('.carousel-control-next').click(function() {ù
+            if (actualid != datesarray.length){
+                var actualid = actualid+1
+            }
         })
         $('.carousel-control').click(function() {
             timeline.setSelection(actualid, {focus: true})
