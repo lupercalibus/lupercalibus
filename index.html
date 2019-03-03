@@ -10,10 +10,9 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"/>
         <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css">
 
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/simple-timeline.css">
-        <link rel="stylesheet" type="text/css" href="css/foundation.css">  
     </head>
     <body>
         <div class="container-fluid">
@@ -43,78 +42,13 @@
                 <div class="col-md-3">
                 </div>
         </div>
+        
         <div class="container">
-                <div class="row">
-                <div id='flash' style="overflow: hidden;">
-                  <p class='currentYear'>0</p>
-                  <div class='dateRight'>
-                    <p class='currentDate'>0</p>
-                  </div>
-                  <div id='timelineWrap'>
-                        <div class='months'>
-                                <div class='monthLine firstlast' style="left: 0px"></div>
-                                <div class='monthLine' style="left: 70.833px"></div>
-                                <div class='monthLine' style="left: 140.666px"></div>
-                                <div class='monthLine' style="left: 210.999px"></div>
-                                <div class='monthLine' style="left: 281.332px"></div>
-                                <div class='monthLine' style="left: 351.665px"></div>
-                                <div class='monthLine' style="left: 421.998px"></div>
-                                <div class='monthLine' style="left: 492.331px"></div>
-                                <div class='monthLine' style="left: 562.664px"></div>
-                                <div class='monthLine' style="left: 632.997px"></div>
-                                <div class='monthLine' style="left: 703.33px"></div>
-                                <div class='monthLine' style="left: 773.663px"></div>
-                                <div class='monthLine firstlast' style="left: 849px"></div>
-                              </div>
-                  </div>
-                  <div class="row">
-                        <button class='dselect' id='dprev'><</button>
-                    <div class='tlcontainer m-0' data-date='1915-03-12'>
-                        <p class="eventTitle">act1</p>
-                    </div>
-                    <div class='tlcontainer m-0' data-date='1915-05-12'>
-                            <p class="eventTitle">act2</p>
-                        </div>
-                        <div class='tlcontainer m-0' data-date='1915-08-12'>
-                                <p class="eventTitle">act3</p>
-                            </div>
-                            <div class='tlcontainer m-0' data-date='1916-08-15'>
-                                    <p class="eventTitle">act3</p>
-                                </div>
-                        <button class ='dselect' id='dnext'>></button>
-                  </div>
-                </div> 
-            </div>
-                <script src="simple-timeline.jquery.js"></script> 
-                <script>
-                
-                  $('div.tlcontainer').simpleTimeline();
-                  
-                </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <div class="row">
+                <div class="col-md-12 pl-0 pr-0" >
+                <div class="mb-30" id="visualization"></div>
+            </div>   
+            </div>         
             <div class="row">
                 <div class="col-md-6 pl-0 pr-0" >
                         <div class="card" style="height: 500">
@@ -174,5 +108,28 @@
     var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
+
+
+    var container = document.getElementById('visualization');
+
+  // Create a DataSet (allows two way data-binding)
+  var items = new vis.DataSet([
+    {id: 1, content: 'item 1', start: '1916-04-20'},
+    {id: 2, content: 'item 2', start: '1916-04-14'},
+    {id: 3, content: 'item 3', start: '1916-04-18'},
+    {id: 4, content: 'item 4', start: '1917-04-16'},
+    {id: 5, content: 'item 5', start: '1917-04-25'},
+    {id: 6, content: 'item 6', start: '1917-04-27'}
+  ]);
+
+  // Configuration for the Timeline
+  var options = {
+    min: '1916-01-01',
+    max: '1918-01-01',
+    zoomMin: '3000000000' //1500000000 per il girono esatto
+  };
+
+  // Create a Timeline
+  var timeline = new vis.Timeline(container, items, options);
     </script>
 </html>
