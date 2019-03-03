@@ -46,7 +46,7 @@ $.ajax({
 
 
         $('#carouselTitle').on('slid.bs.carousel', function () {
-            var actualid = actualid+1
+            actualid = actualid+1
             timeline.setSelection(actualid, {focus: true})
           })
     }})
