@@ -27,10 +27,10 @@ var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 jQuery.each(data1, function() {
     if (arrayItem["number"] == 1) {
-        $('.TitlesContainer').html('<div class="carousel-item active"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>');
+        $('#TitlesContainer').html('<div class="carousel-item active"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>');
     }
     else {
-        $('.TitlesContainer').html('<div class="carousel-item"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>');
+        $('#TitlesContainer').html('<div class="carousel-item"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>');
     }
 })
 
@@ -52,7 +52,7 @@ min: '1916-01-01',
 max: '1918-01-01',
 maxHeight: "200px",
 minHeight: "200px",
-zoomMin: '3000000000' //1500000000 per il girono esatto
+zoomMin: 3000000000 //1500000000 per il girono esatto
 };
 
 // Create a Timeline
