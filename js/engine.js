@@ -16,7 +16,7 @@ $.ajax({
     success: function(dati) {
     var datesarray = []
         dati.forEach(function(arrayItem) {
-            datesarray.push({id: arrayItem["number"], content: 'item'+String(arrayItem["number"]), start: arrayItem["date"]})
+            datesarray.push({id: arrayItem["number"], content: (arrayItem["place"]) + (arrayItem["date"]), start: arrayItem["date"]})
             if (arrayItem["number"] == 1) {
                 $('<div class="carousel-item active"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="'+ arrayItem["number"] + '" align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
             }
@@ -48,7 +48,6 @@ $.ajax({
 
         $('#carouselTitle').on('slid.bs.carousel', function () {
             actualid= $( ".active" ).find( ".actualcard").attr('id')
-            console.log(actualid)
             timeline.setSelection(actualid, {focus: true})
           })
     }})
