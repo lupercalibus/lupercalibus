@@ -38,8 +38,7 @@ $.ajax({
         max: '1919-01-01',
         maxHeight: "200px",
         minHeight: "200px",
-        zoomMin: 1000 * 60 * 60 * 24 * 7 * 2, //1500000000 per il girono esatto
-        zoomMax: 3000000000
+        zoomMin: 3000000000, //1500000000 per il girono esatto 
         };
 
         // Create a Timeline
