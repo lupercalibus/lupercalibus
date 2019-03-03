@@ -34,8 +34,8 @@ $.ajax({
 
         // Configuration for the Timeline
         var options = {
-        //min: '1916-01-01',
-        //max: '1919-01-01',
+        min: '1916-01-01',
+        max: '1919-01-01',
         maxHeight: "200px",
         minHeight: "200px",
         zoomMin: 1500000000, //1500000000 per il girono esatto
@@ -44,19 +44,7 @@ $.ajax({
 
         // Create a Timeline
         var timeline = new vis.Timeline(container, items, options);
-        
-        
-        var optionNEW = {
-            //min: '1916-01-01',
-            //max: '1919-01-01',
-            maxHeight: "200px",
-            minHeight: "200px",
-            zoomMin: 1500000000, //1500000000 per il girono esatto
-            zoomMax: 1500000000
-            };
 
-        timeline.setOptions(optionNEW);
-        
         var actualid = 1
         timeline.setSelection(1, {focus: true})
 
