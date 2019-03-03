@@ -43,7 +43,7 @@ $.ajax({
 
         // Create a Timeline
         var timeline = new vis.Timeline(container, items, options);
-        timeline.setSelection(1, {focus: true})
+        
         var actualid = 1
 
         //visjs è buggato devo impostare un nuovo zoom dopo il primo caricamento
@@ -56,7 +56,9 @@ $.ajax({
             zoomMax: 3000000000
             };
         timeline.setOptions(optionsNEW);
+        timeline.setSelection(1, {focus: true})
 
+        
         $('#carouselTitle').on('slid.bs.carousel', function () {
             actualid= $( ".active" ).find( ".actualcard").attr('id')
             timeline.setSelection(actualid, {focus: true})
