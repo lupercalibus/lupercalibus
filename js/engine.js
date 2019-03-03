@@ -45,17 +45,17 @@ $.ajax({
         var actualid = 1
 
 
-        $('.carousel-control-prev').click(function() {
+        $('.dietro').click(function() {
             if (actualid != 1){
                 var actualid = actualid-1
             }
         })
-        $('.carousel-control-next').click(function() {ù
+        $('.avanti').click(function() {ù
             if (actualid != datesarray.length){
                 var actualid = actualid+1
             }
         })
-        $('.carousel-control').click(function() {
+        $('.controllo').click(function() {
             timeline.setSelection(actualid, {focus: true})
         })
     }})
