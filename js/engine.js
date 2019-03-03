@@ -41,6 +41,6 @@ $.ajax({
 
         // Create a Timeline
         var timeline = new vis.Timeline(container, items, options);
-
+        timeline.setSelection(1, {focus: true})
     }})
 })
