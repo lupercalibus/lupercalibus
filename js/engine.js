@@ -37,7 +37,7 @@ $.ajax({
         maxHeight: "200px",
         minHeight: "200px",
         zoomMin: 1500000000, //1500000000 per il girono esatto
-        zoomMax: 2000000000
+        zoomMax: 3000000000
         };
 
         // Create a Timeline
