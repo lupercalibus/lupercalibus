@@ -30,13 +30,15 @@ $.ajax({
         // Create a DataSet (allows two way data-binding)
         var items = new vis.DataSet(datesarray);
 
+
+
         // Configuration for the Timeline
         var options = {
         min: '1916-01-01',
         max: '1919-01-01',
         maxHeight: "200px",
         minHeight: "200px",
-        zoomMin: 1500000000, //1500000000 per il girono esatto
+        zoomMin: 1000 * 60 * 60 * 24, //1500000000 per il girono esatto
         zoomMax: 3000000000
         };
 
