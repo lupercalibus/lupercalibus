@@ -50,7 +50,7 @@ $.ajax({
                 var actualid = actualid-1
             }
         })
-        $('.avanti').click(function() {ù
+        $('.avanti').click(function() {
             if (actualid != datesarray.length){
                 var actualid = actualid+1
             }
