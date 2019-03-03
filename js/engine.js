@@ -46,6 +46,16 @@ $.ajax({
         timeline.setSelection(1, {focus: true})
         var actualid = 1
 
+        //visjs è buggato devo impostare un nuovo zoom dopo il primo caricamento
+        var optionsNEW = {
+            min: '1916-01-01',
+            max: '1919-01-01',
+            maxHeight: "200px",
+            minHeight: "200px",
+            zoomMin: 1500000000, //1500000000 per il girono esatto 
+            zoomMax: 3000000000
+            };
+        timeline.setOptions(optionsNEW);
 
         $('#carouselTitle').on('slid.bs.carousel', function () {
             actualid= $( ".active" ).find( ".actualcard").attr('id')
