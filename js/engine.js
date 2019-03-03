@@ -37,7 +37,6 @@ $.ajax({
         maxHeight: "200px",
         minHeight: "200px",
         zoomMin: 4000000000, //1500000000 per il girono esatto
-        zoomMax: 4000000000
         };
 
         // Create a Timeline
@@ -50,5 +49,9 @@ $.ajax({
             actualid= $( ".active" ).find( ".actualcard").attr('id')
             timeline.setSelection(actualid, {focus: true})
           })
+
+        timeline.on('select', function (properties) {
+            console.log('selected items: ' + properties.items);
+          });
     }})
 })
