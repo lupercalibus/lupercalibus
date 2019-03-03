@@ -51,9 +51,7 @@ $.ajax({
           })
 
         timeline.on('select', function (properties) {
-            if (properties.items){
-                $('#carouselTitle').carousel($(this).data(properties.items));
-            }
+                $('#carouselTitle').carousel(30)
           });
     }})
 })
