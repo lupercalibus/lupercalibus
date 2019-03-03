@@ -47,12 +47,12 @@ $.ajax({
 
         $('.dietro').click(function() {
             if (actualid != 1){
-                var actualid = actualid-1
+                actualid = actualid-1
             }
         })
         $('.avanti').click(function() {
             if (actualid != datesarray.length){
-                var actualid = actualid+1
+                actualid = actualid+1
             }
         })
         $('.controllo').click(function() {
