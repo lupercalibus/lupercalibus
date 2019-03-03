@@ -52,7 +52,7 @@ $.ajax({
 
         timeline.on('select', function (properties) {
             if (properties.items){
-                $('#carouselTitle').carousel(properties.items);
+                $('#carouselTitle').carousel(34);
             }
           });
     }})
