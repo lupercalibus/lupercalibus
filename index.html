@@ -51,23 +51,23 @@
             </div>
             <div class="row" style="margin-bottom: 15px; padding-bottom: 10px">
                     <div class="col-md-12">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div id="carouselTitle" class="carousel slide" data-wrap="false" data-interval="false">
                             <div class="carousel-inner">
                               <div class="carousel-item active">
                                     <div class="row">
-                                        <div class="col-md-3 col-xs-1"></div>
-                                        <div class="col-md-6 col-xs-10">
+                                        <div class="col-md-3"></div>
+                                        <div class="col-md-6 mx-1">
                                             <div class="card bg-secondary" align="center">
                                                 <h1 align="center">ACT1</h1>
                                             </div>
                                         </div>    
-                                        <div class="col-md-3 col-xs-1"></div>
+                                        <div class="col-md-3"></div>
                                     </div>
                               </div>
                               <div class="carousel-item">
                                     <div class="row">
                                             <div class="col-md-3"></div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 mx-1">
                                                 <div class="card bg-secondary" align="center">
                                                     <h1 align="center">ACT2</h1>
                                                 </div>
@@ -78,7 +78,7 @@
                               <div class="carousel-item">
                                     <div class="row">
                                             <div class="col-md-3"></div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 mx-1">
                                                 <div class="card bg-secondary" align="center">
                                                     <h1 align="center">ACT3</h1>
                                                 </div>
@@ -87,11 +87,11 @@
                                         </div>
                               </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <a class="carousel-control-prev bg-dark" href="#carouselTitle" role="button" data-slide="prev">
                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                               <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <a class="carousel-control-next bg-dark" href="#carouselTitle" role="button" data-slide="next">
                               <span class="carousel-control-next-icon" aria-hidden="true"></span>
                               <span class="sr-only">Next</span>
                             </a>
@@ -118,7 +118,37 @@
                                 <div role="tabpanel" class="tab-pane active" id="stats" role="tabpanel">
                                     <div class="card-body">
                                         <h5 class="card-title">STATS</h5>
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <p class="card-text">
+                                                ENEMY COuntry: AUSTRIA
+                                                <table class="table">
+                                                        <thead>
+                                                          <tr>
+                                                            <th scope="col"></th>
+                                                            <th scope="col">Type</th>
+                                                            <th scope="col">ID</th>
+                                                            <th scope="col">SQUAD</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr>
+                                                            <th scope="row">Baracca's Plane</th>
+                                                            <td>Mark</td>
+                                                            <td>Otto</td>
+                                                            <td>@mdo</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th scope="row">Rival Plane</th>
+                                                            <td>Mark</td>
+                                                            <td>Otto</td>
+                                                            <td>@mdo</td>
+                                                            </tr>
+                                                        </tbody>
+                                                      </table>
+
+
+
+
+                                        </p>
                                     </div>
                                 </div>
                                 <div role="tabpanel" class="tab-pane fade in" id="letters">
@@ -148,6 +178,7 @@
 
     </body>   
     <script>
+
        var map = L.map('map', {
         maxZoom: 18,
         minZoom: 12,
