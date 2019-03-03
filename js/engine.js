@@ -18,10 +18,10 @@ $.ajax({
         dati.forEach(function(arrayItem) {
             datesarray.push({id: arrayItem["number"], content: 'item'+String(arrayItem["number"]), start: arrayItem["date"]})
             if (arrayItem["number"] == 1) {
-                $('<div class="carousel-item active"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
+                $('<div class="carousel-item active"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="'+arrayItem["number"]+ 'align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
             }
             else {
-                $('<div class="carousel-item"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
+                $('<div class="carousel-item"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="'+arrayItem["number"]+ 'align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
             }
         })
 
@@ -46,7 +46,7 @@ $.ajax({
 
 
         $('#carouselTitle').on('slid.bs.carousel', function () {
-            actualid = actualid+1
+            actualid= $( ".active" ).find( ".actualcard").attr('id')
             timeline.setSelection(actualid, {focus: true})
           })
     }})
