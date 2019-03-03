@@ -45,7 +45,7 @@ $.ajax({
         // Create a Timeline
         var timeline = new vis.Timeline(container, items, options);
         
-        var actualid = 1
+        
         var optionNEW = {
             //min: '1916-01-01',
             //max: '1919-01-01',
@@ -56,6 +56,8 @@ $.ajax({
             };
 
         timeline.setOptions(optionNEW);
+        
+        var actualid = 1
         timeline.setSelection(1, {focus: true})
 
 
