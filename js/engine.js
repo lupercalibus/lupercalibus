@@ -47,6 +47,7 @@ $.ajax({
 
         $('#carouselTitle').on('slid.bs.carousel', function () {
             actualid= $( ".active" ).find( ".actualcard").attr('id')
+            console.log(actualid)
             timeline.setSelection(actualid, {focus: true})
           })
     }})
