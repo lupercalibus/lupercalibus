@@ -1,0 +1,796 @@
+    [
+        {
+            "number": 1,
+            "date": "07-04-1916",
+            "place": "Medeuzza",
+            "plane":{
+                "type": "Br. C.I.",
+                "id": "61.5",
+                "squad": "Flik 19"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Feldwebel",
+                        "name":"Adolf Ott",
+                        "status": "Prisoner of War"
+                    },
+                    {
+                        "grade": "Oberleutnant",
+                        "name":"Franz Lenarcic",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": []
+        },
+        {
+            "number": 2,
+            "date": "16-05-1916",
+            "place": "Gorizia",
+            "plane":{
+                "type": "Löener",
+                "id": "17.42",
+                "squad": "Flik 12"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Korporal",
+                        "name":"Lajos Knelly",
+                        "status": "Killed in Action"
+                    },
+                    {
+                        "grade": "Fähnrich",
+                        "name":"Ladislaus Horváth-Tima",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": []
+        },
+        {
+            "number": 3,
+            "date": "23-08-1916",
+            "place": "Miren",
+            "plane":{
+                "type": "Br. C.I.",
+                "id": "61.61",
+                "squad": "Flik 19"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Zugsführer",
+                        "name":"Anton Himmer",
+                        "status": "Unhurt"
+                    },
+                    {
+                        "grade": "Unknown",
+                        "name":"Unknown",
+                        "status": "Unhurt"
+                    }
+                ],
+            "allied": ["Fulco Ruffo di Calabria"]
+        },
+        {
+            "number": 4,
+            "date": "16-09-1916",
+            "place": "Caporetto",
+            "plane":{
+                "type": "Lloyd",
+                "id": "43.74",
+                "squad": "Flik 16"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Zugsführer",
+                        "name":"Franz Morozko",
+                        "status": "Killed in Action"
+                    },
+                    {
+                        "grade": "Leutnant",
+                        "name": "Anton Von Csáby",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied":
+                [
+                    "Fulco Ruffo di Calabria",
+                    "Luigi Olivari"
+                ]
+        },
+        {
+            "number": 5,
+            "date": "25-11-1916",
+            "place": "Tolmezzo",
+            "plane":{
+                "type": "Br. C.I.",
+                "id": "68.03",
+                "squad": "Flik 16"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Korporal",
+                        "name":"Fritz Fuchs",
+                        "status": "Killed in Action"
+                    },
+                    {
+                        "grade": "Leutnant",
+                        "name": "Kalman Sarközy",
+                        "status": "Prisoner of War"
+                    }
+                ],
+            "allied": []
+        },
+        {
+            "number": 6,
+            "date": "01-01-1917",
+            "place": "Kostanjevica",
+            "plane":{
+                "type": "Br. C.I.",
+                "id": "Unknown",
+                "squad": "Flik 12"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Korporal",
+                        "name":"Franz Neuwirh",
+                        "status": "Unhurt"
+                    },
+                    {
+                        "grade": "Leutnant",
+                        "name": "Viktor Huber",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": []
+        },
+        {
+            "number": 7,
+            "date": "11-02-1917",
+            "place": "Orzano",
+            "plane":{
+                "type": "Br. C.I.",
+                "id": "21.74",
+                "squad": "Flik 35"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Korporal",
+                        "name":"Ludwig Fleck",
+                        "status": "Prisoner of War"
+                    },
+                    {
+                        "grade": "Leutnant",
+                        "name": "Wilhelm Graf Siemenski",
+                        "status": "Prisoner of War"
+                    }
+                ],
+            "allied": ["Fulco Ruffo di Calabria", "Goffredo Gorini", "Giulio Poli"]
+        },
+        {
+            "number": 8,
+            "date": "26-04-1917",
+            "place": "Gradisca",
+            "plane":{
+                "type": "Br. C.I.",
+                "id": "129.17",
+                "squad": "Flik 35"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Zugsführer",
+                        "name":"Josef Majsay",
+                        "status": "Killed in Action"
+                    },
+                    {
+                        "grade": "Leutnant",
+                        "name": "Emmerich Treer",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": ["Goffredo Gorini", "Attilio Imolesi"]
+        },
+        {
+            "number": 9,
+            "date": "01-05-1917",
+            "place": "Latisana",
+            "plane":{
+                "type": "Br. C.I.",
+                "id": "229.08",
+                "squad": "Flik 12"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Oberleutnant",
+                        "name":"Frank Linke-Crawford",
+                        "status": "Unhurt"
+                    },
+                    {
+                        "grade": "Oberleutnant",
+                        "name": "Johann Graf Herberstein",
+                        "status": "Unhurt"
+                    }
+                ],
+            "allied": []
+        },
+        {
+            "number": 10,
+            "date": "10-05-1917",
+            "place": "Vertoiba",
+            "plane":{
+                "type": "Br. D.I.",
+                "id": "28.17",
+                "squad": "Unknown"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Feldwebel",
+                        "name":"Rudolf Stöhr",
+                        "status": "Wounded in Action"
+                    }
+                ],
+            "allied": []
+        },
+        {
+            "number": 11,
+            "date": "13-05-1917",
+            "place": "Korada",
+            "plane":{
+                "type": "Br. C.I.",
+                "id": "129.20",
+                "squad": "FIG. 1"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Feldwebel",
+                        "name":"Julius Busa",
+                        "status": "Killed in Action"
+                    },
+                    {
+                        "grade": "Oberleutnant",
+                        "name": "Hermann Grössler",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": []
+        },
+        {
+            "number": 12,
+            "date": "20-05-1917",
+            "place": "Plave",
+            "plane":{
+                "type": "Br. C.I.",
+                "id": "Unknown",
+                "squad": "Flik 12"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Unknown",
+                        "name":"Unknown",
+                        "status": "Killed in Action"
+                    },
+                    {
+                        "grade": "Unknown",
+                        "name": "Unknown",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": []
+        },
+        {
+            "number": 13,
+            "date": "03-06-1917",
+            "place": "Plave",
+            "plane":{
+                "type": "Br. C.I.",
+                "id": "129.51",
+                "squad": "FIG. 1"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Zugsführer",
+                        "name":"Johann Rotter",
+                        "status": "Killed in Action"
+                    },
+                    {
+                        "grade": "Oberleutnant",
+                        "name": "Max Bednarzik",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": []
+        },
+        {
+            "number": 14,
+            "date": "07-07-1917",
+            "place": "Kostanjevica",
+            "plane":{
+                "type": "Br. C.I.",
+                "id": "129.68",
+                "squad": "Flik 46"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Feldwebel",
+                        "name":"Sigmund Duschek",
+                        "status": "Killed in Action"
+                    },
+                    {
+                        "grade": "Oberleutnant",
+                        "name": "Andor Bozo de Dinyeberki et Agod",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": []
+        },
+        {
+            "number": 15,
+            "date": "31-07-1917",
+            "place": "Podgora",
+            "plane":{
+                "type": "Br. C.I.",
+                "id": "69.93",
+                "squad": "Flik 46"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Zugsführer",
+                        "name":"Julius Klausz",
+                        "status": "Killed in Action"
+                    },
+                    {
+                        "grade": "Oberleutnant",
+                        "name": "Erich Bock",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": ["Alessandro Buzio"]
+        },
+        {
+            "number": 16,
+            "date": "03-08-1917",
+            "place": "Sava (Valley)",
+            "plane":{
+                "type": "Unknown",
+                "id": "Unknown",
+                "squad": "Unknown"
+            },
+            "nation": "Unknown",
+            "victims":
+                [],
+            "allied": ["Flavio Torello Baracchini"]
+        },
+        {
+            "number": 17,
+            "date": "19-08-1917",
+            "place": "Selo",
+            "plane":{
+                "type": "Br. C.I.",
+                "id": "Unknown",
+                "squad": "Flik 28"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Zugsführer",
+                        "name":"Artur Zeides",
+                        "status": "Killed in Action"
+                    },
+                    {
+                        "grade": "Oberleutnant",
+                        "name": "Karl Balzar",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": []
+        },
+        {
+            "number": 18,
+            "date": "01-09-1917",
+            "place": "Zagorje",
+            "plane":{
+                "type": "Br. C.I.",
+                "id": "69.10",
+                "squad": "FG 101"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Feldwebel",
+                        "name":"Rudolf Nölscher",
+                        "status": "Wounded in Action"
+                    },
+                    {
+                        "grade": "Leutnant",
+                        "name": "Odilo von Khuepach",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": []
+        },
+        {
+            "number": 19,
+            "date": "06-09-1917",
+            "place": "San Gabriele",
+            "plane":{
+                "type": "Br. C.I.",
+                "id": "129.50",
+                "squad": "Flik 34"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Zugsführer",
+                        "name":"Stefan Morth",
+                        "status": "Wounded in Action"
+                    },
+                    {
+                        "grade": "Oberleutnant",
+                        "name": "Bela Gerey",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": ["Giovanni Sabelli"]
+        },
+        {
+            "number": 20,
+            "date": "22-10-1917",
+            "place": "Sabotino",
+            "plane":{
+                "type": "DFW C.V.",
+                "id": "Unknown",
+                "squad": "FA 14"
+            },
+            "nation": "Germany",
+            "victims":
+                [
+                    {
+                        "grade": "Leutnant",
+                        "name":"R. Werner Zimmermann",
+                        "status": "Killed in Action"
+                    },
+                    {
+                        "grade": "Leutnant",
+                        "name": "R. Arthur Fischer",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": []
+        },
+        {
+            "number": 21,
+            "date": "22-10-1917",
+            "place": "Volnik",
+            "plane":{
+                "type": "DFW C.V.",
+                "id": "Unknown",
+                "squad": "FA 14"
+            },
+            "nation": "Germany",
+            "victims":
+                [
+                    {
+                        "grade": "Leutnant",
+                        "name":"R. Ludwig Güttler",
+                        "status": "Killed in Action"
+                    },
+                    {
+                        "grade": "Leutnant",
+                        "name": "Heinrich Hansberg",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": []
+        },
+        {
+            "number": 22,
+            "date": "25-10-1917",
+            "place": "San Marco",
+            "plane":{
+                "type": "Br. C.I.",
+                "id": "29.63",
+                "squad": "Flik 19/D"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Feldwebel",
+                        "name":"Anton Lambert",
+                        "status": "Wounded in Action"
+                    },
+                    {
+                        "grade": "Leutnant",
+                        "name": "Jan Pappius",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": ["Pier Ruggero Piccio"]
+        },
+        {
+            "number": 23,
+            "date": "26-10-1917",
+            "place": "Most na Soči",
+            "plane":{
+                "type": "DFW C.V.",
+                "id": "Unknown",
+                "squad": "Unknown"
+            },
+            "nation": "Germany",
+            "victims": [],
+            "allied": ["Giuliano Parvis"]
+        },
+        {
+            "number": 24,
+            "date": "26-10-1917",
+            "place": "Matajur",
+            "plane":{
+                "type": "DFW C.V.",
+                "id": "Unknown",
+                "squad": "Unknown"
+            },
+            "nation": "Germany",
+            "victims": [],
+            "allied": ["Giuliano Parvis"]
+        },
+        {
+            "number": 25,
+            "date": "06-11-1917",
+            "place": "Fossalta",
+            "plane":{
+                "type": "Albatros D. III",
+                "id": "153.54",
+                "squad": "Flik 41"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Oberleutnant",
+                        "name":"Rudolf Szepessy-Sokoll",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": ["Giuliano Parvis"]
+        },
+        {
+            "number": 26,
+            "date": "06-11-1917",
+            "place": "Godega",
+            "plane":{
+                "type": "DFW C.V.",
+                "id": "Unknown",
+                "squad": "FA (A) 219"
+            },
+            "nation": "Germany",
+            "victims":
+                [
+                    {
+                        "grade": "Vizefeldwebel",
+                        "name":"Werner Schcröder",
+                        "status": "Killed in Action"
+                    },
+                    {
+                        "grade": "Leutnant",
+                        "name": "Albrecht Binder",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": ["Giuliano Parvis"]
+        },
+        {
+            "number": 27,
+            "date": "07-11-1917",
+            "place": "Orsago",
+            "plane":{
+                "type": "DFW C.V.",
+                "id": "3955.17",
+                "squad": "FA (A) 204"
+            },
+            "nation": "Germany",
+            "victims":
+                [
+                    {
+                        "grade": "Gefreiter",
+                        "name":"Willhelm Appelt",
+                        "status": "Killed in Action"
+                    },
+                    {
+                        "grade": "Leutnant",
+                        "name": "Paul Wilkening",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": ["Giuliano Parvis"]
+        },
+        {
+            "number": 28,
+            "date": "15-11-1917",
+            "place": "Istrana",
+            "plane":{
+                "type": "DFW C.V.",
+                "id": "Unknown",
+                "squad": "FA 14"
+            },
+            "nation": "Germany",
+            "victims":
+                [
+                    {
+                        "grade": "Leutnant",
+                        "name":"Alfred Müller",
+                        "status": "Killed in Action"
+                    },
+                    {
+                        "grade": "Leutnant",
+                        "name": "Erich Peucer",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": []
+        },
+        {
+            "number": 29,
+            "date": "23-11-1917",
+            "place": "Falzè",
+            "plane":{
+                "type": "Albatros D. III",
+                "id": "Unknown",
+                "squad": "Jasta 39"
+            },
+            "nation": "Germany",
+            "victims":
+                [
+                    {
+                        "grade": "Feldwebel",
+                        "name":"Karl Übershär",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": ["Gastone Novelli"]
+        },
+        {
+            "number": 30,
+            "date": "07-12-1917",
+            "place": "Kaberlaba",
+            "plane":{
+                "type": "Br. C.I.",
+                "id": "29.20",
+                "squad": "Flik 19"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Feldwebel",
+                        "name":"Hermann Schütze",
+                        "status": "Killed in Action"
+                    },
+                    {
+                        "grade": "Leutnant",
+                        "name": "Hermann Mehrfurt",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": []
+        },
+        {
+            "number": 31,
+            "date": "03-05-1918",
+            "place": "Salettuol",
+            "plane":{
+                "type": "Br. C.I.",
+                "id": "369.28",
+                "squad": "Flik 19"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Zugsführer",
+                        "name":"Josef Friedrich",
+                        "status": "Killed in Action"
+                    },
+                    {
+                        "grade": "Oberleutnant",
+                        "name": "Karl Rosenbaum",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": ["Guido Nardini"]
+        },
+        {
+            "number": 32,
+            "date": "22-05-1918",
+            "place": "Cimadolmo",
+            "plane":{
+                "type": "Albatros D. III",
+                "id": "153.155",
+                "squad": "Flik 51"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Fähnrich",
+                        "name":"Ernst von Pontalti",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": ["Mario D'Urso"]
+        },
+        {
+            "number": 33,
+            "date": "15-06-1918",
+            "place": "Saletto",
+            "plane":{
+                "type": "Br. C.I.",
+                "id": "369.116",
+                "squad": "Flik 32/D"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Oberleutnant",
+                        "name":"Albin Tomasic",
+                        "status": "Killed in Action"
+                    },
+                    {
+                        "grade": "Leutnant",
+                        "name": "Arthur Fellner",
+                        "status": "Killed in Action"
+                    }
+                ],
+            "allied": []
+        },
+        {
+            "number": 34,
+            "date": "15-06-1918",
+            "place": "San Biagio",
+            "plane":{
+                "type": "Albatros D. III",
+                "id": "153.266",
+                "squad": "Flik 51"
+            },
+            "nation": "Austria-Hungary",
+            "victims":
+                [
+                    {
+                        "grade": "Leutnant",
+                        "name":"Sigmund von Josipovich",
+                        "status": "Prisoner of War"
+                    }
+                ],
+            "allied": ["Gaetano Aliperta"]
+        }
+    ]
