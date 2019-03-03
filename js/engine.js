@@ -1,19 +1,4 @@
 $(document).ready(function() {
-var data1 = (function () {
-    var data1 = null;
-    $.ajax({
-        'async': false,
-        'global': false,
-        'url': "json/Baracca.json",
-        'dataType': "json",
-        'success': function (data) {
-            data1 = data;
-        }
-    });
-    return data1;
-});
-
-
 
 
 var map = L.map('map', {
@@ -25,13 +10,17 @@ var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-data1.forEach(function(arrayItem) {
-    if (arrayItem["number"] == 1) {
-        $('<div class="carousel-item active"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
-    }
-    else {
-        $('<div class="carousel-item"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
-    }
+$.ajax({
+    dataType: "json",
+    url: "json/Baracca.json",
+    success: function(dati) {
+        dati.forEach(function(arrayItem) {
+            if (arrayItem["number"] == 1) {
+                $('<div class="carousel-item active"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
+            }
+            else {
+                $('<div class="carousel-item"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
+            }
 })
 
 var container = document.getElementById('visualization');
