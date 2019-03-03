@@ -34,11 +34,11 @@ $.ajax({
 
         // Configuration for the Timeline
         var options = {
-        //min: '1916-01-01',
-        //max: '1919-01-01',
+        min: '1916-01-01',
+        max: '1919-01-01',
         maxHeight: "200px",
         minHeight: "200px",
-        zoomMin: 1500000000, //1500000000 per il girono esatto 
+        zoomMin: 1500000000, //1500000000 per il girono esatto
 
         };
 
