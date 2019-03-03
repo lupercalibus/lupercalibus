@@ -42,5 +42,17 @@ $.ajax({
         // Create a Timeline
         var timeline = new vis.Timeline(container, items, options);
         timeline.setSelection(1, {focus: true})
+        var actualid = 1
+
+
+        $('.carousel-control-prev').click(function() {
+            var actualid = actualid-1
+        })
+        $('.carousel-control-next').click(function() {
+            var actualid = actualid+1
+        })
+        $('.carousel-control').click(function() {
+            timeline.setSelection(actualid, {focus: true})
+        })
     }})
 })
