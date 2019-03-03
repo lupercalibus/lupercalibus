@@ -46,7 +46,7 @@ $.ajax({
 
         var actualid = 1
         
-        timeline.zoomIn(50)
+        timeline.zoomIn(0.5)
         timeline.setSelection(1, {focus: true})
 
         $('#carouselTitle').on('slid.bs.carousel', function () {
