@@ -21,7 +21,7 @@ $.ajax({
             else {
                 $('<div class="carousel-item"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
             }
-})
+    })
 
 var container = document.getElementById('visualization');
 
@@ -47,4 +47,5 @@ zoomMin: 3000000000 //1500000000 per il girono esatto
 // Create a Timeline
 var timeline = new vis.Timeline(container, items, options);
 
+    }})
 })
