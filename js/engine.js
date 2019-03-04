@@ -65,8 +65,9 @@ $.ajax({
         timeline.setSelection(1, {focus: true})
 
         itemfirst.add(items)
+        var layerGroup = L.layerGroup().addTo(map);
 
-        var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(map);
+        var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
         function FirstPlaceFilter(feature) {
             if (feature.properties.name === firstitem["place"]) return true
             }
@@ -84,8 +85,8 @@ $.ajax({
                 actualitem = datesarray.find(item => item.id === actualid)
             }
             
-            actualplace.clearLayers();
-            var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(map);
+            layerGroup.clearLayers();
+            var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
             function PlaceFilter(feature) {
                 if (feature.properties.name === actualitem["place"]) return true
                 }
