@@ -67,14 +67,6 @@ $.ajax({
 
         itemfirst.add(items)
 
-        var firstplace 
-        for (x in  places.responseJSON.features){
-            if (x.properties.name == firstitem["place"])
-            {
-                firstplace = x.geometry.coordinates
-            }
-        }
-        console.log(firstplace)
         
         $('#carouselTitle').on('slid.bs.carousel', function () {
             actualid= $( ".active" ).find( ".actualcard").attr('id')
