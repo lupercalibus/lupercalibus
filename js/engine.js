@@ -75,6 +75,7 @@ $.ajax({
             actualid= $( ".active" ).find( ".actualcard").attr('id')
             timeline.setSelection(actualid, {focus: true})
             var actualitem = dati.find(item => item.id === actualid)
+            console.log(actualitem)
             map.removeLayer(actualplace);
             var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(map);
             function PlaceFilter(feature) {
