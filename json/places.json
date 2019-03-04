@@ -1,0 +1,326 @@
+{
+    "type": "FeatureCollection",
+    "features":
+    [
+        {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.3964406,45.9404877]
+            },
+            "properties": {
+              "name": "Medeuzza"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.6250,45.9439]
+            },
+            "properties": {
+              "name": "Gorizia"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.6089235,45.8943390]
+            },
+            "properties": {
+              "name": "Miren"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.5788,46.2457]
+            },
+            "properties": {
+              "name": "Caporetto"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.0158,46.4054]
+            },
+            "properties": {
+              "name": "Tolmezzo"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.6421079,45.8444767]
+            },
+            "properties": {
+              "name": "Kostanjevica"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.3439248,46.0655818]
+            },
+            "properties": {
+              "name": "Orzano"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [12.9014231,46.0724506]
+            },
+            "properties": {
+              "name": "Gradisca"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [12.9961,45.7786]
+            },
+            "properties": {
+              "name": "Latisana"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.6339114,45.9159781]
+            },
+            "properties": {
+              "name": "Vertoiba"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.5606372,46.0649360]
+            },
+            "properties": {
+              "name": "Korada"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.5895793,46.0411219]
+            },
+            "properties": {
+              "name": "Plave"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.5853291,46.1343309]
+            },
+            "properties": {
+              "name": "Podgora"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.9241,46.2754]
+            },
+            "properties": {
+              "name": "Sava (Valley)"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.6175962,45.8220951]
+            },
+            "properties": {
+              "name": "Selo"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.6885250,45.9935289]
+            },
+            "properties": {
+              "name": "Zagorje"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.6775164,45.9763267]
+            },
+            "properties": {
+              "name": "San Gabriele"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.6347815,45.9884151]
+            },
+            "properties": {
+              "name": "Sabotino"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.7824065,45.7470244]
+            },
+            "properties": {
+              "name": "Volnik"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.7012162,45.5373008]
+            },
+            "properties": {
+              "name": "San Marco"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.7410956,46.1531057]
+            },
+            "properties": {
+              "name": "Most na Soči"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [13.5310850,46.1951087]
+            },
+            "properties": {
+              "name": "Matajur"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [12.9086,45.7917]
+            },
+            "properties": {
+              "name": "Fossalta"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [12.3983645,45.8887601]
+            },
+            "properties": {
+              "name": "Godega"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [12.4235,45.9307]
+            },
+            "properties": {
+              "name": "Orsago"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [12.0987,45.6779]
+            },
+            "properties": {
+              "name": "Istrana"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [12.0925347,45.7434446]
+            },
+            "properties": {
+              "name": "Falzè"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [11.4974850,45.8451504]
+            },
+            "properties": {
+              "name": "Kaberlaba"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [12.3277109,45.7653614]
+            },
+            "properties": {
+              "name": "Salettuol"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [12.361,45.7876]
+            },
+            "properties": {
+              "name": "Cimadolmo"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [12.9234388,45.8706606]
+            },
+            "properties": {
+              "name": "Saletto"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [ 12.3684,45.6806]
+            },
+            "properties": {
+              "name": "San Biagio"
+            }
+          }    
+    ]
+}
