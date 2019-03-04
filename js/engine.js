@@ -32,7 +32,7 @@ $.ajax({
 
         // Create a DataSet (allows two way data-binding)
         var itemfirst =  new vis.DataSet(datesfirst)
-        var items =  new vis.DataSet(datesarray)
+        var items =  (datesarray)
 
         // Configuration for the Timeline
         var options = {
