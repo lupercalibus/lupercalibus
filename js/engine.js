@@ -17,7 +17,7 @@ var places = $.ajax({
                     dataType: "json",
                 })   
    
-L.geoJSON(places.responseJSON).addTo(map);
+var geodata = places.responseJSON
 
 
 
@@ -67,7 +67,15 @@ $.ajax({
 
         itemfirst.add(items)
 
+        function getPlace(place_name) {
+            return geodata.filter(
+                function(geodata){return geodata.features.properties.name == place_name}
+            );
+          }
+        firstplace = getPlace ((firstitem["place"]))
         
+        console.log(firstplace)
+
         $('#carouselTitle').on('slid.bs.carousel', function () {
             actualid= $( ".active" ).find( ".actualcard").attr('id')
             timeline.setSelection(actualid, {focus: true})
