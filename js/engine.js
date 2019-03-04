@@ -82,7 +82,7 @@ $.ajax({
                 actualitem = datesfirst
             }
             else {
-                actualitem = datesarray.find(item => item.id === actualid)
+                actualitem = datesarray.find(function(datesarray){return datesarray.number == actualid})
             }
             
             layerGroup.clearLayers();
