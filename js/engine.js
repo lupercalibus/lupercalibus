@@ -76,21 +76,16 @@ $.ajax({
             actualid= $( ".active" ).find( ".actualcard").attr('id')
             timeline.setSelection(actualid, {focus: true})
 
-            console.log(datesarray)
+            console.log(dati)
             //json del nuovo oggetto
             var actualitem
-            if (actualid == 1){
-                actualitem = datesfirst
-            }
-            else {
-                actualitem = datesarray.find(function(datesarray){return datesarray.number ==  actualid})
-            }
+            actualitem = dati.find(function(dati){return dati.number ==  actualid})
 
 
             layerGroup.clearLayers();
             var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
             function PlaceFilter(feature) {
-                if (feature.properties.name === actualitem[0].place) return true
+                if (feature.properties.name === actualitem["place"]) return true
                 }
     
           })
