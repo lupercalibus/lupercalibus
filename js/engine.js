@@ -66,12 +66,15 @@ $.ajax({
 
         itemfirst.add(items)
 
-        var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter(feature, firstitem["place"])}).addTo(map);
-
-        function PlaceFilter(feature, place_name) {
-        if (feature.properties.name === place_name) return true
+        newplacename (firstitem["place"])
+        
+        function newplace (newplacename) {
+            map.removeLayer(actualplace);
+            var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(map);
+            function PlaceFilter(feature) {
+                if (feature.properties.name === newplacename) return true
+                }
         }
-
         
 
         $('#carouselTitle').on('slid.bs.carousel', function () {
