@@ -43,7 +43,7 @@ $.ajax({
 
         // Create a Timeline
         var timeline = new vis.Timeline(container, items, options);
-        timeline.zoomIn(1)
+        timeline.setWindow('1916-03-30', '1916-04-16')
         var actualid = 1
 
         timeline.setSelection(1, {focus: true})
