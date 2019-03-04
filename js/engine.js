@@ -11,13 +11,14 @@ var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-var places
+var places = []
 $.ajax({
     dataType: "json",
     url: "json/places.json",
     success: function(geodata) {
-        places = geodata
-        return places
+        dati.forEach(function(arrayItem) {
+            places.push(arrayItem)
+        })
     }
 })
  console.log(places)
