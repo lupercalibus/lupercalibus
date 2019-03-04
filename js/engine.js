@@ -32,6 +32,7 @@ $.ajax({
 
         // Create a DataSet (allows two way data-binding)
         var itemfirst =  new vis.DataSet(datesfirst)
+        var items =  new vis.DataSet(datesarray)
 
         // Configuration for the Timeline
         var options = {
@@ -49,9 +50,9 @@ $.ajax({
 
         timeline.setSelection(1, {focus: true})
 
-        itemfirst.add(datesarray)
+        itemfirst.add(items)
 
-
+        
         $('#carouselTitle').on('slid.bs.carousel', function () {
             actualid= $( ".active" ).find( ".actualcard").attr('id')
             timeline.setSelection(actualid, {focus: true})
