@@ -75,8 +75,8 @@ $.ajax({
                 if (feature.properties.name === newplacename) return true
                 }
         }
-        
-        newplace (firstitem["place"])
+        roba =  firstitem["place"]
+        newplace (roba)
 
         $('#carouselTitle').on('slid.bs.carousel', function () {
             actualid= $( ".active" ).find( ".actualcard").attr('id')
