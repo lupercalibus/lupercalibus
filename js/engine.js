@@ -11,7 +11,7 @@ var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-
+//per caricare il geojson serve un procedimento diverso
 var places;
 $.getJSON("json/places.json",function(json){
     places = json;                 
@@ -65,9 +65,7 @@ $.ajax({
 
         itemfirst.add(items)
 
-        actualplace = places.features.find(x => x.properties.names === firstitem["place"]);
-
-        var marker = L.marker([actualplace.features.geometry.coordinates]).addTo(map);
+        var geojson = L.geoJson(places).addTo(map);
         
         $('#carouselTitle').on('slid.bs.carousel', function () {
             actualid= $( ".active" ).find( ".actualcard").attr('id')
