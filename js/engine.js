@@ -5,10 +5,24 @@ var map = L.map('map', {
  maxZoom: 18,
  minZoom: 12,
 });
-map.setView([44.4915, 11.3355], 12);
+map.setView([46.0160, 13.1611], 9);
 var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+
+
+var places
+$.ajax({
+    dataType: "json",
+    url: "json/places.json",
+    success: function(geodata) {
+        places = geodata
+    }
+})
+
+
+
+
 
 $.ajax({
     dataType: "json",
@@ -16,9 +30,11 @@ $.ajax({
     success: function(dati) {
     var datesfirst = []
     var datesarray = []
+    var firstitem = []
         dati.forEach(function(arrayItem) {
             //datesarray.push({id: arrayItem["number"], content: (arrayItem["place"]) +" "+ (arrayItem["date"]), start: arrayItem["date"]})
             if (arrayItem["number"] == 1) {
+                firstitem = arrayItem
                 datesfirst.push({id: arrayItem["number"], content: (arrayItem["place"]) +" "+ (arrayItem["date"]), start: arrayItem["date"]})
                 $('<div class="carousel-item active"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="'+ arrayItem["number"] + '" align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
             }
@@ -53,6 +69,9 @@ $.ajax({
 
         itemfirst.add(items)
 
+        actualplace = places.find(x => x.properties.names === firstitem["place"]);
+
+        var marker = L.marker([actualplace.features.geometry.coordinates]).addTo(map);
         
         $('#carouselTitle').on('slid.bs.carousel', function () {
             actualid= $( ".active" ).find( ".actualcard").attr('id')
@@ -62,5 +81,7 @@ $.ajax({
         timeline.on('select', function (properties) {
                 $('#carouselTitle').carousel(properties.items - 1)
           });
+
+       
     }})
 })
