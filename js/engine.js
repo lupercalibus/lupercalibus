@@ -82,11 +82,11 @@ $.ajax({
                 actualitem = datesfirst
             }
             else {
-                actualitem = datesarray.find(function(datesarray){return datesarray.number == actualid})
+                actualitem = datesarray.find(function(datesarray){return datesarray.number ==  parseInt(actualid)})
             }
             
-            console.log(actualitem)
-            
+            console.log(actualid)
+
             layerGroup.clearLayers();
             var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
             function PlaceFilter(feature) {
