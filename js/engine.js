@@ -75,7 +75,7 @@ $.ajax({
                 if (feature.properties.name === newplacename) return true
                 }
         }
-        roba =  firstitem["place"]
+        var roba =  firstitem["place"]
         newplace (roba)
 
         $('#carouselTitle').on('slid.bs.carousel', function () {
