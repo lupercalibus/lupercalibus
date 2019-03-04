@@ -14,13 +14,16 @@ $.ajax({
     dataType: "json",
     url: "json/Baracca.json",
     success: function(dati) {
+    var datesfirst = []
     var datesarray = []
         dati.forEach(function(arrayItem) {
-            datesarray.push({id: arrayItem["number"], content: (arrayItem["place"]) +" "+ (arrayItem["date"]), start: arrayItem["date"]})
+            //datesarray.push({id: arrayItem["number"], content: (arrayItem["place"]) +" "+ (arrayItem["date"]), start: arrayItem["date"]})
             if (arrayItem["number"] == 1) {
+                datesfirst.push({id: arrayItem["number"], content: (arrayItem["place"]) +" "+ (arrayItem["date"]), start: arrayItem["date"]})
                 $('<div class="carousel-item active"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="'+ arrayItem["number"] + '" align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
             }
             else {
+                datesarray.push({id: arrayItem["number"], content: (arrayItem["place"]) +" "+ (arrayItem["date"]), start: arrayItem["date"]})
                 $('<div class="carousel-item"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="'+ arrayItem["number"] + '" align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
             }
         })
@@ -28,6 +31,7 @@ $.ajax({
         var container = document.getElementById('visualization');
 
         // Create a DataSet (allows two way data-binding)
+        var itemfirst =  new vis.DataSet(datesfirst)
         var items =  new vis.DataSet(datesarray)
 
         // Configuration for the Timeline
@@ -40,7 +44,7 @@ $.ajax({
         };
 
         // Create a Timeline
-        var timeline = new vis.Timeline(container, items, options);
+        var timeline = new vis.Timeline(container, itemfirst, options);
         timeline.setWindow('1916-03-30', '1916-04-16')
         var actualid = 1
 
