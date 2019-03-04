@@ -67,14 +67,13 @@ $.ajax({
 
         itemfirst.add(items)
 
-        function getPlace(place_name) {
-            return geodata.filter(
-                function(geodata){return geodata.features.properties.name == place_name}
-            );
-          }
-        firstplace = getPlace ((firstitem["place"]))
+        var firstplace= L.geoJson(myJson, {filter: FirstPlaceFilter}).addTo(map);
+
+        function FirstPlaceFilter(feature) {
+        if (feature.properties.name === (firstitem["place"])) return true
+        }
+
         
-        console.log(firstplace)
 
         $('#carouselTitle').on('slid.bs.carousel', function () {
             actualid= $( ".active" ).find( ".actualcard").attr('id')
