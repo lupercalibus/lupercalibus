@@ -11,7 +11,7 @@ var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-var places
+var places = []
 $.ajax({
     dataType: "json",
     url: "json/places.json",
@@ -20,7 +20,7 @@ $.ajax({
         return places
     }
 })
-
+ console.log(places)
 
 
 
