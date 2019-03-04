@@ -16,8 +16,8 @@ $.ajax({
     dataType: "json",
     url: "json/places.json",
     success: function(geodata) {
-        dati.forEach(function(arrayItem) {
-            places.push(arrayItem)
+        geodata.forEach(function(jsonitem) {
+            places.push(jsonitem)
         })
     }
 })
