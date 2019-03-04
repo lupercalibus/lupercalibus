@@ -74,8 +74,17 @@ $.ajax({
         $('#carouselTitle').on('slid.bs.carousel', function () {
             actualid= $( ".active" ).find( ".actualcard").attr('id')
             timeline.setSelection(actualid, {focus: true})
-            var actualitem = dati.find(item => item.id === actualid)
-            console.log(actualitem)
+
+            //json del nuovo oggetto
+            var actualitem
+            if (actualid == 1){
+                actualitem = datesfirst
+            }
+            else {
+                actualitem = datesarray.find(item => item.id === actualid)
+            }
+            
+
             map.removeLayer(actualplace);
             var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(map);
             function PlaceFilter(feature) {
