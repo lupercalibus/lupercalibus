@@ -68,8 +68,9 @@ $.ajax({
 
         var firstplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(map);
 
+        console.log(firstitem["place"])
         function FirstPlaceFilter(feature) {
-        if (feature.properties.name === (firstitem["place"])) return true
+        if (feature.properties.name === firstitem["place"]) return true
         }
 
         
