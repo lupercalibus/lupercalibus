@@ -12,10 +12,12 @@ var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 //per caricare il geojson serve un procedimento diverso
-var places;
-$.getJSON("json/places.json",function(json){
-    places = json;                 
-});         
+var places = $.ajax({
+                    url:"json/places.json",
+                    dataType: "json",
+                })   
+   
+L.geoJSON(places.responseJSON).addTo(map);
 
 
 
