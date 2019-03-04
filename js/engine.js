@@ -16,8 +16,7 @@ var places = $.ajax({
                     url:"json/places.json",
                     dataType: "json",
                 })   
-   
-var geodata = places.responseJSON
+
 
 
 
@@ -67,7 +66,7 @@ $.ajax({
 
         itemfirst.add(items)
 
-        var firstplace= L.geoJson(myJson, {filter: FirstPlaceFilter}).addTo(map);
+        var firstplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(map);
 
         function FirstPlaceFilter(feature) {
         if (feature.properties.name === (firstitem["place"])) return true
