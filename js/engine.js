@@ -66,21 +66,21 @@ $.ajax({
 
         itemfirst.add(items)
 
-        
-        
-        function newplace (newplacename) {
-            map.removeLayer(actualplace);
-            var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(map);
-            function PlaceFilter(feature) {
-                if (feature.properties.name === newplacename) return true
-                }
-        }
-        var roba =  firstitem["place"]
-        newplace (roba)
+        var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(map);
+        function FirstPlaceFilter(feature) {
+            if (feature.properties.name === firstitem["place"]) return true
+            }
 
         $('#carouselTitle').on('slid.bs.carousel', function () {
             actualid= $( ".active" ).find( ".actualcard").attr('id')
             timeline.setSelection(actualid, {focus: true})
+            var actualitem = dati.find(item => item.id === actualid)
+            map.removeLayer(actualplace);
+            var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(map);
+            function PlaceFilter(feature) {
+                if (feature.properties.name === actualitem["place"]) return true
+                }
+    
           })
 
         timeline.on('select', function (properties) {
