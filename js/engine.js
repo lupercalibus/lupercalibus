@@ -32,7 +32,6 @@ $.ajax({
 
         // Create a DataSet (allows two way data-binding)
         var itemfirst =  new vis.DataSet(datesfirst)
-        var items =  new vis.DataSet(datesarray)
 
         // Configuration for the Timeline
         var options = {
@@ -45,10 +44,13 @@ $.ajax({
 
         // Create a Timeline
         var timeline = new vis.Timeline(container, itemfirst, options);
-        timeline.setWindow('1916-03-30', '1916-04-16')
+
         var actualid = 1
 
         timeline.setSelection(1, {focus: true})
+
+        itemfirst.add(datesarray)
+
 
         $('#carouselTitle').on('slid.bs.carousel', function () {
             actualid= $( ".active" ).find( ".actualcard").attr('id')
