@@ -66,7 +66,7 @@ $.ajax({
 
         itemfirst.add(items)
 
-        newplacename (firstitem["place"])
+        
         
         function newplace (newplacename) {
             map.removeLayer(actualplace);
@@ -76,6 +76,7 @@ $.ajax({
                 }
         }
         
+        newplace (firstitem["place"])
 
         $('#carouselTitle').on('slid.bs.carousel', function () {
             actualid= $( ".active" ).find( ".actualcard").attr('id')
