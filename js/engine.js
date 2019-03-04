@@ -28,9 +28,7 @@ $.ajax({
         var container = document.getElementById('visualization');
 
         // Create a DataSet (allows two way data-binding)
-        var items = datesarray;
-
-
+        var items =  new timeline.DataSet(datesarray);
 
         // Configuration for the Timeline
         var options = {
