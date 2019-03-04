@@ -85,6 +85,8 @@ $.ajax({
                 actualitem = datesarray.find(function(datesarray){return datesarray.number == actualid})
             }
             
+            console.log(actualitem)
+            
             layerGroup.clearLayers();
             var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
             function PlaceFilter(feature) {
