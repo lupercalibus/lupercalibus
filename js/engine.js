@@ -17,7 +17,7 @@ var places = $.ajax({
                     dataType: "json",
                 })   
 
-
+$.when(places).done(function() {
 
 
 
@@ -96,4 +96,5 @@ $.ajax({
 
        
     }})
+})
 })
