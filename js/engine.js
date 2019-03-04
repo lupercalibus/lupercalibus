@@ -28,7 +28,7 @@ $.ajax({
         var container = document.getElementById('visualization');
 
         // Create a DataSet (allows two way data-binding)
-        var items = new vis.DataSet(datesarray);
+        var items = datesarray;
 
 
 
@@ -42,7 +42,7 @@ $.ajax({
         };
 
         // Create a Timeline
-        var timeline = new vis.Timeline(container, items, options);
+        var timeline = new timeline.Timeline(container, items, options);
         timeline.setWindow('1916-03-30', '1916-04-16')
         var actualid = 1
 
