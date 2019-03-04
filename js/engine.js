@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 var map = L.map('map', {
  maxZoom: 18,
- minZoom: 12,
+ minZoom: 6,
 });
 map.setView([46.0160, 13.1611], 7);
 var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
