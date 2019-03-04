@@ -14,13 +14,8 @@ var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var places;
 $.getJSON("json/places.json",function(json){
-    places = json;   
-    checkDrink();                
+    places = json;                 
 });         
-
-function checkDrink() {
-    console.log(places);
-}   
 
 
 
@@ -70,7 +65,7 @@ $.ajax({
 
         itemfirst.add(items)
 
-        actualplace = places.find(x => x.properties.names === firstitem["place"]);
+        actualplace = places.features.find(x => x.properties.names === firstitem["place"]);
 
         var marker = L.marker([actualplace.features.geometry.coordinates]).addTo(map);
         
