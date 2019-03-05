@@ -76,7 +76,11 @@ $.ajax({
         var layerGroup = L.layerGroup().addTo(map);
 
         var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
-
+        function centermark(actualplace)
+        function centermark(markname){
+            var latLngs = [ markname.getLatLng() ];
+            var markerBounds = L.latLngBounds(latLngs);
+            map.fitBounds(markerBounds);}
         function FirstPlaceFilter(feature) {
             if (feature.properties.name === firstitem["place"]) return true
             }
@@ -85,7 +89,6 @@ $.ajax({
             actualid= $( ".active" ).find( ".actualcard").attr('id')
             timeline.setSelection(actualid, {focus: true})
 
-            console.log(dati)
             //json del nuovo oggetto
             var actualitem
             actualitem = dati.find(function(dati){return dati.number ==  actualid})
@@ -93,7 +96,7 @@ $.ajax({
 
             layerGroup.clearLayers();
             var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
-            map.setView(actualplace.getLatLng());
+            function centermark(actualplace)
             function PlaceFilter(feature) {
                 if (feature.properties.name === actualitem["place"]) return true
                 }
