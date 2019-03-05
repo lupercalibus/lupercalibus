@@ -45,7 +45,7 @@ $.ajax({
                 $('<div class="carousel-item"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="'+ arrayItem["number"] + '" align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
             }
         })
-
+        $.when(battles).done(function() {
         var container = document.getElementById('visualization');
 
         // Create a DataSet (allows two way data-binding)
@@ -102,7 +102,7 @@ $.ajax({
                 $('#carouselTitle').carousel(properties.items - 1)
           });
 
-       
+        })
     }})
 })
 })
