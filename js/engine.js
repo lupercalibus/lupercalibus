@@ -25,6 +25,7 @@ $.when(places).done(function() {
         dataType: "json",
     })  
 
+console.log(battles)
 
 $.ajax({
     dataType: "json",
@@ -51,7 +52,7 @@ $.ajax({
         // Create a DataSet (allows two way data-binding)
         var itemfirst =  new vis.DataSet(datesfirst)
         var items =  (datesarray)
-        var itembattles = new vis.DataSet(battles)
+        var itembattles = (battles)
 
         // Configuration for the Timeline
         var options = {
