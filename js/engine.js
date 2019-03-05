@@ -2,15 +2,16 @@ $(document).ready(function() {
 
 
 var map = L.map('map', {
- maxZoom: 18,
+ maxZoom: 6,
  minZoom: 6,
 });
-map.setView([46.0160, 13.1611], 7);
-var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+map.setView([46.0160, 13.1611], 6);
+https://tile.thunderforest.com/spinal-map/{z}/{x}/{y}.png
+var osm = L.tileLayer('https://tile.thunderforest.com/spinal-map/{z}/{x}/{y}.png', {
  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-
+//'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 //per caricare il geojson serve un procedimento diverso
 var places = $.ajax({
                     url:"json/places.json",
@@ -76,6 +77,7 @@ $.ajax({
         var layerGroup = L.layerGroup().addTo(map);
 
         var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
+
         function FirstPlaceFilter(feature) {
             if (feature.properties.name === firstitem["place"]) return true
             }
@@ -92,6 +94,7 @@ $.ajax({
 
             layerGroup.clearLayers();
             var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
+            map.setView(actualplace.getLatLng());
             function PlaceFilter(feature) {
                 if (feature.properties.name === actualitem["place"]) return true
                 }
