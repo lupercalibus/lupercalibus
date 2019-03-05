@@ -1,7 +1,9 @@
 .vis-item {
     margin: 0px !important;
     padding: 0px !important;
-    border-width: 0px !important
+    border-width: 0px !important;
+    color: black;
+    background-color: transparent;
 
 }
 .vis-item.vis-background.victory {
