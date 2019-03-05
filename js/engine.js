@@ -65,7 +65,7 @@ $.ajax({
 
         
         // Create a Timeline
-        var timeline = new vis.Timeline(container, itemfirst, timegroups, options);
+        var timeline = new vis.Timeline(container, itemfirst, options);
 
         var actualid = 1
 
