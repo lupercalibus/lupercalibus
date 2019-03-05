@@ -6,7 +6,7 @@
     background-color: rgba(255, 0, 0, 0.2);
     overflow: visible;
 }
-.vis-item.vis-background.defeat{
+.vis-item.vis-background.inconclusive{
     background-color: rgba(83, 83, 83, 0.2);
     overflow: visible;
 }
