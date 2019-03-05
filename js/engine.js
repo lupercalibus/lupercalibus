@@ -19,6 +19,12 @@ var places = $.ajax({
 
 $.when(places).done(function() {
 
+    var battles = $.ajax({
+        url:"json/battles.json",
+        dataType: "json",
+    })   
+})
+$.when(battles).done(function() {
 
 
 $.ajax({
