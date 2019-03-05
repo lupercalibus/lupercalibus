@@ -76,11 +76,7 @@ $.ajax({
         var layerGroup = L.layerGroup().addTo(map);
 
         var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
-        centermark(actualplace)
-        function centermark(markname){
-            var latLngs = [ markname.getLatLng() ];
-            var markerBounds = L.latLngBounds(latLngs);
-            map.fitBounds(markerBounds);}
+   
         function FirstPlaceFilter(feature) {
             if (feature.properties.name === firstitem["place"]) return true
             }
@@ -96,7 +92,7 @@ $.ajax({
 
             layerGroup.clearLayers();
             var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
-            centermark(actsualplace)
+
             function PlaceFilter(feature) {
                 if (feature.properties.name === actualitem["place"]) return true
                 }
