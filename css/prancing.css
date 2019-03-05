@@ -1,24 +1,63 @@
-.vis-item.dogfight {
-    margin: 0px !important;
-    padding: 0px !important;
-    border-width: 0px !important;
-    background-color:black !important;
+/* .vis-item.dogfight {
+    margin: 0px !important !important;
+    padding: 0px !important !important;
+    border-width: 0px !important !important;
+    background-color:black !important !important;
     content : "hjfdjsdfhjfdsjkdf"
 
-}
+} */
+.vis-item.dogfight {
+    margin: 50px 0 !important;
+    position: relative !important;
+    display: block !important;
+    color: red !important;
+    width: 0px !important;
+    height: 0px !important;
+    border-right: 100px solid transparent !important;
+    border-bottom: 70px solid red !important;
+    border-left: 100px solid transparent !important;
+    transform: rotate(35deg) !important;
+  }
+  .vis-item.dogfight:before {
+    border-bottom: 80px solid red !important;
+    border-left: 30px solid transparent !important;
+    border-right: 30px solid transparent !important;
+    position: absolute !important;
+    height: 0 !important;
+    width: 0 !important;
+    top: -45px !important;
+    left: -65px !important;
+    display: block !important;
+    content: '' !important;
+    transform: rotate(-35deg) !important;
+  }
+  .vis-item.dogfight:after {
+    position: absolute !important;
+    display: block !important;
+    color: red !important;
+    top: 3px !important;
+    left: -105px !important;
+    width: 0px !important;
+    height: 0px !important;
+    border-right: 100px solid transparent !important;
+    border-bottom: 70px solid red !important;
+    border-left: 100px solid transparent !important;
+    transform: rotate(-70deg) !important;
+    content: '' !important;
+  }
 .vis-item.vis-selected{
-    border-color: #fff785 !important;
+    border-color: #fff785  !important;
     background-color:#fff785 !important
 }
 .vis-item.vis-background.victory {
-    background-color: rgba(35, 138, 14, 0.2) !important;
-    overflow: visible;
+    background-color: rgba(35, 138, 14, 0.2)  !important;
+    overflow: visible !important;
   }
 .vis-item.vis-background.defeat{
-    background-color: rgba(255, 0, 0, 0.2) !important;
-    overflow: visible;
+    background-color: rgba(255, 0, 0, 0.2)  !important;
+    overflow: visible !important;
 }
 .vis-item.vis-background.inconclusive{
-    background-color: rgba(83, 83, 83, 0.2) !important;
-    overflow: visible;
+    background-color: rgba(83, 83, 83, 0.2)  !important;
+    overflow: visible !important;
 }
