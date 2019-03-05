@@ -60,7 +60,9 @@ $.ajax({
         maxHeight: "250px",
         minHeight: "250px",
         zoomMin: 500000000, //1500000000 per il girono esatto
-        zoomMax: 500000000
+        zoomMax: 500000000,
+        type: 'point',
+        showMajorLabels: false
         };
 
         
