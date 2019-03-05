@@ -51,7 +51,7 @@ $.ajax({
         // Create a DataSet (allows two way data-binding)
         var itemfirst =  new vis.DataSet(datesfirst)
         var items =  (datesarray)
-        var itembattles = (battles)
+        var itembattles = new vis.DataSet(battles)
 
         // Configuration for the Timeline
         var options = {
