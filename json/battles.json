@@ -1,11 +1,11 @@
 [
-    {"id": "STR", "content": "Strafexpedition", "start": "1916-05-15", "end": "1916-05-31", "type": "background", "className": "victory"},
-    {"id": "06I", "content": "VI Battle of the Isonzo", "start": "1916-08-06", "end": "1916-08-17", "type": "background", "className": "victory"},
-    {"id": "07I", "content": "VII Battle of the Isonzo", "start": "1916-09-14", "end": "1916-09-17", "type": "background", "className": "inconclusive"},
-    {"id": "08I", "content": "VIII Battle of the Isonzo", "start": "1916-10-10", "end": "1916-10-12", "type": "background", "className": "inconclusive"},
-    {"id": "09I", "content": "IX Battle of the Isonzo", "start": "1916-11-01", "end": "1916-11-14", "type": "background", "className": "inconclusive"},
-    {"id": "10I", "content": "X Battle of the Isonzo", "start": "1917-05-12", "end": "1917-06-05", "type": "background", "className": "inconclusive"},
-    {"id": "11I", "content": "XI Battle of the Isonzo", "start": "1917-08-17", "end": "1917-09-12", "type": "background", "className": "victory"},
-    {"id": "12I", "content": "XII Battle of the Isonzo (Caporetto)", "start": "1917-10-24", "end": "1917-11-12", "type": "background", "className": "defeat"},
-    {"id": "SOL", "content": "Solstice Battle", "start": "1918-06-15", "end": "1918-06-24", "type": "background", "className": "victory"}
+    {"id": "STR", "content": "Strafexpedition", "start": "1916-05-15", "end": "1916-05-31", "className": "victory"},
+    {"id": "06I", "content": "VI Battle of the Isonzo", "start": "1916-08-06", "end": "1916-08-17", "className": "victory"},
+    {"id": "07I", "content": "VII Battle of the Isonzo", "start": "1916-09-14", "end": "1916-09-17", "className": "inconclusive"},
+    {"id": "08I", "content": "VIII Battle of the Isonzo", "start": "1916-10-10", "end": "1916-10-12", "className": "inconclusive"},
+    {"id": "09I", "content": "IX Battle of the Isonzo", "start": "1916-11-01", "end": "1916-11-14", "className": "inconclusive"},
+    {"id": "10I", "content": "X Battle of the Isonzo", "start": "1917-05-12", "end": "1917-06-05", "className": "inconclusive"},
+    {"id": "11I", "content": "XI Battle of the Isonzo", "start": "1917-08-17", "end": "1917-09-12", "className": "victory"},
+    {"id": "12I", "content": "XII Battle of the Isonzo (Caporetto)", "start": "1917-10-24", "end": "1917-11-12", "className": "defeat"},
+    {"id": "SOL", "content": "Solstice Battle", "start": "1918-06-15", "end": "1918-06-24", "className": "victory"}
 ]
