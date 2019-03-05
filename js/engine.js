@@ -51,6 +51,7 @@ $.ajax({
         // Create a DataSet (allows two way data-binding)
         var itemfirst =  new vis.DataSet(datesfirst)
         var items =  (datesarray)
+        var itembattles = (battles)
 
         // Configuration for the Timeline
         var options = {
@@ -70,6 +71,7 @@ $.ajax({
         timeline.setSelection(1, {focus: true})
 
         itemfirst.add(items)
+        itemfirst.add(itembattles)
         var layerGroup = L.layerGroup().addTo(map);
 
         var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
