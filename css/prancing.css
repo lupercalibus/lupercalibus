@@ -1,12 +1,11 @@
-.vis-item {
+.vis-item.dogfight {
     margin: 0px !important;
     padding: 0px !important;
     border-width: 0px !important;
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: red;
+    background-color:black !important
 
 }
-vis-item.vis-selected{
+.vis-item.vis-selected{
     border-color: #fff785 !important;
     background-color:#fff785 !important
 }
