@@ -17,15 +17,13 @@ var places = $.ajax({
                     dataType: "json",
                 })   
 
-                var battles
+               
 $.when(places).done(function() {
 
-     battles = $.ajax({
+     var battles = $.ajax({
         url:"json/battles.json",
         dataType: "json",
     })  
-})
-$.when(battles).done(function() {
 
 
 $.ajax({
