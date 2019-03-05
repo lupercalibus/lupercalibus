@@ -6,6 +6,6 @@
     {"id": "09I", "content": "Ninth Battle of the Isonzo", "start": "1916-11-01", "end": "1916-11-14", "type": "background", "className": "inconclusive"},
     {"id": "10I", "content": "Tenth Battle of the Isonzo", "start": "1917-05-12", "end": "1917-06-05", "type": "background", "className": "inconclusive"},
     {"id": "11I", "content": "Eleventh Battle of the Isonzo", "start": "1917-08-17", "end": "1917-09-12", "type": "background", "className": "victory"},
-    {"id": "12I", "content": "Twelfth Battle of the Isonzo (Caporetto)", "start": "1917-10-24", "end": "1917-11-12", "type": "background", "className": "defeat"},
+    {"id": "12I", "content": "                              Twelfth Battle of the Isonzo (Caporetto)", "start": "1917-10-24", "end": "1917-11-12", "type": "background", "className": "defeat"},
     {"id": "SOL", "content": "Solstice Battle", "start": "1918-06-15", "end": "1918-06-24", "type": "background", "className": "victory"}
 ]
