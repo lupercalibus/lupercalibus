@@ -1,12 +1,12 @@
-.vis-item.victory {
+.vis-item.vis-background.victory {
     background-color: rgba(35, 138, 14, 0.2);
     overflow: visible;
   }
-.vis-item.defeat{
+.vis-item.vis-background.defeat{
     background-color: rgba(255, 0, 0, 0.2);
     overflow: visible;
 }
-.vis-item.defeat{
+.vis-item.vis-background.defeat{
     background-color: rgba(83, 83, 83, 0.2);
     overflow: visible;
 }
