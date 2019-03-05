@@ -6,7 +6,7 @@
 
 }
 vis-item.vis-selected{
-    border-color: transparent !important;
+    border-color: #fff785 !important;
     background-color:#fff785 !important
 }
 .vis-item.vis-background.victory {
