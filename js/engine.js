@@ -25,7 +25,6 @@ $.when(places).done(function() {
         dataType: "json",
     })  
 
-console.log(battles)
 
 $.ajax({
     dataType: "json",
