@@ -7,26 +7,26 @@
 
 } */
 .vis-item.dogfight {
-    margin: 50px 0 !important;
+    margin: 10px 0 !important;
     position: relative !important;
     display: block !important;
     color: red !important;
     width: 0px !important;
     height: 0px !important;
-    border-right: 100px solid transparent !important;
-    border-bottom: 70px solid red !important;
-    border-left: 100px solid transparent !important;
+    border-right: 20px solid transparent !important;
+    border-bottom: 14px solid red !important;
+    border-left: 20px solid transparent !important;
     transform: rotate(35deg) !important;
   }
   .vis-item.dogfight:before {
-    border-bottom: 80px solid red !important;
-    border-left: 30px solid transparent !important;
-    border-right: 30px solid transparent !important;
+    border-bottom: 16px solid red !important;
+    border-left: 6px solid transparent !important;
+    border-right: 6px solid transparent !important;
     position: absolute !important;
     height: 0 !important;
     width: 0 !important;
-    top: -45px !important;
-    left: -65px !important;
+    top: -9px !important;
+    left: -13px !important;
     display: block !important;
     content: '' !important;
     transform: rotate(-35deg) !important;
@@ -36,12 +36,12 @@
     display: block !important;
     color: red !important;
     top: 3px !important;
-    left: -105px !important;
+    left: -21px !important;
     width: 0px !important;
     height: 0px !important;
-    border-right: 100px solid transparent !important;
-    border-bottom: 70px solid red !important;
-    border-left: 100px solid transparent !important;
+    border-right: 20px solid transparent !important;
+    border-bottom: 14px solid red !important;
+    border-left: 20px solid transparent !important;
     transform: rotate(-70deg) !important;
     content: '' !important;
   }
@@ -58,6 +58,6 @@
     overflow: visible !important;
 }
 .vis-item.vis-background.inconclusive{
-    background-color: rgba(83, 83, 83, 0.2)  !important;
+    background-color: rgba(83, 83, 83, 0.2) !important;
     overflow: visible !important;
 }
