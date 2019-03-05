@@ -37,11 +37,11 @@ $.ajax({
             //datesarray.push({id: arrayItem["number"], content: (arrayItem["place"]) +" "+ (arrayItem["date"]), start: arrayItem["date"]})
             if (arrayItem["number"] == 1) {
                 firstitem = arrayItem
-                datesfirst.push({id: arrayItem["number"], content: (arrayItem["place"]) +" "+ (arrayItem["date"]), start: arrayItem["date"]})
+                datesfirst.push({id: arrayItem["number"], content: (arrayItem["place"]) +" "+ (arrayItem["date"]), start: arrayItem["date"], group: 2})
                 $('<div class="carousel-item active"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="'+ arrayItem["number"] + '" align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
             }
             else {
-                datesarray.push({id: arrayItem["number"], content: (arrayItem["place"]) +" "+ (arrayItem["date"]), start: arrayItem["date"]})
+                datesarray.push({id: arrayItem["number"], content: (arrayItem["place"]) +" "+ (arrayItem["date"]), start: arrayItem["date"], group: 2})
                 $('<div class="carousel-item"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="'+ arrayItem["number"] + '" align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
             }
         })
@@ -62,9 +62,13 @@ $.ajax({
         zoomMin: 1500000000, //1500000000 per il girono esatto
         zoomMax: 1500000000
         };
-
+        var timegroups = new vis.DataSet([
+            {id: 1, content: ''},
+            {id: 2, content: ''}
+          ]);
+        
         // Create a Timeline
-        var timeline = new vis.Timeline(container, itemfirst, options);
+        var timeline = new vis.Timeline(container, itemfirst, timegroups, options);
 
         var actualid = 1
 
