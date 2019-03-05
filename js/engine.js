@@ -6,7 +6,6 @@ var map = L.map('map', {
  minZoom: 6,
 });
 map.setView([46.0160, 13.1611], 6);
-https://tile.thunderforest.com/spinal-map/{z}/{x}/{y}.png
 var osm = L.tileLayer('https://tile.thunderforest.com/spinal-map/{z}/{x}/{y}.png', {
  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
