@@ -2,10 +2,10 @@ $(document).ready(function() {
 
 
 var map = L.map('map', {
- maxZoom: 7,
- minZoom: 7,
+ maxZoom: 5,
+ minZoom: 5,
 });
-map.setView([46.0160, 13.1611], 7);
+map.setView([46.0160, 13.1611], 5);
 var osm = L.tileLayer('https://tile.thunderforest.com/spinal-map/{z}/{x}/{y}.png', {
  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
