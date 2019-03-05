@@ -76,7 +76,7 @@ $.ajax({
         var layerGroup = L.layerGroup().addTo(map);
 
         var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
-        function centermark(actualplace)
+        centermark(actualplace)
         function centermark(markname){
             var latLngs = [ markname.getLatLng() ];
             var markerBounds = L.latLngBounds(latLngs);
@@ -96,7 +96,7 @@ $.ajax({
 
             layerGroup.clearLayers();
             var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
-            function centermark(actualplace)
+            centermark(actsualplace)
             function PlaceFilter(feature) {
                 if (feature.properties.name === actualitem["place"]) return true
                 }
