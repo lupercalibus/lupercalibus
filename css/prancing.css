@@ -1,17 +1,13 @@
-/* .vis-item.dogfight {
-    margin: 0px !important !important;
-    padding: 0px !important !important;
-    border-width: 0px !important !important;
-    background-color:black !important !important;
-    content : "hjfdjsdfhjfdsjkdf"
-
-} */
 .vis-item.dogfight {
-    background: url("star.png") black;
-  }
+    margin: 0px !important;
+    padding: 0px !important;
+    border-width: 0px !important;
+    background-color:black !important;
+    border-radius: 50% !important;
+} 
 
 .vis-item.vis-selected{
-    border-color: #fff785  !important;
+    border-radius: 50% !important;
     background-color:#fff785 !important
 }
 .vis-item.vis-background.victory {
