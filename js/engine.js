@@ -78,7 +78,7 @@ $.ajax({
         var layerGroup = L.layerGroup().addTo(map);
 
         var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
-   
+        map.setView(actualplace.getLatLng(),10);
         function FirstPlaceFilter(feature) {
             if (feature.properties.name === firstitem["place"]) return true
             }
@@ -94,7 +94,7 @@ $.ajax({
 
             layerGroup.clearLayers();
             var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
-
+            map.setView(actualplace.getLatLng(),10);
             function PlaceFilter(feature) {
                 if (feature.properties.name === actualitem["place"]) return true
                 }
