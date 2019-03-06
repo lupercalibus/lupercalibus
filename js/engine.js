@@ -85,6 +85,7 @@ $.ajax({
         $('#carouselTitle').on('slid.bs.carousel', function () {
             actualid= $( ".active" ).find( ".actualcard").attr('id')
             timeline.setSelection(actualid, {focus: true})
+            $( ".vis-item.vis-selected" ).click();
             //json del nuovo oggetto
             var actualitem
             actualitem = dati.find(function(dati){return dati.number ==  actualid})
