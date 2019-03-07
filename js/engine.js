@@ -102,11 +102,13 @@ $.ajax({
             actualitem = dati.find(function(dati){return dati.number ==  actualid})
             if (Caporetto == false && (Date(actualitem.date) >= Date("1917-10-24"))){
                 Caporetto = true;
-                layerBorder.clearLayers();
+                map.removeLayer(layerBorder)
+                var layerBorder = L.layerGroup().addTo(map);
                 var actualborder = L.geoJson(border1917.responseJSON).addTo(layerBorder);
             }
 
-            layerGroup.clearLayers(layerGroup);
+            map.removeLayer(layerGroup)
+            var layerGroup = L.layerGroup().addTo(map);
             var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
             map.flyTo(actualplace.getBounds().getCenter(), 10);
             function PlaceFilter(feature) {
