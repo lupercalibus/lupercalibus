@@ -90,9 +90,9 @@ $.ajax({
         map.flyTo(actualplace.getBounds().getCenter(), 10);
 
 
-        var northEast = L.latLng(46.4054, 13.9241);
-        var southWest = L.latLng(45.5373008, 11.497485);
-        var bounds = L.latLngBounds(southWest, northEast);
+        var NW = L.latLng(47.557993859037765,  10.458984375);
+        var SE = L.latLng(44.81691551782855, 14.7216796875);
+        var bounds = L.latLngBounds(NW, SE);
         map.setMaxBounds(bounds);
         
         function FirstPlaceFilter(feature) {
