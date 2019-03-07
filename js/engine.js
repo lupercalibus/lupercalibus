@@ -84,7 +84,7 @@ $.ajax({
         itemfirst.add(itembattles)
         var layerGroup = L.layerGroup().addTo(map);
 
-        var actualborder = L.geoJson(border1916.responseJSON).addTo(layerGroup);
+        var actualborder = L.geoJson(border1916.responseJSON).addTo(map);
         var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
         map.flyTo(actualplace.getBounds().getCenter(), 10);
         function FirstPlaceFilter(feature) {
