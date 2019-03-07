@@ -104,7 +104,7 @@ $.ajax({
             }
             if (actualid == 24){
                 actualborder.remove(); 
-                actualborder = L.geoJson(border1917.responseJSON).addTo(map);
+                actualborder = L.geoJson(border1916.responseJSON).addTo(map);
             }
 
             layerGroup.clearLayers();
