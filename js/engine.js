@@ -76,7 +76,7 @@ $.ajax({
         itemfirst.add(itembattles)
         var layerGroup = L.layerGroup().addTo(map);
 
-        var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
+        var actualplace= L.marker(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
         var actualpoint = actualplace.getLatLng()
         map.setView(actualpoint,10);
         function FirstPlaceFilter(feature) {
