@@ -89,12 +89,12 @@ $.ajax({
         var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
         map.flyTo(actualplace.getBounds().getCenter(), 10);
 
-        var geojsonLayer = L.geoJson(places.responseJSON).addTo(map);
-        var valuemio = geojsonLayer.getBounds()
-        map.fitBounds(valuemio);
-        console.log(valuemio)
 
-
+        var northEast = L.latLng(46.4054, 13.9241);
+        var southWest = L.latLng(45.5373008, 11.497485);
+        var bounds = L.latLngBounds(southWest, northEast);
+        map.setMaxBounds(bounds);
+        
         function FirstPlaceFilter(feature) {
             if (feature.properties.name === firstitem["place"]) return true
             }
