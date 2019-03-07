@@ -83,15 +83,14 @@ $.ajax({
         itemfirst.add(items)
         itemfirst.add(itembattles)
         var layerGroup = L.layerGroup().addTo(map);
-        var layerBorder = L.layerGroup().addTo(map);
 
-        var actualborder = L.geoJson(border1916.responseJSON).addTo(layerBorder);
+
+        var actualborder1 = L.geoJson(border1916.responseJSON).addTo(map);
         var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
         map.flyTo(actualplace.getBounds().getCenter(), 10);
         function FirstPlaceFilter(feature) {
             if (feature.properties.name === firstitem["place"]) return true
             }
-        var Caporetto = false;
 
         $('#carouselTitle').on('slid.bs.carousel', function () {
             actualid= $( ".active" ).find( ".actualcard").attr('id')
@@ -100,15 +99,12 @@ $.ajax({
             //json del nuovo oggetto
             var actualitem
             actualitem = dati.find(function(dati){return dati.number ==  actualid})
-            if (Caporetto == false && (Date(actualitem.date) >= Date("1917-10-24"))){
-                Caporetto = true;
-                map.removeLayer(layerBorder)
-                var layerBorder = L.layerGroup().addTo(map);
-                var actualborder = L.geoJson(border1917.responseJSON).addTo(layerBorder);
+            if (actualid == 25){
+                map.removeLayer(actualborder1);
+                var actualborder = L.geoJson(border1917.responseJSON).addTo(map);
             }
 
-            map.removeLayer(layerGroup)
-            var layerGroup = L.layerGroup().addTo(map);
+            layerGroup.clearLayers();
             var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
             map.flyTo(actualplace.getBounds().getCenter(), 10);
             function PlaceFilter(feature) {
