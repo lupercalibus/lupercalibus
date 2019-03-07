@@ -4,6 +4,7 @@ $(document).ready(function() {
 var map = L.map('map', {
  maxZoom: 11,
  minZoom: 8,
+ maxBoundsViscosity: 1.0
 });
 map.setView([46.0160, 13.1611], 9);
 var osm = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
