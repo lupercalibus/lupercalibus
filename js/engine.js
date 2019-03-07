@@ -3,9 +3,9 @@ $(document).ready(function() {
 
 var map = L.map('map', {
  maxZoom: 10,
- minZoom: 10,
+ minZoom: 9,
 });
-map.setView([46.0160, 13.1611], 10);
+map.setView([46.0160, 13.1611], 9);
 var osm = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 }).addTo(map);
 
@@ -15,7 +15,15 @@ var osm = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Worl
 var places = $.ajax({
                     url:"json/places.json",
                     dataType: "json",
-                })   
+                })
+var border1916 = $.ajax({
+                    url:"json/linea_1916.json",
+                    dataType: "json",
+                })
+var border1917 = $.ajax({
+                    url:"json/border1917.json",
+                    dataType: "json",
+                })           
 
                
 $.when(places).done(function() {
@@ -76,6 +84,7 @@ $.ajax({
         itemfirst.add(itembattles)
         var layerGroup = L.layerGroup().addTo(map);
 
+        var actualborder = L.geoJson(border1916.responseJSON).addTo(layerGroup);
         var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
         map.flyTo(actualplace.getBounds().getCenter(), 10);
         function FirstPlaceFilter(feature) {
