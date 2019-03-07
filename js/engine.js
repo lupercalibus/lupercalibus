@@ -88,6 +88,13 @@ $.ajax({
         actualborder = L.geoJson(border1916.responseJSON).addTo(map);
         var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
         map.flyTo(actualplace.getBounds().getCenter(), 10);
+
+        var geojsonLayer = L.geoJson(places.responseJSON).addTo(map);
+        var valuemio = geojsonLayer.getBounds()
+        map.fitBounds(valuemio);
+        console.log(valuemio)
+
+
         function FirstPlaceFilter(feature) {
             if (feature.properties.name === firstitem["place"]) return true
             }
