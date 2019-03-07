@@ -2,8 +2,8 @@ $(document).ready(function() {
 
 
 var map = L.map('map', {
- maxZoom: 10,
- minZoom: 9,
+ maxZoom: 11,
+ minZoom: 8,
 });
 map.setView([46.0160, 13.1611], 9);
 var osm = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
@@ -109,7 +109,7 @@ $.ajax({
 
             layerGroup.clearLayers();
             var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
-            map.flyTo(actualplace.getBounds().getCenter(), 10);
+            map.flyTo(actualplace.getBounds().getCenter(), 9);
             function PlaceFilter(feature) {
                 if (feature.properties.name === actualitem["place"]) return true
                 }
