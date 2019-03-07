@@ -103,6 +103,10 @@ $.ajax({
                 map.removeLayer(actualborder1);
                 var actualborder = L.geoJson(border1917.responseJSON).addTo(map);
             }
+            if (actualid == 24){
+                map.removeLayer(actualborder);
+                var actualborder1 = L.geoJson(border1917.responseJSON).addTo(map);
+            }
 
             layerGroup.clearLayers();
             var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
