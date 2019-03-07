@@ -101,7 +101,7 @@ $.ajax({
             actualitem = dati.find(function(dati){return dati.number ==  actualid})
             if (actualid == 25){
                 map.removeLayer(actualborder);
-                actualborder = L.geoJson(border1917.responseJSON).addTo(map);
+                var actualborder = L.geoJson(border1917.responseJSON).addTo(map);
             }
             if (actualid == 24){
                 map.removeLayer(actualborder);
