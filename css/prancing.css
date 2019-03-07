@@ -8,7 +8,7 @@
 
 .vis-item.vis-selected{
     border-radius: 50% !important;
-    background-color:#fff785 !important
+    background-color:black !important
 }
 .vis-item.vis-background.victory {
     background-color: rgba(35, 138, 14, 0.2)  !important;
