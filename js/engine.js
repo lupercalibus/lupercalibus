@@ -83,9 +83,11 @@ $.ajax({
         itemfirst.add(items)
         itemfirst.add(itembattles)
         var layerGroup = L.layerGroup().addTo(map);
+        var BorderGroup = L.layerGroup().addTo(map);
 
 
-        var actualborder = L.geoJson(border1916.responseJSON).addTo(map);
+
+        var actualborder = L.geoJson(border1916.responseJSON).addTo(BorderGroup);
         var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
         map.flyTo(actualplace.getBounds().getCenter(), 10);
         function FirstPlaceFilter(feature) {
@@ -100,11 +102,11 @@ $.ajax({
             var actualitem
             actualitem = dati.find(function(dati){return dati.number ==  actualid})
             if (actualid == 25){
-                map.removeLayer(actualborder);
-                var actualborder = L.geoJson(border1917.responseJSON).addTo(map);
+                BorderGroup.removeLayer(actualborder);
+                var actualborder = L.geoJson(border1917.responseJSON).addTo(BorderGroup);
             }
             if (actualid == 24){
-                map.removeLayer(actualborder);
+                BorderGroup.removeLayer(actualborder);
                 var actualborder = L.geoJson(border1917.responseJSON).addTo(map);
             }
 
