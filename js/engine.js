@@ -83,11 +83,9 @@ $.ajax({
         itemfirst.add(items)
         itemfirst.add(itembattles)
         var layerGroup = L.layerGroup().addTo(map);
-        var BorderGroup = L.layerGroup().addTo(map);
 
-
-
-        var actualborder = L.geoJson(border1916.responseJSON).addTo(BorderGroup);
+        var actualborder 
+        actualborder = L.geoJson(border1916.responseJSON).addTo(map);
         var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
         map.flyTo(actualplace.getBounds().getCenter(), 10);
         function FirstPlaceFilter(feature) {
@@ -97,17 +95,16 @@ $.ajax({
         $('#carouselTitle').on('slid.bs.carousel', function () {
             actualid= $( ".active" ).find( ".actualcard").attr('id')
             timeline.setSelection(actualid, {focus: true})
-            $( ".vis-item.vis-selected" ).tooltip();
             //json del nuovo oggetto
             var actualitem
             actualitem = dati.find(function(dati){return dati.number ==  actualid})
             if (actualid == 25){
-                BorderGroup.removeLayer(actualborder);
-                var actualborder = L.geoJson(border1917.responseJSON).addTo(BorderGroup);
+                actualborder.remove(); 
+                actualborder = L.geoJson(border1917.responseJSON).addTo(map);
             }
             if (actualid == 24){
-                BorderGroup.removeLayer(actualborder);
-                var actualborder = L.geoJson(border1917.responseJSON).addTo(BorderGroup);
+                actualborder.remove(); 
+                actualborder = L.geoJson(border1917.responseJSON).addTo(map);
             }
 
             layerGroup.clearLayers();
