@@ -106,7 +106,7 @@ $.ajax({
                 var actualborder = L.geoJson(border1917.responseJSON).addTo(layerBorder);
             }
 
-            layerGroup.clearLayers();
+            layerGroup.clearLayers(layerGroup);
             var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
             map.flyTo(actualplace.getBounds().getCenter(), 10);
             function PlaceFilter(feature) {
