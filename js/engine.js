@@ -88,7 +88,7 @@ $.ajax({
         var actualborder 
         actualborder = L.geoJson(border1916.responseJSON).addTo(map);
         var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
-        map.flyTo(actualplace.getBounds().getCenter(), 11);
+        map.flyTo(actualplace.getBounds().getCenter(), 9);
 
         
         var NW = L.latLng(47.53389264528655,  10.553741455078123);
