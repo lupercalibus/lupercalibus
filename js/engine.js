@@ -107,6 +107,7 @@ $.ajax({
         var rivalsquad = firstitem["rival squad"]
         var victims = firstitem.victims
 
+        console.log (plane)
 
         $('.planestat').append(plane)
         $('.squadstat').append(squad)
