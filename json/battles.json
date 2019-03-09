@@ -1,5 +1,4 @@
 [
-    {"id": "STR", "content": "Strafexpedition", "start": "1916-05-15", "end": "1916-05-31", "type": "background", "className": "victory"},
     {"id": "06I", "content": "VI Battle of the Isonzo", "start": "1916-08-06", "end": "1916-08-17", "type": "background", "className": "victory"},
     {"id": "07I", "content": "VII Battle of the Isonzo", "start": "1916-09-14", "end": "1916-09-17", "type": "background", "className": "inconclusive"},
     {"id": "08I", "content": "VIII Battle of the Isonzo", "start": "1916-10-10", "end": "1916-10-12", "type": "background", "className": "inconclusive"},
