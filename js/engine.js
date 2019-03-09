@@ -161,7 +161,7 @@ $.ajax({
 
             var plane = actualitem.plane.type
             var squad = actualitem.plane.squad
-            var wingmen = actualitem.wingmen
+            var wingmenarray = actualitem.wingmen
             var nation = actualitem.nation
             var rivalplane = actualitem.rival_plane.rival_type
             var rivalsquad = actualitem.rival_plane.rival_squad
@@ -170,11 +170,19 @@ $.ajax({
     
             $('.planestat').append(plane)
             $('.squadstat').append(squad)
-            $('.wingmenstat').append(wingmen)
+            //$('.wingmenstat').append(wingmen)
             $('.nationstat').append(nation)
             $('.rivalplanestat').append(rivalplane)
             $('.rivalsquadstat').append(rivalsquad)
             $('.victimsstat').append(victims)
+
+            wingmenarray.forEach(function (wingmenarrayitem) {
+                var li = document.createElement('li');
+                $('.wingmenstat').append(li);
+            
+                li.innerHTML += wingmenarrayitem;
+            });
+
           })
 
         timeline.on('select', function (properties) {
