@@ -99,10 +99,13 @@ $.ajax({
 
         firstitem = dati.find(function(dati){return dati.number ==  1})
 
-        var winstat = firstitem["number"]
-        var placestat = firstitem["place"]
-        var datestat = firstitem["date"]
-        var datestat = firstitem["date"]
+        var plane = firstitem.type
+        var squad = firstitem.squad
+        var wingmen = firstitem.wingmen
+        var nation = firstitem.nation
+        var rivalplane = firstitem["rival type"]
+        var rivalsquad = firstitem["rival squad"]
+        var victims = firstitem.victims
 
 
         $('.card-stats').append()
