@@ -141,7 +141,33 @@ $.ajax({
             function PlaceFilter(feature) {
                 if (feature.properties.name === actualitem["place"]) return true
                 }
-                
+            
+
+            $('.planestat').html('')
+            $('.squadstat').html('')
+            $('.wingmenstat').html('')
+            $('.nationstat').html('')
+            $('.rivalplanestat').html('')
+            $('.rivalsquadstat').html('')
+            $('.victimsstat').html('')
+
+
+            var plane = actualitem.plane.type
+            var squad = actualitem.plane.squad
+            var wingmen = actualitem.wingmen
+            var nation = actualitem.nation
+            var rivalplane = actualitem.rival_plane.rival_type
+            var rivalsquad = actualitem.rival_plane.rival_squad
+            var victims = actualitem.victims
+    
+    
+            $('.planestat').append(plane)
+            $('.squadstat').append(squad)
+            $('.wingmenstat').append(wingmen)
+            $('.nationstat').append(nation)
+            $('.rivalplanestat').append(rivalplane)
+            $('.rivalsquadstat').append(rivalsquad)
+            $('.victimsstat').append(victims)
           })
 
         timeline.on('select', function (properties) {
