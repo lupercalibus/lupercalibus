@@ -99,15 +99,14 @@ $.ajax({
 
         firstitem = dati.find(function(dati){return dati.number ==  1})
 
-        var plane = firstitem.type
-        var squad = firstitem.squad
+        var plane = firstitem.plane.type
+        var squad = firstitem.plane.squad
         var wingmen = firstitem.wingmen
         var nation = firstitem.nation
-        var rivalplane = firstitem["rival type"]
-        var rivalsquad = firstitem["rival squad"]
+        var rivalplane = firstitem.rival_plane.rival_type
+        var rivalsquad = firstitem.rival_plane.rival_type
         var victims = firstitem.victims
 
-        console.log (plane)
 
         $('.planestat').append(plane)
         $('.squadstat').append(squad)
