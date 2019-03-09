@@ -108,7 +108,13 @@ $.ajax({
         var victims = firstitem.victims
 
 
-        $('.card-stats').append()
+        $('.planestat').append(plane)
+        $('.squadstat').append(squad)
+        $('.wingmenstat').append(wingmen)
+        $('.nationstat').append(nation)
+        $('.rivalplanestat').append(rivalplane)
+        $('.rivalsquadstat').append(rivalsquad)
+        $('.victimsstat').append(victims)
 
         function FirstPlaceFilter(feature) {
             if (feature.properties.name === firstitem["place"]) return true
