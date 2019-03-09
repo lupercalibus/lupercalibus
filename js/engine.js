@@ -27,7 +27,7 @@ var border1917 = $.ajax({
                 })           
 
                
-$.when(places).done(function() {
+$.when(places, border1916, border1917).done(function() {
 
      var battles = $.ajax({
         url:"json/battles.json",
