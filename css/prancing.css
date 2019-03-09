@@ -22,3 +22,7 @@
 .vis-item .vis-item-overflow {
     overflow: visible !important;
   }
+
+ul {
+list-style-type: none;
+}
