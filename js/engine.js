@@ -135,7 +135,7 @@ $.ajax({
                 //var rivalname = document.createElement('ul');
                 //var rivalstatus = document.createElement('ul');
                 ul.append(rivalgrade)
-                rivalgrade.innerHTML += victimsarrayitem.grade;
+                rivalgrade.innerHTML += '<div class="row"><div class="col-3">Grade</div><div class="col-9>'+ victimsarrayitem.grade +'</div></div>';
             }
         });
 
