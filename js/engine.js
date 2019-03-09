@@ -104,7 +104,7 @@ $.ajax({
         var wingmen = firstitem.wingmen
         var nation = firstitem.nation
         var rivalplane = firstitem.rival_plane.rival_type
-        var rivalsquad = firstitem.rival_plane.rival_type
+        var rivalsquad = firstitem.rival_plane.rival_squad
         var victims = firstitem.victims
 
 
