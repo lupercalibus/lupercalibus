@@ -26,7 +26,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": []
+            "wingmen": []
         },
         {
             "number": 2,
@@ -55,7 +55,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": []
+            "wingmen": []
         },
         {
             "number": 3,
@@ -84,7 +84,7 @@
                         "status": "Unhurt"
                     }
                 ],
-            "allied": ["Fulco Ruffo di Calabria"]
+            "wingmen": ["Fulco Ruffo di Calabria"]
         },
         {
             "number": 4,
@@ -113,7 +113,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied":
+            "wingmen":
                 [
                     "Fulco Ruffo di Calabria",
                     "Luigi Olivari"
@@ -146,7 +146,7 @@
                         "status": "Prisoner of War"
                     }
                 ],
-            "allied": []
+            "wingmen": []
         },
         {
             "number": 6,
@@ -175,7 +175,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": []
+            "wingmen": []
         },
         {
             "number": 7,
@@ -204,7 +204,7 @@
                         "status": "Prisoner of War"
                     }
                 ],
-            "allied": ["Fulco Ruffo di Calabria", "Goffredo Gorini", "Giulio Poli"]
+            "wingmen": ["Fulco Ruffo di Calabria", "Goffredo Gorini", "Giulio Poli"]
         },
         {
             "number": 8,
@@ -233,7 +233,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": ["Goffredo Gorini", "Attilio Imolesi"]
+            "wingmen": ["Goffredo Gorini", "Attilio Imolesi"]
         },
         {
             "number": 9,
@@ -262,7 +262,7 @@
                         "status": "Unhurt"
                     }
                 ],
-            "allied": []
+            "wingmen": []
         },
         {
             "number": 10,
@@ -286,7 +286,7 @@
                         "status": "Wounded in Action"
                     }
                 ],
-            "allied": []
+            "wingmen": []
         },
         {
             "number": 11,
@@ -315,7 +315,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": []
+            "wingmen": []
         },
         {
             "number": 12,
@@ -344,7 +344,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": []
+            "wingmen": []
         },
         {
             "number": 13,
@@ -373,7 +373,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": []
+            "wingmen": []
         },
         {
             "number": 14,
@@ -402,7 +402,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": []
+            "wingmen": []
         },
         {
             "number": 15,
@@ -431,7 +431,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": ["Alessandro Buzio"]
+            "wingmen": ["Alessandro Buzio"]
         },
         {
             "number": 16,
@@ -449,7 +449,7 @@
             "nation": "Unknown",
             "victims":
                 [],
-            "allied": ["Flavio Torello Baracchini"]
+            "wingmen": ["Flavio Torello Baracchini"]
         },
         {
             "number": 17,
@@ -478,7 +478,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": []
+            "wingmen": []
         },
         {
             "number": 18,
@@ -507,7 +507,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": []
+            "wingmen": []
         },
         {
             "number": 19,
@@ -536,7 +536,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": ["Giovanni Sabelli"]
+            "wingmen": ["Giovanni Sabelli"]
         },
         {
             "number": 20,
@@ -565,7 +565,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": []
+            "wingmen": []
         },
         {
             "number": 21,
@@ -594,7 +594,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": []
+            "wingmen": []
         },
         {
             "number": 22,
@@ -623,7 +623,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": ["Pier Ruggero Piccio"]
+            "wingmen": ["Pier Ruggero Piccio"]
         },
         {
             "number": 23,
@@ -640,7 +640,7 @@
             },
             "nation": "Germany",
             "victims": [],
-            "allied": ["Giuliano Parvis"]
+            "wingmen": ["Giuliano Parvis"]
         },
         {
             "number": 24,
@@ -657,7 +657,7 @@
             },
             "nation": "Germany",
             "victims": [],
-            "allied": ["Giuliano Parvis"]
+            "wingmen": ["Giuliano Parvis"]
         },
         {
             "number": 25,
@@ -681,7 +681,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": ["Giuliano Parvis"]
+            "wingmen": ["Giuliano Parvis"]
         },
         {
             "number": 26,
@@ -710,7 +710,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": ["Giuliano Parvis"]
+            "wingmen": ["Giuliano Parvis"]
         },
         {
             "number": 27,
@@ -739,7 +739,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": ["Giuliano Parvis"]
+            "wingmen": ["Giuliano Parvis"]
         },
         {
             "number": 28,
@@ -768,7 +768,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": []
+            "wingmen": []
         },
         {
             "number": 29,
@@ -792,7 +792,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": ["Gastone Novelli"]
+            "wingmen": ["Gastone Novelli"]
         },
         {
             "number": 30,
@@ -821,7 +821,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": []
+            "wingmen": []
         },
         {
             "number": 31,
@@ -850,7 +850,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": ["Gurival ido Nardini"]
+            "wingmen": ["Gurival ido Nardini"]
         },
         {
             "number": 32,
@@ -874,7 +874,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": ["Mario D'Urso"]
+            "wingmen": ["Mario D'Urso"]
         },
         {
             "number": 33,
@@ -903,7 +903,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": []
+            "wingmen": []
         },
         {
             "number": 34,
@@ -927,6 +927,6 @@
                         "status": "Prisoner of War"
                     }
                 ],
-            "allied": ["Gaetano Aliperta"]
+            "wingmen": ["Gaetano Aliperta"]
         }
     ]

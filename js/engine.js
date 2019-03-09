@@ -47,11 +47,11 @@ $.ajax({
             if (arrayItem["number"] == 1) {
                 firstitem = arrayItem
                 datesfirst.push({id: arrayItem["number"], title: (arrayItem["place"]) +" "+ (arrayItem["date"]), start: arrayItem["date"], className: "dogfight"})
-                $('<div class="carousel-item active"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="'+ arrayItem["number"] + '" align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
+                $('<div class="carousel-item active"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="'+ arrayItem["number"] + '" align="center">'+ arrayItem["number"]+  arrayItem["place"] + arrayItem["date"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
             }
             else {
                 datesarray.push({id: arrayItem["number"], title: (arrayItem["place"]) +" "+ (arrayItem["date"]), start: arrayItem["date"], className: "dogfight"})
-                $('<div class="carousel-item"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="'+ arrayItem["number"] + '" align="center">'+ arrayItem["place"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
+                $('<div class="carousel-item"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="'+ arrayItem["number"] + '" align="center">'+ arrayItem["number"]+  arrayItem["place"] + arrayItem["date"] + '</h1> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
             }
         })
         $.when(battles).done(function() {
@@ -96,6 +96,17 @@ $.ajax({
         var bounds = L.latLngBounds(NW, SE);
         map.setMaxBounds(bounds);
         
+
+        firstitem = dati.find(function(dati){return dati.number ==  1})
+
+        var winstat = firstitem["number"]
+        var placestat = firstitem["place"]
+        var datestat = firstitem["date"]
+        var datestat = firstitem["date"]
+
+
+        $('.card-stats').append()
+
         function FirstPlaceFilter(feature) {
             if (feature.properties.name === firstitem["place"]) return true
             }
@@ -121,7 +132,7 @@ $.ajax({
             function PlaceFilter(feature) {
                 if (feature.properties.name === actualitem["place"]) return true
                 }
-    
+                
           })
 
         timeline.on('select', function (properties) {
