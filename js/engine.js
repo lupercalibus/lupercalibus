@@ -118,9 +118,9 @@ $.ajax({
 
         wingmenarray.forEach(function (wingmenarrayitem) {
             var li = document.createElement('li');
-            $('.wingmenstat').appendChild(li);
+            $('.wingmenstat').append(li);
         
-            li.innerHTML += item;
+            li.innerHTML += wingmenarrayitem;
         });
 
         function FirstPlaceFilter(feature) {
