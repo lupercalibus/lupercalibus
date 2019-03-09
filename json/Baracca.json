@@ -469,7 +469,7 @@
                 [
                     {
                         "grade": "Zugsführer",
-                        "name":"Artur Zerival_ides",
+                        "name":"Artur Zeides",
                         "status": "Killed in Action"
                     },
                     {
@@ -850,7 +850,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "wingmen": ["Gurival_ido Nardini"]
+            "wingmen": ["Guido Nardini"]
         },
         {
             "number": 32,
