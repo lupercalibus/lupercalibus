@@ -101,12 +101,17 @@ $.ajax({
 
         var plane = firstitem.plane.type
         var squad = firstitem.plane.squad
-        var wingmen = firstitem.wingmen
+        var wingmenarray = firstitem.wingmen
         var nation = firstitem.nation
         var rivalplane = firstitem.rival_plane.rival_type
         var rivalsquad = firstitem.rival_plane.rival_squad
         var victims = firstitem.victims
 
+        var wingmen = ""
+
+        for (var item in wingmenarray){
+            wingmen =+ "<li>" + item + "</li>"
+        }
 
         $('.planestat').append(plane)
         $('.squadstat').append(squad)
