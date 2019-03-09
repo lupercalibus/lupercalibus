@@ -1,12 +1,16 @@
     [
         {
             "number": 1,
+            "plane": {
+                "type": "Nieuport XI",
+                "squad": "Squadriglia 1"
+            },
             "date": "1916-04-07",
             "place": "Medeuzza",
-            "plane":{
-                "type": "Br. C.I.",
-                "id": "61.5",
-                "squad": "Flik 19"
+            "rival plane":{
+                "rival type": "Br. C.I.",
+                "rival id": "61.5",
+                "rival squad": "Flik 19"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -26,12 +30,16 @@
         },
         {
             "number": 2,
+            "plane": {
+                "type": "Nieuport XI",
+                "squad": "Squadriglia 70"
+            },
             "date": "1916-05-16",
             "place": "Gorizia",
-            "plane":{
-                "type": "Löener",
-                "id": "17.42",
-                "squad": "Flik 12"
+            "rival plane":{
+                "rival type": "Löener",
+                "rival id": "17.42",
+                "rival squad": "Flik 12"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -51,12 +59,16 @@
         },
         {
             "number": 3,
+            "plane": {
+                "type": "Nieuport XI",
+                "squad": "Squadriglia 70"
+            },
             "date": "1916-08-23",
             "place": "Miren",
-            "plane":{
-                "type": "Br. C.I.",
-                "id": "61.61",
-                "squad": "Flik 19"
+            "rival plane":{
+                "rival type": "Br. C.I.",
+                "rival id": "61.61",
+                "rival squad": "Flik 19"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -76,12 +88,16 @@
         },
         {
             "number": 4,
+            "plane": {
+                "type": "Nieuport XI",
+                "squad": "Squadriglia 70"
+            },
             "date": "1916-09-16",
             "place": "Caporetto",
-            "plane":{
-                "type": "Lloyd",
-                "id": "43.74",
-                "squad": "Flik 16"
+            "rival plane":{
+                "rival type": "Lloyd",
+                "rival id": "43.74",
+                "rival squad": "Flik 16"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -105,12 +121,16 @@
         },
         {
             "number": 5,
+            "plane": {
+                "type": "Unknown",
+                "squad": "Squadriglia 70"
+            },
             "date": "1916-11-25",
             "place": "Tolmezzo",
-            "plane":{
-                "type": "Br. C.I.",
-                "id": "68.03",
-                "squad": "Flik 16"
+            "rival plane":{
+                "rival type": "Br. C.I.",
+                "rival id": "68.03",
+                "rival squad": "Flik 16"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -130,12 +150,16 @@
         },
         {
             "number": 6,
+            "plane": {
+                "type": "Nieuport XVII",
+                "squad": "Squadriglia 70"
+            },
             "date": "1917-01-01",
             "place": "Kostanjevica",
-            "plane":{
-                "type": "Br. C.I.",
-                "id": "Unknown",
-                "squad": "Flik 12"
+            "rival plane":{
+                "rival type": "Br. C.I.",
+                "rival id": "Unknown",
+                "rival squad": "Flik 12"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -155,12 +179,16 @@
         },
         {
             "number": 7,
+            "plane": {
+                "type": "Nieuport XVII",
+                "squad": "Squadriglia 70"
+            },
             "date": "1917-02-01",
             "place": "Orzano",
-            "plane":{
-                "type": "Br. C.I.",
-                "id": "21.74",
-                "squad": "Flik 35"
+            "rival plane":{
+                "rival type": "Br. C.I.",
+                "rival id": "21.74",
+                "rival squad": "Flik 35"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -180,12 +208,16 @@
         },
         {
             "number": 8,
+            "plane": {
+                "type": "Nieuport XVII",
+                "squad": "Squadriglia 70"
+            },
             "date": "1917-04-26",
             "place": "Gradisca",
-            "plane":{
-                "type": "Br. C.I.",
-                "id": "129.17",
-                "squad": "Flik 35"
+            "rival plane":{
+                "rival type": "Br. C.I.",
+                "rival id": "129.17",
+                "rival squad": "Flik 35"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -205,12 +237,16 @@
         },
         {
             "number": 9,
+            "plane": {
+                "type": "Nieuport XVII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-05-01",
             "place": "Latisana",
-            "plane":{
-                "type": "Br. C.I.",
-                "id": "229.08",
-                "squad": "Flik 12"
+            "rival plane":{
+                "rival type": "Br. C.I.",
+                "rival id": "229.08",
+                "rival squad": "Flik 12"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -230,12 +266,16 @@
         },
         {
             "number": 10,
+            "plane": {
+                "type": "SPAD VII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-05-10",
             "place": "Vertoiba",
-            "plane":{
-                "type": "Br. D.I.",
-                "id": "28.17",
-                "squad": "Unknown"
+            "rival plane":{
+                "rival type": "Br. D.I.",
+                "rival id": "28.17",
+                "rival squad": "Unknown"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -250,12 +290,16 @@
         },
         {
             "number": 11,
+            "plane": {
+                "type": "SPAD VII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-05-13",
             "place": "Korada",
-            "plane":{
-                "type": "Br. C.I.",
-                "id": "129.20",
-                "squad": "FIG. 1"
+            "rival plane":{
+                "rival type": "Br. C.I.",
+                "rival id": "129.20",
+                "rival squad": "FIG. 1"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -275,12 +319,16 @@
         },
         {
             "number": 12,
+            "plane": {
+                "type": "SPAD VII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-05-20",
             "place": "Plave",
-            "plane":{
-                "type": "Br. C.I.",
-                "id": "Unknown",
-                "squad": "Flik 12"
+            "rival plane":{
+                "rival type": "Br. C.I.",
+                "rival id": "Unknown",
+                "rival squad": "Flik 12"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -300,12 +348,16 @@
         },
         {
             "number": 13,
+            "plane": {
+                "type": "SPAD VII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-06-03",
             "place": "Plave",
-            "plane":{
-                "type": "Br. C.I.",
-                "id": "129.51",
-                "squad": "FIG. 1"
+            "rival plane":{
+                "rival type": "Br. C.I.",
+                "rival id": "129.51",
+                "rival squad": "FIG. 1"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -325,12 +377,16 @@
         },
         {
             "number": 14,
+            "plane": {
+                "type": "SPAD VII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-07-07",
             "place": "Kostanjevica",
-            "plane":{
-                "type": "Br. C.I.",
-                "id": "129.68",
-                "squad": "Flik 46"
+            "rival plane":{
+                "rival type": "Br. C.I.",
+                "rival id": "129.68",
+                "rival squad": "Flik 46"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -350,12 +406,16 @@
         },
         {
             "number": 15,
+            "plane": {
+                "type": "SPAD VII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-07-31",
             "place": "Podgora",
-            "plane":{
-                "type": "Br. C.I.",
-                "id": "69.93",
-                "squad": "Flik 46"
+            "rival plane":{
+                "rival type": "Br. C.I.",
+                "rival id": "69.93",
+                "rival squad": "Flik 46"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -375,12 +435,16 @@
         },
         {
             "number": 16,
+            "plane": {
+                "type": "SPAD VII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-08-03",
             "place": "Sava (Valley)",
-            "plane":{
-                "type": "Unknown",
-                "id": "Unknown",
-                "squad": "Unknown"
+            "rival plane":{
+                "rival type": "Unknown",
+                "rival id": "Unknown",
+                "rival squad": "Unknown"
             },
             "nation": "Unknown",
             "victims":
@@ -389,19 +453,23 @@
         },
         {
             "number": 17,
+            "plane": {
+                "type": "SPAD VII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-08-19",
             "place": "Selo",
-            "plane":{
-                "type": "Br. C.I.",
-                "id": "Unknown",
-                "squad": "Flik 28"
+            "rival plane":{
+                "rival type": "Br. C.I.",
+                "rival id": "Unknown",
+                "rival squad": "Flik 28"
             },
             "nation": "Austria-Hungary",
             "victims":
                 [
                     {
                         "grade": "Zugsführer",
-                        "name":"Artur Zeides",
+                        "name":"Artur Zerival ides",
                         "status": "Killed in Action"
                     },
                     {
@@ -414,12 +482,16 @@
         },
         {
             "number": 18,
+            "plane": {
+                "type": "SPAD VII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-09-01",
             "place": "Zagorje",
-            "plane":{
-                "type": "Br. C.I.",
-                "id": "69.10",
-                "squad": "FG 101"
+            "rival plane":{
+                "rival type": "Br. C.I.",
+                "rival id": "69.10",
+                "rival squad": "FG 101"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -439,12 +511,16 @@
         },
         {
             "number": 19,
+            "plane": {
+                "type": "SPAD VII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-09-06",
             "place": "San Gabriele",
-            "plane":{
-                "type": "Br. C.I.",
-                "id": "129.50",
-                "squad": "Flik 34"
+            "rival plane":{
+                "rival type": "Br. C.I.",
+                "rival id": "129.50",
+                "rival squad": "Flik 34"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -464,12 +540,16 @@
         },
         {
             "number": 20,
+            "plane": {
+                "type": "SPAD XIII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-10-22",
             "place": "Sabotino",
-            "plane":{
-                "type": "DFW C.V.",
-                "id": "Unknown",
-                "squad": "FA 14"
+            "rival plane":{
+                "rival type": "DFW C.V.",
+                "rival id": "Unknown",
+                "rival squad": "FA 14"
             },
             "nation": "Germany",
             "victims":
@@ -489,12 +569,16 @@
         },
         {
             "number": 21,
+            "plane": {
+                "type": "SPAD XIII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-10-22",
             "place": "Volnik",
-            "plane":{
-                "type": "DFW C.V.",
-                "id": "Unknown",
-                "squad": "FA 14"
+            "rival plane":{
+                "rival type": "DFW C.V.",
+                "rival id": "Unknown",
+                "rival squad": "FA 14"
             },
             "nation": "Germany",
             "victims":
@@ -514,12 +598,16 @@
         },
         {
             "number": 22,
+            "plane": {
+                "type": "SPAD VII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-10-25",
             "place": "San Marco",
-            "plane":{
-                "type": "Br. C.I.",
-                "id": "29.63",
-                "squad": "Flik 19/D"
+            "rival plane":{
+                "rival type": "Br. C.I.",
+                "rival id": "29.63",
+                "rival squad": "Flik 19/D"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -539,12 +627,16 @@
         },
         {
             "number": 23,
+            "plane": {
+                "type": "SPAD VII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-10-26",
             "place": "Most na Soči",
-            "plane":{
-                "type": "DFW C.V.",
-                "id": "Unknown",
-                "squad": "Unknown"
+            "rival plane":{
+                "rival type": "DFW C.V.",
+                "rival id": "Unknown",
+                "rival squad": "Unknown"
             },
             "nation": "Germany",
             "victims": [],
@@ -552,12 +644,16 @@
         },
         {
             "number": 24,
+            "plane": {
+                "type": "SPAD VII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-10-26",
             "place": "Matajur",
-            "plane":{
-                "type": "DFW C.V.",
-                "id": "Unknown",
-                "squad": "Unknown"
+            "rival plane":{
+                "rival type": "DFW C.V.",
+                "rival id": "Unknown",
+                "rival squad": "Unknown"
             },
             "nation": "Germany",
             "victims": [],
@@ -565,12 +661,16 @@
         },
         {
             "number": 25,
+            "plane": {
+                "type": "SPAD VII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-11-06",
             "place": "Fossalta",
-            "plane":{
-                "type": "Albatros D. III",
-                "id": "153.54",
-                "squad": "Flik 41"
+            "rival plane":{
+                "rival type": "Albatros D. III",
+                "rival id": "153.54",
+                "rival squad": "Flik 41"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -585,12 +685,16 @@
         },
         {
             "number": 26,
+            "plane": {
+                "type": "SPAD VII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-11-06",
             "place": "Godega",
-            "plane":{
-                "type": "DFW C.V.",
-                "id": "Unknown",
-                "squad": "FA (A) 219"
+            "rival plane":{
+                "rival type": "DFW C.V.",
+                "rival id": "Unknown",
+                "rival squad": "FA (A) 219"
             },
             "nation": "Germany",
             "victims":
@@ -610,12 +714,16 @@
         },
         {
             "number": 27,
+            "plane": {
+                "type": "SPAD VII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-11-07",
             "place": "Orsago",
-            "plane":{
-                "type": "DFW C.V.",
-                "id": "3955.17",
-                "squad": "FA (A) 204"
+            "rival plane":{
+                "rival type": "DFW C.V.",
+                "rival id": "3955.17",
+                "rival squad": "FA (A) 204"
             },
             "nation": "Germany",
             "victims":
@@ -635,12 +743,16 @@
         },
         {
             "number": 28,
+            "plane": {
+                "type": "SPAD XIII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-11-15",
             "place": "Istrana",
-            "plane":{
-                "type": "DFW C.V.",
-                "id": "Unknown",
-                "squad": "FA 14"
+            "rival plane":{
+                "rival type": "DFW C.V.",
+                "rival id": "Unknown",
+                "rival squad": "FA 14"
             },
             "nation": "Germany",
             "victims":
@@ -660,12 +772,16 @@
         },
         {
             "number": 29,
+            "plane": {
+                "type": "SPAD XIII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-11-23",
             "place": "Falzè",
-            "plane":{
-                "type": "Albatros D. III",
-                "id": "Unknown",
-                "squad": "Jasta 39"
+            "rival plane":{
+                "rival type": "Albatros D. III",
+                "rival id": "Unknown",
+                "rival squad": "Jasta 39"
             },
             "nation": "Germany",
             "victims":
@@ -680,12 +796,16 @@
         },
         {
             "number": 30,
+            "plane": {
+                "type": "SPAD VII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1917-12-07",
             "place": "Kaberlaba",
-            "plane":{
-                "type": "Br. C.I.",
-                "id": "29.20",
-                "squad": "Flik 19"
+            "rival plane":{
+                "rival type": "Br. C.I.",
+                "rival id": "29.20",
+                "rival squad": "Flik 19"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -705,12 +825,16 @@
         },
         {
             "number": 31,
+            "plane": {
+                "type": "Unknown",
+                "squad": "Squadriglia 91"
+            },
             "date": "1918-05-03",
             "place": "Salettuol",
-            "plane":{
-                "type": "Br. C.I.",
-                "id": "369.28",
-                "squad": "Flik 19"
+            "rival plane":{
+                "rival type": "Br. C.I.",
+                "rival id": "369.28",
+                "rival squad": "Flik 19"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -726,16 +850,20 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "allied": ["Guido Nardini"]
+            "allied": ["Gurival ido Nardini"]
         },
         {
             "number": 32,
+            "plane": {
+                "type": "Unknown",
+                "squad": "Squadriglia 91"
+            },
             "date": "1918-05-22",
             "place": "Cimadolmo",
-            "plane":{
-                "type": "Albatros D. III",
-                "id": "153.155",
-                "squad": "Flik 51"
+            "rival plane":{
+                "rival type": "Albatros D. III",
+                "rival id": "153.155",
+                "rival squad": "Flik 51"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -750,12 +878,16 @@
         },
         {
             "number": 33,
+            "plane": {
+                "type": "SPAD XIII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1918-06-15",
             "place": "Saletto",
-            "plane":{
-                "type": "Br. C.I.",
-                "id": "369.116",
-                "squad": "Flik 32/D"
+            "rival plane":{
+                "rival type": "Br. C.I.",
+                "rival id": "369.116",
+                "rival squad": "Flik 32/D"
             },
             "nation": "Austria-Hungary",
             "victims":
@@ -775,12 +907,16 @@
         },
         {
             "number": 34,
+            "plane": {
+                "type": "SPAD XIII",
+                "squad": "Squadriglia 91"
+            },
             "date": "1918-06-15",
             "place": "San Biagio",
-            "plane":{
-                "type": "Albatros D. III",
-                "id": "153.266",
-                "squad": "Flik 51"
+            "rival plane":{
+                "rival type": "Albatros D. III",
+                "rival id": "153.266",
+                "rival squad": "Flik 51"
             },
             "nation": "Austria-Hungary",
             "victims":
