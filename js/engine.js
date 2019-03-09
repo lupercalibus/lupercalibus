@@ -123,13 +123,19 @@ $.ajax({
         });
 
         victimsarray.forEach(function (victimsarrayitem) {
-            var li = document.createElement('li');
-            $('.victimsstat').append(li);
             if (victimsarrayitem == "Unknown"){
+                var li = document.createElement('li');
+                $('.victimsstat').append(li);
                 li.innerHTML += victimsarrayitem;
             }
             else{
-                li.innerHTML += victimsarrayitem;
+                var ul = document.createElement('ul');
+                $('.victimsstat').append(ul);
+                var rivalgrade = document.createElement('ul');
+                //var rivalname = document.createElement('ul');
+                //var rivalstatus = document.createElement('ul');
+                ul.append(rivalgrade)
+                rivalgrade.innerHTML += victimsarrayitem.grade;
             }
         });
 
