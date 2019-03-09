@@ -42,17 +42,16 @@ $.ajax({
     var datesfirst = []
     var datesarray = []
     var firstitem = []
-
         dati.forEach(function(arrayItem) {
             //datesarray.push({id: arrayItem["number"], content: (arrayItem["place"]) +" "+ (arrayItem["date"]), start: arrayItem["date"]})
             if (arrayItem["number"] == 1) {
                 firstitem = arrayItem
-                datesfirst.push({id: arrayItem["number"], title: (arrayItem["place"]) +" "+ (new Date(arrayItem["date"])).toDateString(), start: arrayItem["date"], className: "dogfight"})
-                $('<div class="carousel-item active"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="'+ arrayItem["number"] + '" align="center"> Victory #'+ arrayItem["number"]+ '</h1><h2>'+  arrayItem["place"] + " - "+ arrayItem["date"] + '</h2> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
+                datesfirst.push({id: arrayItem["number"], title: (arrayItem["place"]) +" "+ (arrayItem["date"]), start: arrayItem["date"], className: "dogfight"})
+                $('<div class="carousel-item active"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="'+ arrayItem["number"] + '" align="center"> Victory #'+ arrayItem["number"]+ '</h1><h2>'+  arrayItem["place"] + " - "+ (new Date(arrayItem["date"])).toDateString + '</h2> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
             }
             else {
-                datesarray.push({id: arrayItem["number"], title: (arrayItem["place"]) +" "+ (new Date(arrayItem["date"])).toDateString(), start: arrayItem["date"], className: "dogfight"})
-                $('<div class="carousel-item"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="'+ arrayItem["number"] + '" align="center"> Victory #'+ arrayItem["number"]+ '</h1><h2>'+  arrayItem["place"] + " - "+ arrayItem["date"] + '</h2> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
+                datesarray.push({id: arrayItem["number"], title: (arrayItem["place"]) +" "+ (arrayItem["date"]), start: arrayItem["date"], className: "dogfight"})
+                $('<div class="carousel-item"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="'+ arrayItem["number"] + '" align="center"> Victory #'+ arrayItem["number"]+ '</h1><h2>'+  arrayItem["place"] + " - "+ (new Date(arrayItem["date"])).toDateString + '</h2> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
             }
         })
         $.when(battles).done(function() {
