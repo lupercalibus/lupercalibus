@@ -110,7 +110,6 @@ $.ajax({
 
         $('.planestat').append(plane)
         $('.squadstat').append(squad)
-        //$('.wingmenstat').append(wingmen)
         $('.nationstat').append(nation)
         $('.rivalplanestat').append(rivalplane)
         $('.rivalsquadstat').append(rivalsquad)
@@ -170,7 +169,6 @@ $.ajax({
     
             $('.planestat').append(plane)
             $('.squadstat').append(squad)
-            //$('.wingmenstat').append(wingmen)
             $('.nationstat').append(nation)
             $('.rivalplanestat').append(rivalplane)
             $('.rivalsquadstat').append(rivalsquad)
