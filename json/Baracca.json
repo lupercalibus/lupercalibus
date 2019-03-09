@@ -26,7 +26,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "wingmen": []
+            "wingmen": ["None"]
         },
         {
             "number": 2,
@@ -55,7 +55,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "wingmen": []
+            "wingmen": ["None"]
         },
         {
             "number": 3,
@@ -146,7 +146,7 @@
                         "status": "Prisoner of War"
                     }
                 ],
-            "wingmen": []
+            "wingmen": ["None"]
         },
         {
             "number": 6,
@@ -175,7 +175,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "wingmen": []
+            "wingmen": ["None"]
         },
         {
             "number": 7,
@@ -262,7 +262,7 @@
                         "status": "Unhurt"
                     }
                 ],
-            "wingmen": []
+            "wingmen": ["None"]
         },
         {
             "number": 10,
@@ -286,7 +286,7 @@
                         "status": "Wounded in Action"
                     }
                 ],
-            "wingmen": []
+            "wingmen": ["None"]
         },
         {
             "number": 11,
@@ -315,7 +315,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "wingmen": []
+            "wingmen": ["None"]
         },
         {
             "number": 12,
@@ -344,7 +344,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "wingmen": []
+            "wingmen": ["None"]
         },
         {
             "number": 13,
@@ -373,7 +373,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "wingmen": []
+            "wingmen": ["None"]
         },
         {
             "number": 14,
@@ -402,7 +402,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "wingmen": []
+            "wingmen": ["None"]
         },
         {
             "number": 15,
@@ -448,7 +448,7 @@
             },
             "nation": "Unknown",
             "victims":
-                [],
+               ["Unknown"],
             "wingmen": ["Flavio Torello Baracchini"]
         },
         {
@@ -478,7 +478,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "wingmen": []
+            "wingmen": ["None"]
         },
         {
             "number": 18,
@@ -507,7 +507,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "wingmen": []
+            "wingmen": ["None"]
         },
         {
             "number": 19,
@@ -565,7 +565,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "wingmen": []
+            "wingmen": ["None"]
         },
         {
             "number": 21,
@@ -594,7 +594,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "wingmen": []
+            "wingmen": ["None"]
         },
         {
             "number": 22,
@@ -639,7 +639,7 @@
                 "rival_squad": "Unknown"
             },
             "nation": "Germany",
-            "victims": [],
+            "victims":["Unknown"],
             "wingmen": ["Giuliano Parvis"]
         },
         {
@@ -656,7 +656,7 @@
                 "rival_squad": "Unknown"
             },
             "nation": "Germany",
-            "victims": [],
+            "victims":["Unknown"],
             "wingmen": ["Giuliano Parvis"]
         },
         {
@@ -768,7 +768,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "wingmen": []
+            "wingmen": ["None"]
         },
         {
             "number": 29,
@@ -821,7 +821,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "wingmen": []
+            "wingmen": ["None"]
         },
         {
             "number": 31,
@@ -903,7 +903,7 @@
                         "status": "Killed in Action"
                     }
                 ],
-            "wingmen": []
+            "wingmen": ["None"]
         },
         {
             "number": 34,
