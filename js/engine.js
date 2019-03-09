@@ -185,7 +185,7 @@ $.ajax({
             var nation = actualitem.nation
             var rivalplane = actualitem.rival_plane.rival_type
             var rivalsquad = actualitem.rival_plane.rival_squad
-            var victims = actualitem.victims
+            var victimsarray = actualitem.victims
     
     
             $('.planestat').append(plane)
@@ -193,13 +193,34 @@ $.ajax({
             $('.nationstat').append(nation)
             $('.rivalplanestat').append(rivalplane)
             $('.rivalsquadstat').append(rivalsquad)
-            $('.victimsstat').append(victims)
+            //$('.victimsstat').append(victims)
 
             wingmenarray.forEach(function (wingmenarrayitem) {
                 var li = document.createElement('li');
                 $('.wingmenstat').append(li);
             
                 li.innerHTML += wingmenarrayitem;
+            });
+
+            victimsarray.forEach(function (victimsarrayitem) {
+                if (victimsarrayitem == "Unknown"){
+                    var li = document.createElement('li');
+                    $('.victimsstat').append(li);
+                    li.innerHTML += victimsarrayitem;
+                }
+                else{
+                    var ul = document.createElement('ul');
+                    $('.victimsstat').append(ul);
+                    var rivalgrade = document.createElement('li');
+                    var rivalname = document.createElement('li');
+                    var rivalstatus = document.createElement('li');
+                    ul.append(rivalname)
+                    rivalname.innerHTML += ('<div class="row"><div class="col-3">Name</div><div class="col-9">'+ victimsarrayitem.name +'</div></div>');
+                    ul.append(rivalgrade)
+                    rivalgrade.innerHTML += ('<div class="row"><div class="col-3">Grade</div><div class="col-9">'+ victimsarrayitem.grade +'</div></div>');
+                    ul.append(rivalstatus)
+                    rivalstatus.innerHTML += ('<div class="row"><div class="col-3">Status</div><div class="col-9">'+ victimsarrayitem.status +'</div></div>');
+                }
             });
 
           })
