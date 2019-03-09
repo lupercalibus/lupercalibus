@@ -105,7 +105,7 @@ $.ajax({
         var nation = firstitem.nation
         var rivalplane = firstitem.rival_plane.rival_type
         var rivalsquad = firstitem.rival_plane.rival_squad
-        var victims = firstitem.victims
+        var victimsarray = firstitem.victims
 
 
         $('.planestat').append(plane)
@@ -113,13 +113,24 @@ $.ajax({
         $('.nationstat').append(nation)
         $('.rivalplanestat').append(rivalplane)
         $('.rivalsquadstat').append(rivalsquad)
-        $('.victimsstat').append(victims)
+        //$('.victimsstat').append(victims)
 
         wingmenarray.forEach(function (wingmenarrayitem) {
             var li = document.createElement('li');
             $('.wingmenstat').append(li);
         
             li.innerHTML += wingmenarrayitem;
+        });
+
+        victimsarray.forEach(function (victimsarrayitem) {
+            var li = document.createElement('li');
+            $('.victimsstat').append(li);
+            if (victimsarrayitem == "Unknown"){
+                li.innerHTML += victimsarrayitem;
+            }
+            else{
+                li.innerHTML += victimsarrayitem;
+            }
         });
 
         function FirstPlaceFilter(feature) {
