@@ -132,10 +132,14 @@ $.ajax({
                 var ul = document.createElement('ul');
                 $('.victimsstat').append(ul);
                 var rivalgrade = document.createElement('li');
-                //var rivalname = document.createElement('li');
-                //var rivalstatus = document.createElement('li');
+                var rivalname = document.createElement('li');
+                var rivalstatus = document.createElement('li');
+                ul.append(rivalname)
+                rivalname.innerHTML += ('<div class="row"><div class="col-3">Name</div><div class="col-9">'+ victimsarrayitem.name +'</div></div>');
                 ul.append(rivalgrade)
                 rivalgrade.innerHTML += ('<div class="row"><div class="col-3">Grade</div><div class="col-9">'+ victimsarrayitem.grade +'</div></div>');
+                ul.append(rivalstatus)
+                rivalstatus.innerHTML += ('<div class="row"><div class="col-3">Status</div><div class="col-9">'+ victimsarrayitem.status +'</div></div>');
             }
         });
 
