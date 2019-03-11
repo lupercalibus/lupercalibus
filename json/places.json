@@ -196,7 +196,8 @@
             "type": "Feature",
             "geometry": {
               "type": "Point",
-              "coordinates": [13.7012162,45.5373008]
+              "coordinates": [13.6534, 45.92892]
+              
             },
             "properties": {
               "name": "San Marco"
