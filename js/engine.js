@@ -89,8 +89,22 @@ $.ajax({
         actualborder = L.geoJson(border1916.responseJSON).addTo(map);
         var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
         map.flyTo(actualplace.getBounds().getCenter(), 9);
-
         
+        base_SCaterina = [46.0341, 13.1857,]
+
+
+
+        var arrow = L.polyline([base_SCaterina, actualplace]).addTo(map);
+        var arrowHead = L.polylineDecorator(arrow, {
+            patterns: [
+                {
+                    offset: '100%',
+                    repeat: 0,
+                    symbol: L.Symbol.arrowHead({pixelSize: 15, polygon: false, pathOptions: {stroke: true}})
+                }
+            ]
+        }).addTo(map);
+
         var NW = L.latLng(47.53389264528655,  10.553741455078123);
         var SE = L.latLng(44.81691551782855, 14.7216796875);
         var bounds = L.latLngBounds(NW, SE);
