@@ -177,6 +177,11 @@ $.ajax({
                 actualborder.remove(); 
                 actualborder = L.geoJson(border1916.responseJSON).addTo(map);
             }
+
+            
+            var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
+            map.flyTo(actualplace.getBounds().getCenter(), 9);
+
             if (actualid <= 24){
                 var arrow = L.polyline([base_SCaterina, actualplace.getBounds().getCenter()]).addTo(layerGroup);
                 var arrowHead = L.polylineDecorator(arrow, {
@@ -213,10 +218,6 @@ $.ajax({
             ]
             }).addTo(layerGroup);
             }
-
-            
-            var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
-            map.flyTo(actualplace.getBounds().getCenter(), 9);
             function PlaceFilter(feature) {
                 if (feature.properties.name === actualitem["place"]) return true
                 }
