@@ -94,8 +94,12 @@ $.ajax({
         base_Padova = [45.4054, 11.8839]
         baseQuinto = [45.6496, 12.196]
 
+        var actualbase = base_SCaterina
 
-        var arrow = L.polyline([base_SCaterina, actualplace.getBounds().getCenter()]).addTo(layerGroup);
+        varbasemarker =L.marker(actualbase).addTo(layerGroup);
+        //L.marker([51.5, -0.09], {icon: greenIcon}).addTo(map);
+
+        var arrow = L.polyline([actualbase, actualplace.getBounds().getCenter()]).addTo(layerGroup);
         var arrowHead = L.polylineDecorator(arrow, {
             patterns: [
                 {
@@ -121,6 +125,7 @@ $.ajax({
         var rivalplane = firstitem.rival_plane.rival_type
         var rivalsquad = firstitem.rival_plane.rival_squad
         var victimsarray = firstitem.victims
+        var distance = actualbase
 
 
         $('.planestat').append(plane)
@@ -128,6 +133,7 @@ $.ajax({
         $('.nationstat').append(nation)
         $('.rivalplanestat').append(rivalplane)
         $('.rivalsquadstat').append(rivalsquad)
+        $('.basestat').append("Santa Caterina (UD)")
         //$('.victimsstat').append(victims)
 
         wingmenarray.forEach(function (wingmenarrayitem) {
@@ -182,8 +188,12 @@ $.ajax({
             var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
             map.flyTo(actualplace.getBounds().getCenter(), 9);
 
+
             if (actualid <= 24){
-                var arrow = L.polyline([base_SCaterina, actualplace.getBounds().getCenter()]).addTo(layerGroup);
+                var actualbase = base_SCaterina
+                var basename = "Santa Caterina (UD)"
+                varbasemarker =L.marker(actualbase).addTo(layerGroup);
+                var arrow = L.polyline([actualbase, actualplace.getBounds().getCenter()]).addTo(layerGroup);
                 var arrowHead = L.polylineDecorator(arrow, {
                 patterns: [
                 {
@@ -195,7 +205,10 @@ $.ajax({
             }).addTo(layerGroup);
             }
             if (actualid >= 25 && actualid < 31){
-                var arrow = L.polyline([base_Padova, actualplace.getBounds().getCenter()]).addTo(layerGroup);
+                var actualbase = base_Padova
+                var basename = "Padova"
+                varbasemarker =L.marker(actualbase).addTo(layerGroup);
+                var arrow = L.polyline([actualbase, actualplace.getBounds().getCenter()]).addTo(layerGroup);
                 var arrowHead = L.polylineDecorator(arrow, {
                 patterns: [
                 {
@@ -207,7 +220,10 @@ $.ajax({
             }).addTo(layerGroup);
             }
             if (actualid >= 31){
-                var arrow = L.polyline([baseQuinto, actualplace.getBounds().getCenter()]).addTo(layerGroup);
+                var actualbase = baseQuinto
+                var basename = "Quinto (TV)"
+                varbasemarker =L.marker(actualbase).addTo(layerGroup);
+                var arrow = L.polyline([actualbase, actualplace.getBounds().getCenter()]).addTo(layerGroup);
                 var arrowHead = L.polylineDecorator(arrow, {
                 patterns: [
                 {
@@ -230,6 +246,8 @@ $.ajax({
             $('.rivalplanestat').html('')
             $('.rivalsquadstat').html('')
             $('.victimsstat').html('')
+            $('.basestat').html('')
+            
 
 
             var plane = actualitem.plane.type
@@ -246,6 +264,7 @@ $.ajax({
             $('.nationstat').append(nation)
             $('.rivalplanestat').append(rivalplane)
             $('.rivalsquadstat').append(rivalsquad)
+            $('.basestat').append(basename)
             //$('.victimsstat').append(victims)
 
             wingmenarray.forEach(function (wingmenarrayitem) {
