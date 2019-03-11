@@ -125,7 +125,7 @@ $.ajax({
         var rivalplane = firstitem.rival_plane.rival_type
         var rivalsquad = firstitem.rival_plane.rival_squad
         var victimsarray = firstitem.victims
-        var distance = (actualbase).distanceTo(actualplace.getBounds().getCenter())
+        var distance = L.latLng(actualbase).distanceTo(actualplace.getBounds().getCenter())
 
 
         $('.planestat').append(plane)
@@ -259,7 +259,7 @@ $.ajax({
             var rivalplane = actualitem.rival_plane.rival_type
             var rivalsquad = actualitem.rival_plane.rival_squad
             var victimsarray = actualitem.victims
-            var distance = (actualbase).distanceTo(actualplace.getBounds().getCenter())
+            var distance = L.latLng(actualbase).distanceTo(actualplace.getBounds().getCenter())
     
             $('.planestat').append(plane)
             $('.squadstat').append(squad)
