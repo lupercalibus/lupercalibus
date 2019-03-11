@@ -194,7 +194,7 @@ $.ajax({
             ]
             }).addTo(layerGroup);
             }
-            if (actualid >= 25){
+            if (actualid >= 25 && actualid < 31){
                 var arrow = L.polyline([base_Padova, actualplace.getBounds().getCenter()]).addTo(layerGroup);
                 var arrowHead = L.polylineDecorator(arrow, {
                 patterns: [
@@ -207,7 +207,7 @@ $.ajax({
             }).addTo(layerGroup);
             }
             if (actualid >= 31){
-                var arrow = L.polyline([base_SCaterina, actualplace.getBounds().getCenter()]).addTo(layerGroup);
+                var arrow = L.polyline([baseQuinto, actualplace.getBounds().getCenter()]).addTo(layerGroup);
                 var arrowHead = L.polylineDecorator(arrow, {
                 patterns: [
                 {
