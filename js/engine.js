@@ -134,7 +134,7 @@ $.ajax({
         $('.rivalplanestat').append(rivalplane)
         $('.rivalsquadstat').append(rivalsquad)
         $('.basestat').append("Santa Caterina (UD)")
-        $('.distancestat').append(distance.toFixed(1) + " km")
+        $('.distancestat').append(distance.toFixed(1) + " km (Roundtrip)")
         //$('.victimsstat').append(victims)
 
         wingmenarray.forEach(function (wingmenarrayitem) {
@@ -267,7 +267,7 @@ $.ajax({
             $('.rivalplanestat').append(rivalplane)
             $('.rivalsquadstat').append(rivalsquad)
             $('.basestat').append(basename)
-            $('.distancestat').append(distance.toFixed(1) + " km")
+            $('.distancestat').append(distance.toFixed(1) + " km (Roundtrip)")
             //$('.victimsstat').append(victims)
 
             wingmenarray.forEach(function (wingmenarrayitem) {
