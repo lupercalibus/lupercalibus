@@ -94,7 +94,7 @@ $.ajax({
 
 
 
-        var arrow = L.polyline([base_SCaterina, actualplace.getLatLng()]).addTo(map);
+        var arrow = L.polyline([base_SCaterina, actualplace.getBounds().getCenter()]).addTo(map);
         var arrowHead = L.polylineDecorator(arrow, {
             patterns: [
                 {
