@@ -91,10 +91,11 @@ $.ajax({
         map.flyTo(actualplace.getBounds().getCenter(), 9);
         
         base_SCaterina = [46.0341, 13.1857,]
+        base_Padova = [45.4054, 11.8839]
+        baseQuinto = [45.6496, 12.196]
 
 
-
-        var arrow = L.polyline([base_SCaterina, actualplace.getBounds().getCenter()]).addTo(map);
+        var arrow = L.polyline([base_SCaterina, actualplace.getBounds().getCenter()]).addTo(layerGroup);
         var arrowHead = L.polylineDecorator(arrow, {
             patterns: [
                 {
@@ -103,7 +104,7 @@ $.ajax({
                     symbol: L.Symbol.arrowHead({pixelSize: 15, polygon: false, pathOptions: {stroke: true}})
                 }
             ]
-        }).addTo(map);
+        }).addTo(layerGroup);
 
         var NW = L.latLng(47.53389264528655,  10.553741455078123);
         var SE = L.latLng(44.81691551782855, 14.7216796875);
@@ -166,6 +167,7 @@ $.ajax({
             timeline.setSelection(actualid, {focus: true})
             //json del nuovo oggetto
             var actualitem
+            layerGroup.clearLayers();
             actualitem = dati.find(function(dati){return dati.number ==  actualid})
             if (actualid == 25){
                 actualborder.remove(); 
@@ -175,8 +177,44 @@ $.ajax({
                 actualborder.remove(); 
                 actualborder = L.geoJson(border1916.responseJSON).addTo(map);
             }
+            if (actualid <= 24){
+                var arrow = L.polyline([base_SCaterina, actualplace.getBounds().getCenter()]).addTo(layerGroup);
+                var arrowHead = L.polylineDecorator(arrow, {
+                patterns: [
+                {
+                    offset: '100%',
+                    repeat: 0,
+                    symbol: L.Symbol.arrowHead({pixelSize: 15, polygon: false, pathOptions: {stroke: true}})
+                }
+            ]
+            }).addTo(layerGroup);
+            }
+            if (actualid >= 25){
+                var arrow = L.polyline([base_Padova, actualplace.getBounds().getCenter()]).addTo(layerGroup);
+                var arrowHead = L.polylineDecorator(arrow, {
+                patterns: [
+                {
+                    offset: '100%',
+                    repeat: 0,
+                    symbol: L.Symbol.arrowHead({pixelSize: 15, polygon: false, pathOptions: {stroke: true}})
+                }
+            ]
+            }).addTo(layerGroup);
+            }
+            if (actualid >= 31){
+                var arrow = L.polyline([base_SCaterina, actualplace.getBounds().getCenter()]).addTo(layerGroup);
+                var arrowHead = L.polylineDecorator(arrow, {
+                patterns: [
+                {
+                    offset: '100%',
+                    repeat: 0,
+                    symbol: L.Symbol.arrowHead({pixelSize: 15, polygon: false, pathOptions: {stroke: true}})
+                }
+            ]
+            }).addTo(layerGroup);
+            }
 
-            layerGroup.clearLayers();
+            
             var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
             map.flyTo(actualplace.getBounds().getCenter(), 9);
             function PlaceFilter(feature) {
