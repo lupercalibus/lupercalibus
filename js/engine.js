@@ -96,7 +96,7 @@ $.ajax({
 
         var actualbase = base_SCaterina
 
-        varbasemarker =L.marker(actualbase).addTo(layerGroup);
+        var basemarker =L.marker(actualbase).addTo(layerGroup);
         //L.marker([51.5, -0.09], {icon: greenIcon}).addTo(map);
 
         var arrow = L.polyline([actualbase, actualplace.getBounds().getCenter()]).addTo(layerGroup);
@@ -125,7 +125,7 @@ $.ajax({
         var rivalplane = firstitem.rival_plane.rival_type
         var rivalsquad = firstitem.rival_plane.rival_squad
         var victimsarray = firstitem.victims
-        var distance = actualbase
+        var distance = basemarker.distanceTo(actualplace.getBounds().getCenter())
 
 
         $('.planestat').append(plane)
@@ -134,6 +134,7 @@ $.ajax({
         $('.rivalplanestat').append(rivalplane)
         $('.rivalsquadstat').append(rivalsquad)
         $('.basestat').append("Santa Caterina (UD)")
+        $('.distancestat').append(distance)
         //$('.victimsstat').append(victims)
 
         wingmenarray.forEach(function (wingmenarrayitem) {
@@ -192,7 +193,7 @@ $.ajax({
             if (actualid <= 24){
                 var actualbase = base_SCaterina
                 var basename = "Santa Caterina (UD)"
-                varbasemarker =L.marker(actualbase).addTo(layerGroup);
+                var basemarker =L.marker(actualbase).addTo(layerGroup);
                 var arrow = L.polyline([actualbase, actualplace.getBounds().getCenter()]).addTo(layerGroup);
                 var arrowHead = L.polylineDecorator(arrow, {
                 patterns: [
@@ -207,7 +208,7 @@ $.ajax({
             if (actualid >= 25 && actualid < 31){
                 var actualbase = base_Padova
                 var basename = "Padova"
-                varbasemarker =L.marker(actualbase).addTo(layerGroup);
+                var basemarker =L.marker(actualbase).addTo(layerGroup);
                 var arrow = L.polyline([actualbase, actualplace.getBounds().getCenter()]).addTo(layerGroup);
                 var arrowHead = L.polylineDecorator(arrow, {
                 patterns: [
@@ -222,7 +223,7 @@ $.ajax({
             if (actualid >= 31){
                 var actualbase = baseQuinto
                 var basename = "Quinto (TV)"
-                varbasemarker =L.marker(actualbase).addTo(layerGroup);
+                var basemarker =L.marker(actualbase).addTo(layerGroup);
                 var arrow = L.polyline([actualbase, actualplace.getBounds().getCenter()]).addTo(layerGroup);
                 var arrowHead = L.polylineDecorator(arrow, {
                 patterns: [
@@ -247,7 +248,8 @@ $.ajax({
             $('.rivalsquadstat').html('')
             $('.victimsstat').html('')
             $('.basestat').html('')
-            
+            $('.distancestat').html('')
+
 
 
             var plane = actualitem.plane.type
@@ -257,7 +259,7 @@ $.ajax({
             var rivalplane = actualitem.rival_plane.rival_type
             var rivalsquad = actualitem.rival_plane.rival_squad
             var victimsarray = actualitem.victims
-    
+            var distance = basemarker.distanceTo(actualplace.getBounds().getCenter())
     
             $('.planestat').append(plane)
             $('.squadstat').append(squad)
@@ -265,6 +267,7 @@ $.ajax({
             $('.rivalplanestat').append(rivalplane)
             $('.rivalsquadstat').append(rivalsquad)
             $('.basestat').append(basename)
+            $('.distancestat').append(distance)
             //$('.victimsstat').append(victims)
 
             wingmenarray.forEach(function (wingmenarrayitem) {
