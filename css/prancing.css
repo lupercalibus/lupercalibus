@@ -32,3 +32,9 @@ li {
     padding: 0;
     }
 
+#squadgraph {
+    width: 210px;
+    height: 210px;
+    margin: 0 auto;
+    background: transparent url("squad91.png") no-repeat center 70px;
+    }
