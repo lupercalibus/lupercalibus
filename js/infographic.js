@@ -2,24 +2,60 @@ $(document).ready(function() {
 
 
 
-    var chart = new CanvasJS.Chart("squadgraf", {    	
-		data: [              
-		{			
-			type: "doughnut",
-			dataPoints: [
-				{ label: "apple",  y: 18  },
-				{ label: "orange", y: 15  },
-				{ label: "banana", y: 25  }
-			]
-		}
-		]
-	});
-  
-	chart.render();
-  	
-var logo = document.getElementById("logosquad");
-logo.style.top = (chart.bounds.y2 - chart.bounds.y1)/2 + "px";
-logo.style.left = (chart.bounds.x2 - chart.bounds.x1)/2 - 20 + "px";
+    var optionpie = {
+        responsiveAnimationDuration: 1000,
+        responsive: true,
+        plugins: {
+            outlabels: {
+                display: false,
+            },
+           /* labels: [{
+                    render: 'label',
+                    position: 'outside',
+                    fontSize: 18,
+                    fontStyle: 'bold',
+                    fontColor: '#000'
+                },
+                {
+                    render: 'value',
+                    fontSize: 18,
+                    fontStyle: 'bold',
+                    fontColor: '#fff'
+                }
+            ] */
+        },
+        legend: {
+            display: true
+        }
+    };
+
+//VITTORIE PER SQUADRIGLIA
+    var datsquad = {
+        labels: [
+            "Squadriglia 1°",
+            "Squadriglia 70°",
+            "Squadriglia 91°"
+        ],
+        datasets: [{
+            data: [1, 7, 26],
+/*             backgroundColor: [
+                "#a6206a",
+                "#2f9395",
+                "#f4a256"
+            ],
+            hoverBackgroundColor: [
+                "#a6206a",
+                "#2f9395",
+                "#f4a256"
+            ] */
+        }]
+    };
+    var squadgraph = document.getElementById("squadgraph").getContext("2d");
+    new Chart(squadgraph, {
+        type: 'doughnut',
+        data: datsquad,
+        options: optionpie
+    });
 
 
 
