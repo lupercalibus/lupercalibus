@@ -18,14 +18,9 @@
         <script src="js/infographic.js"></script>
         <!--CSS-->
         <link rel="stylesheet" type="text/css" href="css/prancing.css">
-        <!--amcharts-->
-        <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
-        <script src="https://www.amcharts.com/lib/3/serial.js"></script>
-        <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
-        <script src="https://www.amcharts.com/lib/3/pie.js"></script>
-
-
-
+        <!--Chartjs-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
 
 
     </head>
@@ -65,8 +60,9 @@
                         </div>
                 </div>
                 <div class="row">
-                        <div class="col-md-6">
-                                <div id="squadgraph"></div>
+                        <div class="col-md-6 widget doughnut">
+                                <canvas id="squadgraph"style = "width: 100%"></canvas>
+                                <img class="logosquad" src="css/squad91.png" alt="Avatar">
                         </div>
                         <div class="col-md-6">
                         </div>
