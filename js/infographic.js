@@ -2,59 +2,31 @@ $(document).ready(function() {
 
 
 
-    var optionpie = {
-        responsiveAnimationDuration: 1000,
-        plugins: {
-            outlabels: {
-                display: false,
-            },
-          /*  labels: [{
-                    render: 'label',
-                    position: 'outside',
-                    fontSize: 18,
-                    fontStyle: 'bold',
-                    fontColor: '#000'
-                },
-                {
-                    render: 'value',
-                    fontSize: 18,
-                    fontStyle: 'bold',
-                    fontColor: '#fff'
-                }
-            ]*/
-        },
-        legend: {
-            display: true
-        }
-    };
-
-//VITTORIE PER SQUADRIGLIA
-    var datsquad = {
-        labels: [
-            "Squadriglia 1°",
-            "Squadriglia 70°",
-            "Squadriglia 91°"
-        ],
-        datasets: [{
-            data: [1, 7, 26],
-/*             backgroundColor: [
-                "#a6206a",
-                "#2f9395",
-                "#f4a256"
-            ],
-            hoverBackgroundColor: [
-                "#a6206a",
-                "#2f9395",
-                "#f4a256"
-            ] */
+    var chart = AmCharts.makeChart("squadgraph", {
+        "type": "pie",
+        "dataProvider": [{
+          "slice": "1° Squadriglia",
+          "value": 1
+        }, {
+            "slice": "70° Squadriglia",
+            "value": 7
+        },{
+            "slice": "91° Squadriglia",
+            "value": 26s
+        }],
+        "valueField": "value",
+        "titleField": "slice",
+        "labelsEnabled": false,
+        "pullOutRadius": 0,
+        "innerRadius": 60,
+        "allLabels": [{
+          "text": "34%",
+          "color": "#f40000",
+          "size": 20,
+          "align": "center",
+          "y": "55%"
         }]
-    };
-    var squadgraph = document.getElementById("squadgraph").getContext("2d");
-    new Chart(squadgraph, {
-        type: 'doughnut',
-        data: datsquad,
-        options: optionpie
-    });
+      });
 
 
 
