@@ -18,11 +18,7 @@ $(document).ready(function() {
         "pullOutRadius": 0,
         "innerRadius": 60,
         "allLabels": [{
-          "text": "34%",
-          "color": "#f40000",
-          "size": 20,
-          "align": "center",
-          "y": "55%"
+
         }]
       });
 
