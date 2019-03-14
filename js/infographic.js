@@ -96,5 +96,37 @@ $(document).ready(function() {
 
 
 
+    //VITTORIE PER AEREO
+    var datplan = {
+        labels: [
+            "Nieuport XI",
+            "Nieuport XVII",
+            "SPAD VII",
+            "SPAD XIII",
+            "Unknown"
+        ],
+        datasets: [{
+            data: [4, 4, 17, 6, 3],
+/*             backgroundColor: [
+                "#a6206a",
+                "#2f9395",
+                "#f4a256"
+            ],
+            hoverBackgroundColor: [
+                "#a6206a",
+                "#2f9395",
+                "#f4a256"
+            ] */
+        }]
+    };
+    var planegraph = document.getElementById("planegraph").getContext("2d");
+    new Chart(planegraph, {
+        type: 'doughnut',
+        data: datplan,
+        options: optionpie
+    });
+
+
+
 
 })
