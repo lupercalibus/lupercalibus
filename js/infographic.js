@@ -178,9 +178,9 @@ $(document).ready(function() {
         responsive: true,
         elements: {
             center: {
-                text: "BOH",
+                text: "A",
                 color: '#000000', // Default is #000000
-                fontStyle: 'Arial', // Default is Arial
+                fontStyle: 'WW1Planes.ttf', // Default is Arial
                 sidePadding: 20 // Defualt is 20 (as a percentage)
             }
         },
