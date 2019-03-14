@@ -4,6 +4,7 @@ $(document).ready(function() {
 
     var optionpie = {
         responsiveAnimationDuration: 1000,
+        responsive: false,
         plugins: {
             outlabels: {
                 display: false,
