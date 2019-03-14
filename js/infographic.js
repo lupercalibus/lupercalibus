@@ -119,7 +119,7 @@ $(document).ready(function() {
             ] */
         }]
     };
-    var planegraph = document.getElementById("planegraph").getContext("2d");
+    var planegraph = document.getElementById("planesgraph").getContext("2d");
     new Chart(planegraph, {
         type: 'doughnut',
         data: datplan,
