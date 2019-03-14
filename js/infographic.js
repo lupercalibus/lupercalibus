@@ -127,6 +127,11 @@ $(document).ready(function() {
     });
 
 
-
+    var enemygraph = document.getElementById("enemiesgraph").getContext("2d");
+    new Chart(enemygraph, {
+        type: 'doughnut',
+        data: datnat,
+        options: optionpie
+    });
 
 })
