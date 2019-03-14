@@ -31,11 +31,3 @@ li {
     list-style-type: none;
     padding: 0;
     }
-
-#squadgraph {
-   
-    max-width:20%;
-    max-height:20%;
-    margin: 0 auto;
-    background: transparent url("squad91.png") no-repeat center;
-    }
