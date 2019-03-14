@@ -5,6 +5,14 @@ $(document).ready(function() {
     var optionpie = {
         responsiveAnimationDuration: 1000,
         responsive: true,
+        elements: {
+            center: {
+                text: TOTsegn,
+                color: '#000000', // Default is #000000
+                fontStyle: 'Arial', // Default is Arial
+                sidePadding: 20 // Defualt is 20 (as a percentage)
+            }
+        },
         plugins: {
             outlabels: {
                 display: false,
