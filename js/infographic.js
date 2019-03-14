@@ -168,11 +168,73 @@ $(document).ready(function() {
     });
 
 
+
+
+
+//esito scontri
+
+    var optionenemy = {
+        responsiveAnimationDuration: 1000,
+        responsive: true,
+        elements: {
+            center: {
+                text: "BOH",
+                color: '#000000', // Default is #000000
+                fontStyle: 'Arial', // Default is Arial
+                sidePadding: 20 // Defualt is 20 (as a percentage)
+            }
+        },
+        plugins: {
+            outlabels: {
+                display: false,
+            },
+            labels: [{
+                    render: 'label',
+                    position: 'outside',
+                    fontSize: 18,
+                    fontStyle: 'bold',
+                    fontColor: '#000'
+                },
+                {
+                    render: 'value',
+                    fontSize: 18,
+                    fontStyle: 'bold',
+                    fontColor: '#fff'
+                }
+            ] 
+        },
+        legend: {
+            display: false
+        }
+    };
+
+        var daten = {
+            labels: [
+                "Kill in Action",
+                "Wounded in Action",
+                "Prisoner of War",
+                "Unhurted",
+            ],
+            datasets: [{
+                data: [43, 5, 4, 5],
+                 backgroundColor: [
+                    "#a6206a",
+                    "#2f9395",
+                    "#f4a256"
+                ],
+                hoverBackgroundColor: [
+                    "#a6206a",
+                    "#2f9395",
+                    "#f4a256"
+                ] 
+            }]
+        };
+
     var enemygraph = document.getElementById("enemiesgraph").getContext("2d");
     new Chart(enemygraph, {
         type: 'doughnut',
-        data: datnat,
-        options: optionpie
+        data: daten,
+        options: optionenemy
     });
 
 })
