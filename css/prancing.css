@@ -34,7 +34,7 @@ li {
 
 #squadgraph {
     width: 20%;
-    height: 20%;
+    height:  auto;
     margin: 0 auto;
-    background: transparent url("squad91.png") no-repeat center 70px;
+    background: transparent url("squad91.png") no-repeat;
     }
