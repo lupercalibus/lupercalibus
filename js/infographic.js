@@ -67,7 +67,7 @@ $(document).ready(function() {
 
 
 //VITTORIE PER NAZIONE
-    var datsquad = {
+    var datnat = {
         labels: [
             "Austria",
             "Germany",
@@ -87,10 +87,10 @@ $(document).ready(function() {
             ] */
         }]
     };
-    var squadgraph = document.getElementById("squadgraph").getContext("2d");
-    new Chart(squadgraph, {
+    var natgraph = document.getElementById("natgraph").getContext("2d");
+    new Chart(natgraph, {
         type: 'doughnut',
-        data: datsquad,
+        data: datnat,
         options: optionpie
     });
 
