@@ -12,7 +12,7 @@ $(document).ready(function() {
             "value": 7
         },{
             "slice": "91° Squadriglia",
-            "value": 26s
+            "value": 26
         }],
         "valueField": "value",
         "titleField": "slice",
