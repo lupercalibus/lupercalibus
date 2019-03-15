@@ -53,8 +53,8 @@ $(document).ready(function() {
                 var sidePaddingCalculated = (sidePadding / 100) * (chart.innerRadius * 2)
 
                 //Get the width of the string and also the width of the element minus 10 to give it 5px side padding
-                var elementWidth = (chart.innerRadius * 2) - sidePaddingCalculated;
-                
+                //var elementWidth = (chart.innerRadius * 2) - sidePaddingCalculated;
+                var elementWidth = chart.innerRadius * Math.sqrt(2)
                 // Find out how much the font can grow in width.
                // var elementHeight = (chart.innerRadius * 2);
 
