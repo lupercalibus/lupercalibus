@@ -62,7 +62,8 @@ $(document).ready(function() {
                 //Set font settings to draw it correctly.
                 var centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
                 var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
-
+                img.width = elementWidth
+                img.height = 100%
                 //Draw text in center
                 ctx.drawImage(img, centerX, centerY);
             }
