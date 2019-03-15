@@ -41,6 +41,33 @@ $(document).ready(function() {
                 //Draw text in center
                 ctx.fillText(txt, centerX, centerY);
             }
+
+
+            if (chart.config.options.elements.imgcenter) {
+                //Get ctx from string
+                var ctx = chart.chart.ctx;
+
+                //Get options from the center object in options
+                var centerConfig = chart.config.options.elements.imgcenter;
+                var img = new Image;
+                img.src =  centerConfig.imgsrc;
+                var sidePadding = centerConfig.sidePadding || 20;
+                var sidePaddingCalculated = (sidePadding / 100) * (chart.innerRadius * 2)
+
+                //Get the width of the string and also the width of the element minus 10 to give it 5px side padding
+                var elementWidth = (chart.innerRadius * 2) - sidePaddingCalculated;
+
+                // Find out how much the font can grow in width.
+                var elementHeight = (chart.innerRadius * 2);
+
+
+                //Set font settings to draw it correctly.
+                var centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
+                var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
+
+                //Draw text in center
+                ctx.drawImage(img, centerX, centerY);
+            }
         }
     });
 
@@ -179,12 +206,15 @@ $(document).ready(function() {
         responsiveAnimationDuration: 1000,
         responsive: true,
         elements: {
-            center: {
+            /* center: {
                 text: "a",
                 color: '#000000', // Default is #000000
                 fontStyle: 'Planes', // Default is Arial
                 fontSize: 40,
                 sidePadding: 20, // Defualt is 20 (as a percentage)
+            } */
+            imgcenter: {
+                imgsrc: 'css/plane.png',
             }
         },
         plugins: {
