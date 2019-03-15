@@ -32,7 +32,9 @@ $(document).ready(function() {
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'middle';
                 var centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
+                console.log(centerX)
                 var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
+                console.log(centerY)
                 ctx.font = fontSizeToUse + "px " + fontStyle;
                 ctx.fillStyle = color;
 
