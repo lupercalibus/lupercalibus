@@ -71,7 +71,7 @@ $(document).ready(function() {
     });
 
 
-    var optionpie = {
+/*     var optionpie = {
         responsiveAnimationDuration: 1000,
         responsive: true,
         elements: {
@@ -196,7 +196,7 @@ $(document).ready(function() {
     });
 
 
-
+ */
 
 
 //esito scontri
