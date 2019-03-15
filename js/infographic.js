@@ -220,6 +220,20 @@ $(document).ready(function() {
             outlabels: {
                 display: false,
             },
+            labels: [{
+                render: '',
+                position: 'outside',
+                fontSize: 18,
+                fontStyle: 'bold',
+                fontColor: '#000'
+            },
+            {
+                //render: 'value',
+                fontSize: 18,
+                fontStyle: 'bold',
+                fontColor: '#fff'
+            }
+        ]
         },
         legend: {
             display: false
