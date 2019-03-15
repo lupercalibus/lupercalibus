@@ -204,8 +204,7 @@ $(document).ready(function() {
     var optionenemy = {
         responsiveAnimationDuration: 1000,
         responsive: true,
-        segmentStrokeWidth: 20,
-        segmentStrokeColor: "rgba(255, 255, 255, 0.4)",
+        segmentShowStroke : false,
         elements: {
             /* center: {
                 text: "a",
