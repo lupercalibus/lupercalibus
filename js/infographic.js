@@ -221,7 +221,7 @@ $(document).ready(function() {
                 display: false,
             },
             labels: [{
-                render: '',
+                render: 'label',
                 position: 'outside',
                 fontSize: 18,
                 fontStyle: 'bold',
