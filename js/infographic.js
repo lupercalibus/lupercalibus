@@ -56,16 +56,16 @@ $(document).ready(function() {
                 var elementWidth = (chart.innerRadius * 2) - sidePaddingCalculated;
                 
                 // Find out how much the font can grow in width.
-                var elementHeight = (chart.innerRadius * 2);
+               // var elementHeight = (chart.innerRadius * 2);
 
 
                 //Set font settings to draw it correctly.
-                var centerX = ((chart.chartArea.left + chart.chartArea.right) / 2) - chart.innerRadius;
-                var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2) - chart.innerRadius;
+                var centerX = ((chart.chartArea.left + chart.chartArea.right) / 2) - chart.innerRadius + sidePaddingCalculated;
+                var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2) - chart.innerRadius + sidePaddingCalculated;
                 img.width = elementWidth
-                img.height = elementHeight
+                //img.height = elementHeight
                 //Draw text in center
-                ctx.drawImage(img, centerX, centerY, img.width, 100 * img.height / img.width);
+                ctx.drawImage(img, centerX, centerY, img.width, img.width);
             }
         }
     });
