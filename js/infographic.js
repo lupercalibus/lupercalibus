@@ -180,7 +180,7 @@ $(document).ready(function() {
             center: {
                 text: "a",
                 color: '#000000', // Default is #000000
-                fontStyle: 'WW1Planes.ttf', // Default is Arial
+                fontStyle: 'Planes', // Default is Arial
                 sidePadding: 20 // Defualt is 20 (as a percentage)
             }
         },
