@@ -216,6 +216,11 @@ $(document).ready(function() {
                 imgsrc: 'css/plane.png',
             }
         },
+        plugins: {
+            outlabels: {
+                display: false,
+            },
+        },
         legend: {
             display: false
         }
