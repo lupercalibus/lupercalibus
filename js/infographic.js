@@ -63,9 +63,7 @@ $(document).ready(function() {
                 var centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
                 var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
                 img.width = elementWidth
-                console.log(img.width)
-                console.log(elementWidth)
-                img.height = 100%
+                img.height = elementHeight
                 //Draw text in center
                 ctx.drawImage(img, centerX, centerY);
             }
