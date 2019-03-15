@@ -251,13 +251,13 @@ $(document).ready(function() {
                 data: [43, 5, 4, 5],
                  backgroundColor: [
                     "#990000",
-                    "#ff6600",
+                    "#e65c00",
                     "#ffcc00",
                     "#33cc33"
                 ],
                 hoverBackgroundColor: [
                     "#990000",
-                    "#ff6600",
+                    "#e65c00",
                     "#ffcc00",
                     "#33cc33"
                 ] 
