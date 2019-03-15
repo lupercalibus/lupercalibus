@@ -252,13 +252,13 @@ $(document).ready(function() {
                  backgroundColor: [
                     "#990000",
                     "#e65c00",
-                    "#ffcc00",
+                    "#e6b800",
                     "#33cc33"
                 ],
                 hoverBackgroundColor: [
                     "#990000",
                     "#e65c00",
-                    "#ffcc00",
+                    "#e6b800",
                     "#33cc33"
                 ] 
             }]
