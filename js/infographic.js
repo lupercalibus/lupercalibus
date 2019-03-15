@@ -54,7 +54,7 @@ $(document).ready(function() {
 
                 //Get the width of the string and also the width of the element minus 10 to give it 5px side padding
                 var elementWidth = (chart.innerRadius * 2) - sidePaddingCalculated;
-
+                
                 // Find out how much the font can grow in width.
                 var elementHeight = (chart.innerRadius * 2);
 
@@ -63,6 +63,8 @@ $(document).ready(function() {
                 var centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
                 var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
                 img.width = elementWidth
+                console.log(img.width)
+                console.log(elementWidth)
                 img.height = 100%
                 //Draw text in center
                 ctx.drawImage(img, centerX, centerY);
