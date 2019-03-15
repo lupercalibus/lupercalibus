@@ -204,7 +204,6 @@ $(document).ready(function() {
     var optionenemy = {
         responsiveAnimationDuration: 1000,
         responsive: true,
-        segmentShowStroke : false,
         elements: {
             /* center: {
                 text: "a",
@@ -219,22 +218,8 @@ $(document).ready(function() {
         },
         plugins: {
             outlabels: {
-                display: false,
+                display: true,
             },
-            labels: [{
-                    render: 'label',
-                    position: 'outside',
-                    fontSize: 18,
-                    fontStyle: 'bold',
-                    fontColor: '#000'
-                },
-                {
-                    render: 'value',
-                    fontSize: 18,
-                    fontStyle: 'bold',
-                    fontColor: '#fff'
-                }
-            ] 
         },
         legend: {
             display: false
