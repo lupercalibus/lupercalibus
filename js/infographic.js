@@ -183,7 +183,8 @@ $(document).ready(function() {
                 text: "a",
                 color: '#000000', // Default is #000000
                 fontStyle: 'Planes', // Default is Arial
-                sidePadding: 20 // Defualt is 20 (as a percentage)
+                sidePadding: 20, // Defualt is 20 (as a percentage)
+                fontStyle: 'bold'
             }
         },
         plugins: {
