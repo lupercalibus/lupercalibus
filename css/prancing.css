@@ -31,3 +31,5 @@ li {
     list-style-type: none;
     padding: 0;
     }
+
+ @font-face { font-family: "Planes"; src: url('css/WW1Planes.ttf'); } 
