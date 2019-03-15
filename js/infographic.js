@@ -65,7 +65,7 @@ $(document).ready(function() {
                 img.width = elementWidth
                 img.height = elementHeight
                 //Draw text in center
-                ctx.drawImage(img, centerX, centerY);
+                ctx.drawImage(img, centerX, centerY, img.width, 100 * img.height / img.width);
             }
         }
     });
