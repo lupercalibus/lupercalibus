@@ -218,14 +218,16 @@ $(document).ready(function() {
             datasets: [{
                 data: [43, 5, 4, 5],
                  backgroundColor: [
-                    "#a6206a",
-                    "#2f9395",
-                    "#f4a256"
+                    "#ff0000",
+                    "#ff6600",
+                    "#ffcc00",
+                    "#33cc33"
                 ],
                 hoverBackgroundColor: [
-                    "#a6206a",
-                    "#2f9395",
-                    "#f4a256"
+                    "#ff0000",
+                    "#ff6600",
+                    "#ffcc00",
+                    "#33cc33"
                 ] 
             }]
         };
