@@ -256,7 +256,7 @@ $(document).ready(function() {
                     "#33cc33"
                 ],
                 hoverBackgroundColor: [
-                    "#660000",
+                    "#990000",
                     "#ff6600",
                     "#ffcc00",
                     "#33cc33"
