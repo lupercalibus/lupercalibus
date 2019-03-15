@@ -204,6 +204,7 @@ $(document).ready(function() {
     var optionenemy = {
         responsiveAnimationDuration: 1000,
         responsive: true,
+        borderColor: '#000000',
         elements: {
             /* center: {
                 text: "a",
