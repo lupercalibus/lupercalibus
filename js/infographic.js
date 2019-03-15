@@ -250,13 +250,13 @@ $(document).ready(function() {
             datasets: [{
                 data: [43, 5, 4, 5],
                  backgroundColor: [
-                    "#ff0000",
+                    "#990000",
                     "#ff6600",
                     "#ffcc00",
                     "#33cc33"
                 ],
                 hoverBackgroundColor: [
-                    "#ff0000",
+                    "#660000",
                     "#ff6600",
                     "#ffcc00",
                     "#33cc33"
