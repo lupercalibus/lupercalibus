@@ -98,7 +98,7 @@ $(document).ready(function() {
             labels: [{
                 render: 'label',
                 position: 'outside',
-                fontSize: 18,
+                fontSize: 14,
                 fontStyle: 'bold',
                 fontColor: '#000'
             },
