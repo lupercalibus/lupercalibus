@@ -104,7 +104,7 @@ $(document).ready(function() {
             },
             {
                 //render: 'value',
-                fontSize: 18,
+                fontSize: 16,
                 fontStyle: 'bold',
                 fontColor: '#fff'
             }
