@@ -117,9 +117,9 @@ $(document).ready(function() {
 
         var daten = {
             labels: [
-                "Kill in Action",
-                "Wounded in Action",
-                "Prisoner of War",
+                "Kill",
+                "Wounded",
+                "Prisoner",
                 "Unhurted",
             ],
             datasets: [{
