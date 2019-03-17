@@ -216,14 +216,11 @@ $(document).ready(function() {
     new Chart(document.getElementById("planesstats"), {
         type: 'radar',
         data: {
-          labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
-          datasets: [
-            {
-              label: "1950",
-
-              data: [8.77,55.61,21.69,6.62,6.82]
-            }
-          ]
+            labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
+            datasets: [{
+                label: "Risultati Camera Zona",
+                data: [1, 2, 3, 4, 5, 6]
+            }]
         }
     });
 //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
