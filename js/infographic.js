@@ -212,13 +212,40 @@ $(document).ready(function() {
         });
     }
     //planegraphfun(dataN11)
-    var planesstats = document.getElementById("planesstats").getContext("2d");
-        new Chart(planesstats, {
-            type: 'radar',
-            data: dataN11,
-            options: optradar
-        });
-
+    //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    new Chart(document.getElementById("planesstats"), {
+        type: 'radar',
+        data: {
+          labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+          datasets: [
+            {
+              label: "1950",
+              fill: true,
+              backgroundColor: "rgba(179,181,198,0.2)",
+              borderColor: "rgba(179,181,198,1)",
+              pointBorderColor: "#fff",
+              pointBackgroundColor: "rgba(179,181,198,1)",
+              data: [8.77,55.61,21.69,6.62,6.82]
+            }, {
+              label: "2050",
+              fill: true,
+              backgroundColor: "rgba(255,99,132,0.2)",
+              borderColor: "rgba(255,99,132,1)",
+              pointBorderColor: "#fff",
+              pointBackgroundColor: "rgba(255,99,132,1)",
+              pointBorderColor: "#fff",
+              data: [25.48,54.16,7.61,8.06,4.45]
+            }
+          ]
+        },
+        options: {
+          title: {
+            display: true,
+            text: 'Distribution in % of world population'
+          }
+        }
+    });
+//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
         var dataN11= {
             labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
