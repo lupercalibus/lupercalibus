@@ -206,9 +206,9 @@ $(document).ready(function() {
     function planegraphfun(datirad) {
         var planesstats = document.getElementById("planesstats").getContext("2d");
         new Chart(planesstats, {
-            "type": 'radar',
-            "data": datirad,
-            "options": optradar
+            type: 'radar',
+            data: datirad,
+            options: optradar
         });
     }
     planegraphfun(dataN11)
@@ -217,38 +217,38 @@ $(document).ready(function() {
         var dataN11= {
             labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
             datasets: [{
-                "label": "Risultati Camera Zona",
+                label: "Risultati Camera Zona",
                 data: [1, 2, 3, 4, 5, 6]
             }]
         };
         var dataN17= {
             labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
             datasets: [{
-                "label": "Risultati Camera Zona",
+                label: "Risultati Camera Zona",
                 data: [2, 2, 3, 4, 5, 6]
             }]
         };
         var dataS7= {
             labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
             datasets: [{
-                "label": "Risultati Camera Zona",
+                label: "Risultati Camera Zona",
                 data: [3, 2, 3, 4, 5, 6]
             }]
         };
         var dataS13= {
             labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
             datasets: [{
-                "label": "Risultati Camera Zona",
+                label: "Risultati Camera Zona",
                 data: [4, 2, 3, 4, 5, 6]
             }]
         };
 
         var optradar = {
             responsiveAnimationDuration: 1000,
-            "scale": {
-                "ticks": {
-                    "beginAtZero": true,
-                    "max": 35
+            scale: {
+                ticks: {
+                    beginAtZero: true,
+                    max: 35
                 }
             },
             legend: {
