@@ -201,4 +201,73 @@ $(document).ready(function() {
         data: datplan,
         options: optionpie
     });
+
+    planegraph(dataN11)
+
+    function planegraph(datirad) {
+        var planesstats = document.getElementById("planesstats").getContext("2d");
+        new Chart(planesstats, {
+            "type": 'radar',
+            "data": datirad,
+            "options": optradar
+        });
+    }
+
+        var dataN11= {
+            labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
+            datasets: [{
+                "label": "Risultati Camera Zona",
+                data: [1, 2, 3, 4, 5, 6]
+            }]
+        };
+        var dataN17= {
+            labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
+            datasets: [{
+                "label": "Risultati Camera Zona",
+                data: [1, 2, 3, 4, 5, 6]
+            }]
+        };
+        var dataS7= {
+            labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
+            datasets: [{
+                "label": "Risultati Camera Zona",
+                data: [1, 2, 3, 4, 5, 6]
+            }]
+        };
+        var dataS13= {
+            labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
+            datasets: [{
+                "label": "Risultati Camera Zona",
+                data: [1, 2, 3, 4, 5, 6]
+            }]
+        };
+
+        $('input[type=radio][name=planes]').change(function() {
+            switch ($(this).val()) {
+                case 'N11':
+                    $('#planesstats').remove();
+                    $('#planesstatscontainer').append('<canvas id="planesstats"><canvas>');
+                    planegraph(dataN11)
+                    break
+                case 'N17':
+                    $('#planesstats').remove();
+                    $('#planesstatscontainer').append('<canvas id="planesstats"><canvas>');
+                    planegraph(dataN17)
+                    break
+                case 'S7':
+                    $('#planesstats').remove();
+                    $('#planesstatscontainer').append('<canvas id="planesstats"><canvas>');
+                    planegraph(dataS7)
+                    break
+                case 'S13':
+                    $('#planesstats').remove();
+                    $('#planesstatscontainer').append('<canvas id="planesstats"><canvas>');
+                    planegraph(dataS13)
+                    break
+            }
+        });
+
+
+
+
 })
