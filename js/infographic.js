@@ -248,9 +248,7 @@ $(document).ready(function() {
             "scale": {
                 "ticks": {
                     "beginAtZero": true,
-                    "max": 35,
-                     "callback": function(value, index, values) {
-                                    return value + '%';}
+                    "max": 35
                 }
             },
             legend: {
