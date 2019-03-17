@@ -252,7 +252,7 @@ $(document).ready(function() {
                 }
             },
             legend: {
-                display: false
+                display: true
             },
         };
         $('input[type=radio][name=planes]').change(function() {
