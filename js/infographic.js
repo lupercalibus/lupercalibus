@@ -197,7 +197,7 @@ $(document).ready(function() {
     };
     var planegraph = document.getElementById("planesgraph").getContext("2d");
     new Chart(planegraph, {
-        type: 'doughnut',
+        type: 'pie',
         data: datplan,
         options: optionpie
     });
