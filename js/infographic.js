@@ -176,7 +176,7 @@ $(document).ready(function() {
             outlabels: {
                 display: false,
             },
-           /* labels: [{
+           labels: [{
                     render: 'label',
                     position: 'outside',
                     fontSize: 18,
@@ -189,7 +189,7 @@ $(document).ready(function() {
                     fontStyle: 'bold',
                     fontColor: '#fff'
                 }
-            ] */
+            ] 
         },
         legend: {
             display: false
