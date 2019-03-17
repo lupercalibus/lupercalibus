@@ -213,7 +213,8 @@ $(document).ready(function() {
     }
     //planegraphfun(dataN11)
     //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-    new Chart(document.getElementById("planesstats"), {
+    var planesstats = document.getElementById("planesstats").getContext("2d");
+        new Chart(planesstats, {
         type: 'radar',
         data: {
             labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
