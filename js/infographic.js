@@ -174,15 +174,15 @@ $(document).ready(function() {
         responsive: true,
         plugins: {
             outlabels: {
-                display: false,
+                display: true,
             },
-           labels: [{
+           labels: [/* {
                     render: 'label',
                     position: 'outside',
                     fontSize: 18,
                     fontStyle: 'bold',
                     fontColor: '#000'
-                },
+                }, */
                 {
                     render: 'value',
                     fontSize: 18,
