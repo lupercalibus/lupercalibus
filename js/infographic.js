@@ -243,6 +243,20 @@ $(document).ready(function() {
             }]
         };
 
+        var optradar = {
+            responsiveAnimationDuration: 1000,
+            "scale": {
+                "ticks": {
+                    "beginAtZero": true,
+                    "max": 35,
+                     "callback": function(value, index, values) {
+                                    return value + '%';}
+                }
+            },
+            legend: {
+                display: false
+            },
+        };
         $('input[type=radio][name=planes]').change(function() {
             switch ($(this).val()) {
                 case 'N11':
