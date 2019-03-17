@@ -203,28 +203,6 @@ $(document).ready(function() {
     });
 
 
-    function planegraphfun(datirad) {
-        var planesstats = document.getElementById("planesstats").getContext("2d");
-        new Chart(planesstats, {
-            type: 'radar',
-            data: datirad,
-            options: optradar
-        });
-    }
-    //planegraphfun(dataN11)
-    //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-    var planesstats = document.getElementById("planesstats").getContext("2d");
-        new Chart(planesstats, {
-        type: 'radar',
-        data: {
-            labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
-            datasets: [{
-                label: "Risultati Camera Zona",
-                data: [1, 2, 3, 4, 5, 6]
-            }]
-        }
-    });
-//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
         var dataN11= {
             labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
@@ -267,6 +245,15 @@ $(document).ready(function() {
                 display: true
             },
         };
+        function planegraphfun(datirad) {
+            var planesstats = document.getElementById("planesstats").getContext("2d");
+            new Chart(planesstats, {
+                type: 'radar',
+                data: datirad,
+                options: optradar
+            });
+        }
+        //planegraphfun(dataN11)
         $('input[type=radio][name=planes]').change(function() {
             switch ($(this).val()) {
                 case 'N11':
