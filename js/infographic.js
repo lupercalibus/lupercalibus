@@ -253,7 +253,7 @@ $(document).ready(function() {
                 options: optradar
             });
         }
-        //planegraphfun(dataN11)
+        planegraphfun(dataN11)
         $('input[type=radio][name=planes]').change(function() {
             switch ($(this).val()) {
                 case 'N11':
