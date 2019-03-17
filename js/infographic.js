@@ -203,7 +203,7 @@ $(document).ready(function() {
     });
 
 
-    function planegraph(datirad) {
+    function planegraphfun(datirad) {
         var planesstats = document.getElementById("planesstats").getContext("2d");
         new Chart(planesstats, {
             "type": 'radar',
@@ -211,7 +211,7 @@ $(document).ready(function() {
             "options": optradar
         });
     }
-    planegraph(dataN11)
+    planegraphfun(dataN11)
 
 
         var dataN11= {
@@ -262,22 +262,22 @@ $(document).ready(function() {
                 case 'N11':
                     $('#planesstats').remove();
                     $('#planesstatscontainer').append('<canvas id="planesstats"><canvas>');
-                    planegraph(dataN11)
+                    planegraphfun(dataN11)
                     break
                 case 'N17':
                     $('#planesstats').remove();
                     $('#planesstatscontainer').append('<canvas id="planesstats"><canvas>');
-                    planegraph(dataN17)
+                    planegraphfun(dataN17)
                     break
                 case 'S7':
                     $('#planesstats').remove();
                     $('#planesstatscontainer').append('<canvas id="planesstats"><canvas>');
-                    planegraph(dataS7)
+                    planegraphfun(dataS7)
                     break
                 case 'S13':
                     $('#planesstats').remove();
                     $('#planesstatscontainer').append('<canvas id="planesstats"><canvas>');
-                    planegraph(dataS13)
+                    planegraphfun(dataS13)
                     break
             }
         });
