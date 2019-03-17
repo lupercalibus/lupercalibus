@@ -202,7 +202,6 @@ $(document).ready(function() {
         options: optionpie
     });
 
-    planegraph(dataN11)
 
     function planegraph(datirad) {
         var planesstats = document.getElementById("planesstats").getContext("2d");
@@ -212,6 +211,8 @@ $(document).ready(function() {
             "options": optradar
         });
     }
+    planegraph(dataN11)
+
 
         var dataN11= {
             labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
