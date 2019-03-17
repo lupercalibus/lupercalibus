@@ -224,21 +224,21 @@ $(document).ready(function() {
             labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
             datasets: [{
                 "label": "Risultati Camera Zona",
-                data: [1, 2, 3, 4, 5, 6]
+                data: [2, 2, 3, 4, 5, 6]
             }]
         };
         var dataS7= {
             labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
             datasets: [{
                 "label": "Risultati Camera Zona",
-                data: [1, 2, 3, 4, 5, 6]
+                data: [3, 2, 3, 4, 5, 6]
             }]
         };
         var dataS13= {
             labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
             datasets: [{
                 "label": "Risultati Camera Zona",
-                data: [1, 2, 3, 4, 5, 6]
+                data: [4, 2, 3, 4, 5, 6]
             }]
         };
 
