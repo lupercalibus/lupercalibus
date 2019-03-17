@@ -125,6 +125,7 @@ $(document).ready(function() {
             datasets: [{
                 data: [43, 5, 4, 5],
                  backgroundColor: [
+                    //"rgba(126,204,140, 0.5)"
                     "#990000",
                     "#e65c00",
                     "#e6b800",
@@ -146,4 +147,58 @@ $(document).ready(function() {
         options: optionenemy
     });
 
+    var datplan = {
+        labels: [
+            "Nieuport XI",
+            "Nieuport XVII",
+            "SPAD VII",
+            "SPAD XIII",
+            "Unknown"
+        ],
+        datasets: [{
+            data: [4, 4, 17, 6, 3],
+/*             backgroundColor: [
+                "#a6206a",
+                "#2f9395",
+                "#f4a256"
+            ],
+            hoverBackgroundColor: [
+                "#a6206a",
+                "#2f9395",
+                "#f4a256"
+            ] */
+        }]
+    };
+    var optionpie = {
+        responsiveAnimationDuration: 1000,
+        responsive: true,
+        plugins: {
+            outlabels: {
+                display: false,
+            },
+           /* labels: [{
+                    render: 'label',
+                    position: 'outside',
+                    fontSize: 18,
+                    fontStyle: 'bold',
+                    fontColor: '#000'
+                },
+                {
+                    render: 'value',
+                    fontSize: 18,
+                    fontStyle: 'bold',
+                    fontColor: '#fff'
+                }
+            ] */
+        },
+        legend: {
+            display: false
+        }
+    };
+    var planegraph = document.getElementById("planesgraph").getContext("2d");
+    new Chart(planegraph, {
+        type: 'doughnut',
+        data: datplan,
+        options: optionpie
+    });
 })
