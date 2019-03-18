@@ -420,9 +420,9 @@ $(document).ready(function() {
         };
     
             var datwing = {
-                labels: ['Solo Win', 'Giuliano Parvis', 'Fulco Ruffo di Calabria', 'Goffredo Gorini', 'Pier Ruggero Piccio', "Mario D'Urso", 'Luigi Olivari', 'Guido Nardini', 'Giulio Poli', 'Giovanni Sabelli', 'Gastone Novelli', 'Gaetano Aliperta', 'Flavio Torello Baracchini', 'Attilio Imolesi', 'Alessandro Buzio'],          
+                labels: ['Giuliano Parvis', 'Fulco Ruffo di Calabria', 'Goffredo Gorini', 'Pier Ruggero Piccio', "Mario D'Urso", 'Luigi Olivari', 'Guido Nardini', 'Giulio Poli', 'Giovanni Sabelli', 'Gastone Novelli', 'Gaetano Aliperta', 'Flavio Torello Baracchini', 'Attilio Imolesi', 'Alessandro Buzio'],          
                 datasets: [{
-                    data: [17, 5, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                    data: [5, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
                 }
             ]
             };
