@@ -275,7 +275,8 @@ $(document).ready(function() {
             responsiveAnimationDuration: 1000,
             scale: {
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    max: 2
                 }
             },
             legend: {
