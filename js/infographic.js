@@ -210,7 +210,6 @@ $(document).ready(function() {
     NdataS13= [220, 224, 845, 6.3, 8.1]
 
     var engine = [NdataN11[0], NdataN17[0],NdataS7[0], NdataS13[0]]
-    console.log(engine)
     var speed= [NdataN11[1], NdataN17[1],NdataS7[1], NdataS13[1]]
     var weight= [NdataN11[2], NdataN17[2],NdataS7[2], NdataS13[2]]
     var len = [NdataN11[3], NdataN17[3],NdataS7[3], NdataS13[3]]
@@ -368,7 +367,7 @@ $(document).ready(function() {
                         display: false,
                     },
                 labels: [{
-                            render: 'label',
+                            render: label,
                             position: 'outside',
                             fontSize: 18,
                             fontStyle: 'bold',
