@@ -236,12 +236,6 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
         var dataN11= {
             labels: ["Engine", "Speed", "Max Take-off Weight", "Lenght", "Span"],
             datasets: [{
@@ -292,28 +286,40 @@ $(document).ready(function() {
                 options: optradar
             });
         }
+
+        //first plane
         planegraphfun(dataN11)
+        $('#planesimgcontainer').append('<img id="planeimg" src="css/planes/Nieuport11.png" width="100%">')
+
         $('input[type=radio][name=planes]').change(function() {
             switch ($(this).val()) {
                 case 'N11':
                     $('#planesstats').remove();
                     $('#planesstatscontainer').append('<canvas id="planesstats"><canvas>');
                     planegraphfun(dataN11)
+                    $('#planeimg').remove();
+                    $('#planesimgcontainer').append('<img id="planeimg" src="css/planes/Nieuport11.png" width="100%">')
                     break
                 case 'N17':
                     $('#planesstats').remove();
                     $('#planesstatscontainer').append('<canvas id="planesstats"><canvas>');
                     planegraphfun(dataN17)
+                    $('#planeimg').remove();
+                    $('#planesimgcontainer').append('<img id="planeimg" src="css/planes/Nieuport17.png" width="100%">')
                     break
                 case 'S7':
                     $('#planesstats').remove();
                     $('#planesstatscontainer').append('<canvas id="planesstats"><canvas>');
                     planegraphfun(dataS7)
+                    $('#planeimg').remove();
+                    $('#planesimgcontainer').append('<img id="planeimg" src="css/planes/SPADVII.png" width="100%">')
                     break
                 case 'S13':
                     $('#planesstats').remove();
                     $('#planesstatscontainer').append('<canvas id="planesstats"><canvas>');
                     planegraphfun(dataS13)
+                    $('#planeimg').remove();
+                    $('#planesimgcontainer').append('<img id="planeimg" src="css/planes/SPADXIII.png" width="100%">')
                     break
             }
         });
