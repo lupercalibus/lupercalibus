@@ -271,6 +271,8 @@ $(document).ready(function() {
                 enabled: false
            },
             scale: {
+                pointLabels :{
+                    fontStyle: "bold",
                 ticks: {
                     beginAtZero: true,
                     max: 2,
