@@ -237,6 +237,7 @@ $(document).ready(function() {
         var val_max = Math.max(my_array); // underscore max and min functions
         var val_min = Math.min(my_array);
         var new_val = ((val - val_min) / (val_max - val_min)).toFixed(2);
+        console.log(new_val)
         return new_val;
     }
 
