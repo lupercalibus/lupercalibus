@@ -236,7 +236,7 @@ $(document).ready(function() {
     function normalizeData(val, my_array) {
         var val_max = Math.max(my_array); // underscore max and min functions
         var val_min = Math.min(my_array);
-        var new_val = val == 0 ? 0 : ((val - val_min) / (val_max - val_min)).toFixed(2);
+        var new_val = ((val - val_min) / (val_max - val_min)).toFixed(2);
         return new_val;
     }
 
