@@ -237,28 +237,28 @@ $(document).ready(function() {
 
 
         var dataN11= {
-            labels: [["Engine", NdataN11[0]+ " hp"], ["Speed" , NdataN11[1] + " km/h"], ["Max Take-off Weight" , NdataN11[2] + " kg"], ["Lenght", NdataN11[3] + " m"] , ["Span", NdataN11[4] + " m"]],
+            labels: [["Engine", NdataN11[0]+ " hp"], ["Speed" , NdataN11[1] + " km/h"], ["Weight" , NdataN11[2] + " kg"], ["Lenght", NdataN11[3] + " m"] , ["Span", NdataN11[4] + " m"]],
             datasets: [{
                 label: "Nieuport XI",
                 data: newn11
             }]
         };
         var dataN17= {
-            labels: [["Engine", NdataN17[0]+ " hp"], ["Speed" , NdataN17[1] + " km/h"], ["Max Take-off Weight" , NdataN17[2] + " kg"], ["Lenght", NdataN17[3] + " m"] , ["Span", NdataN17[4] + " m"]],
+            labels: [["Engine", NdataN17[0]+ " hp"], ["Speed" , NdataN17[1] + " km/h"], ["Weight" , NdataN17[2] + " kg"], ["Lenght", NdataN17[3] + " m"] , ["Span", NdataN17[4] + " m"]],
             datasets: [{
                 label: "Nieuport XVII",
                 data: newn17
             }]
         };
         var dataS7= {
-            labels: [["Engine", NdataS7[0]+ " hp"], ["Speed" , NdataS7[1] + " km/h"], ["Max Take-off Weight" , NdataS7[2] + " kg"], ["Lenght", NdataS7[3] + " m"] , ["Span", NdataS7[4] + " m"]],
+            labels: [["Engine", NdataS7[0]+ " hp"], ["Speed" , NdataS7[1] + " km/h"], ["Weight" , NdataS7[2] + " kg"], ["Lenght", NdataS7[3] + " m"] , ["Span", NdataS7[4] + " m"]],
             datasets: [{
                 label: "Spad VII",
                 data: news7
             }]
         };
         var dataS13= {
-            labels: [["Engine", NdataS13[0]+ " hp"], ["Speed" , NdataS13[1] + " km/h"], ["Max Take-off Weight" , NdataS13[2] + " kg"], ["Lenght", NdataS13[3] + " m"] , ["Span", NdataS13[4] + " m"]],
+            labels: [["Engine", NdataS13[0]+ " hp"], ["Speed" , NdataS13[1] + " km/h"], ["Weight" , NdataS13[2] + " kg"], ["Lenght", NdataS13[3] + " m"] , ["Span", NdataS13[4] + " m"]],
             datasets: [{
                 label: "Spad XIII",
                 data: news13
