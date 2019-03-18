@@ -363,6 +363,18 @@ $(document).ready(function() {
               legend: {
                 display: false
             },
+                plugins: {
+                    outlabels: {
+                        display: false,
+                    },
+                labels: [{
+                            render: 'label',
+                            position: 'outside',
+                            //fontSize: 18,
+                            //fontStyle: 'bold',
+                            //fontColor: '#000'
+                        }]
+                }
             }
         });
 
