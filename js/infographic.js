@@ -362,7 +362,7 @@ $(document).ready(function() {
               circumference: 1 * Math.PI,
               legend: {
                 display: false
-            },
+                },
                 plugins: {
                     outlabels: {
                         display: false,
@@ -370,9 +370,15 @@ $(document).ready(function() {
                 labels: [{
                             render: 'label',
                             position: 'outside',
-                            //fontSize: 18,
-                            //fontStyle: 'bold',
-                            //fontColor: '#000'
+                            fontSize: 18,
+                            fontStyle: 'bold',
+                            fontColor: '#000'
+                        },
+                        {
+                            //render: 'value',
+                            fontSize: 18,
+                            fontStyle: 'bold',
+                            fontColor: '#fff'
                         }]
                 }
             }
