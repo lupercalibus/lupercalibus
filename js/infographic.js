@@ -333,8 +333,8 @@ $(document).ready(function() {
 
         var data = {
             labels: [
-                ["Defense","Victories over Italian territories"],
-                ["Raid","Victories over Enemy territories"],
+                "Defense Victories over Italian territories",
+                "Raid Victories over Enemy territories"
             ],
             datasets: [
                 {
@@ -367,7 +367,7 @@ $(document).ready(function() {
                         display: false,
                     },
                 labels: [{
-                            render: label,
+                            render: "label",
                             position: 'outside',
                             fontSize: 18,
                             fontStyle: 'bold',
