@@ -223,7 +223,7 @@ $(document).ready(function() {
         };
     }
     
-    console.log(eninge.map(normalize(80, 220)));
+    console.log(engine.map(normalize(80, 220)));
 
 
 
