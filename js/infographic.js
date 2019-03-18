@@ -379,6 +379,81 @@ $(document).ready(function() {
             }
         });
 
+        //WINGMEN
+        var optionwing = {
+            responsiveAnimationDuration: 1000,
+            responsive: true,
+            elements: {
+                /* center: {
+                    text: "a",
+                    color: '#000000', // Default is #000000
+                    fontStyle: 'Planes', // Default is Arial
+                    fontSize: 40,
+                    sidePadding: 20, // Defualt is 20 (as a percentage)
+                } */
+                imgcenter: {
+                    imgsrc: 'css/plane.png',
+                }
+            },
+            plugins: {
+                outlabels: {
+                    display: false,
+                },
+                labels: [{
+                    render: 'label',
+                    position: 'outside',
+                    fontSize: 14,
+                    fontStyle: 'bold',
+                    fontColor: '#000'
+                },
+                {
+                    render: 'value',
+                    fontSize: 16,
+                    fontStyle: 'bold',
+                    fontColor: '#fff'
+                }
+            ]
+            },
+            legend: {
+                display: false
+            }
+        };
+    
+            var datwing = {
+                labels: ['Solo Win', 'Giuliano Parvis', 'Fulco Ruffo di Calabria', 'Goffredo Gorini', 'Pier Ruggero Piccio', "Mario D'Urso", 'Luigi Olivari', 'Guido Nardini', 'Giulio Poli', 'Giovanni Sabelli', 'Gastone Novelli', 'Gaetano Aliperta', 'Flavio Torello Baracchini', 'Attilio Imolesi', 'Alessandro Buzio'],          
+                datasets: [{
+                    data: [17, 5, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                },{
+                    data: [17, 5, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                     backgroundColor: [
+                        "rgba(255,0,0,1)",
+                        "rgba(255,0,0,1)",
+                        "rgba(255,0,0,1)",
+                        "rgba(255,0,0,1)",
+                        "rgba(255,0,0,1)",
+                        "rgba(255,0,0,1)",
+                        "rgba(255,0,0,1)",
+                        "rgba(255,0,0,1)",
+                        "rgba(255,0,0,1)",
+                        "rgba(255,0,0,1)",
+                        "rgba(255,0,0,1)",
+                        "rgba(255,0,0,1)",
+                        "rgba(255,0,0,1)",
+                        "rgba(255,0,0,1)",
+                        "rgba(255,0,0,1)"
+
+                    ]
+                },
+            
+            ]
+            };
+    
+        var wingraph = document.getElementById("wingmengraph").getContext("2d");
+        new Chart(wingraph, {
+            type: 'doughnut',
+            data: datwing,
+            options: optionwing
+        });
 
 
 
