@@ -219,11 +219,25 @@ $(document).ready(function() {
     function normalize(min, max) {
         var delta = max - min;
         return function (val) {
-            return (val - min) / delta;
+            return (parseFloat((((val - min) / delta)+1).toFixed(2)));
         };
     }
     
-    console.log(engine.map(normalize(80, 220)));
+    engine = (engine.map(normalize(80, 220)));
+    speed = (speed.map(normalize(155, 224)));
+    weight = (weight.map(normalize(408, 845)));
+    len = (len.map(normalize(5.8, 6.3)));
+    span = (span.map(normalize(7.55, 8.2)));
+
+    newn11 = [engine[0], speed[0], weight[0], len[0], span[0]]
+    newn17 = [engine[1], speed[1], weight[1], len[1], span[1]]
+    news7 = [engine[2], speed[2], weight[2], len[2], span[2]]
+    news13 = [engine[3], speed[3], weight[3], len[3], span[3]]
+
+
+
+
+
 
 
 
@@ -232,28 +246,28 @@ $(document).ready(function() {
             labels: ["Engine", "Speed", "Max Take-off Weight", "Lenght", "Span"],
             datasets: [{
                 label: "Nieuport XI",
-                data: [80, 155, 408, 5.8, 7.55]
+                data: newn11
             }]
         };
         var dataN17= {
             labels: ["Engine", "Speed", "Max Take-off Weight", "Lenght", "Span"],
             datasets: [{
                 label: "Nieuport XVII",
-                data: [110, 170, 560, 5.96, 8.2]
+                data: newn17
             }]
         };
         var dataS7= {
             labels: ["Engine", "Speed", "Max Take-off Weight", "Lenght", "Span"],
             datasets: [{
                 label: "Spad VII",
-                data: [180, 192, 740, 6.08, 7.8]
+                data: news7
             }]
         };
         var dataS13= {
             labels: ["Engine", "Speed", "Max Take-off Weight", "Lenght", "Span"],
             datasets: [{
                 label: "Spad XIII",
-                data: [220, 224, 845, 6.3, 8.1]
+                data: news13
             }]
         };
 
