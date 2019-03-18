@@ -224,6 +224,7 @@ $(document).ready(function() {
         dat = normalizeData(x, array)
         result.push(dat)
     }
+    console.log(result)
     return result
     }
 
