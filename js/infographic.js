@@ -237,7 +237,7 @@ $(document).ready(function() {
 
 
         var dataN11= {
-            labels: ["Engine", "Speed", "Max Take-off Weight", "Lenght", "Span"],
+            labels: ["Engine" + NdataN11[0], "Speed" + NdataN11[1], "Max Take-off Weight" + NdataN11[2], "Lenght" + NdataN11[3] , "Span" + NdataN11[4]],
             datasets: [{
                 label: "Nieuport XI",
                 data: newn11
@@ -267,6 +267,9 @@ $(document).ready(function() {
 
         var optradar = {
             responsiveAnimationDuration: 1000,
+            tooltips: {
+                enabled: false
+           },
             scale: {
                 ticks: {
                     beginAtZero: true,
