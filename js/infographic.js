@@ -209,11 +209,11 @@ $(document).ready(function() {
     NdataS7= [180, 192, 740, 6.08, 7.8]
     NdataS13= [220, 224, 845, 6.3, 8.1]
 
-    var engine= engine.push(NdataN11[0], NdataN17[0],NdataS7[0], NdataS13[0])
-    var speed= speed.push(NdataN11[1], NdataN17[1],NdataS7[1], NdataS13[1])
-    var weight= weight.push(NdataN11[2], NdataN17[2],NdataS7[2], NdataS13[2])
-    var len = len.push(NdataN11[3], NdataN17[3],NdataS7[3], NdataS13[3])
-    var span = span.push(NdataN11[4], NdataN17[4],NdataS7[4], NdataS13[4])
+    var engine = [NdataN11[0], NdataN17[0],NdataS7[0], NdataS13[0]]
+    var speed= [NdataN11[1], NdataN17[1],NdataS7[1], NdataS13[1]]
+    var weight= [NdataN11[2], NdataN17[2],NdataS7[2], NdataS13[2]]
+    var len = [NdataN11[3], NdataN17[3],NdataS7[3], NdataS13[3]]
+    var span = [NdataN11[4], NdataN17[4],NdataS7[4], NdataS13[4]]
 
     console.log("nieuport11: " + [normalize(engine)[0], normalize(speed)[0], normalize(weight)[0], normalize(len)[0], normalize(span)[0]])
 
