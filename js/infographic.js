@@ -244,21 +244,21 @@ $(document).ready(function() {
             }]
         };
         var dataN17= {
-            labels: ["Engine", "Speed", "Max Take-off Weight", "Lenght", "Span"],
+            labels: [["Engine", NdataN17[0]+ " hp"], ["Speed" , NdataN17[1] + " km/h"], ["Max Take-off Weight" , NdataN17[2] + " kg"], ["Lenght", NdataN17[3] + " m"] , ["Span", NdataN17[4] + " m"]],
             datasets: [{
                 label: "Nieuport XVII",
                 data: newn17
             }]
         };
         var dataS7= {
-            labels: ["Engine", "Speed", "Max Take-off Weight", "Lenght", "Span"],
+            labels: [["Engine", NdataS7[0]+ " hp"], ["Speed" , NdataS7[1] + " km/h"], ["Max Take-off Weight" , NdataS7[2] + " kg"], ["Lenght", NdataS7[3] + " m"] , ["Span", NdataS7[4] + " m"]],
             datasets: [{
                 label: "Spad VII",
                 data: news7
             }]
         };
         var dataS13= {
-            labels: ["Engine", "Speed", "Max Take-off Weight", "Lenght", "Span"],
+            labels: [["Engine", NdataS13[0]+ " hp"], ["Speed" , NdataS13[1] + " km/h"], ["Max Take-off Weight" , NdataS13[2] + " kg"], ["Lenght", NdataS13[3] + " m"] , ["Span", NdataS13[4] + " m"]],
             datasets: [{
                 label: "Spad XIII",
                 data: news13
