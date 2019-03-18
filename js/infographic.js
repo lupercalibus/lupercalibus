@@ -330,6 +330,42 @@ $(document).ready(function() {
             }
         });
 
+//Trench graph
+
+        var data = {
+            labels: [
+                ["Defense","Victories over Italian territories"],
+                ["Raid","Victories over Enemy territories"],
+            ],
+            datasets: [
+                {
+                    data: [15, 19],
+                    backgroundColor: [
+                        "#FF6384",
+                        "#36A2EB"
+                    ],
+                    hoverBackgroundColor: [
+                        "#FF6384",
+                        "#36A2EB"
+                    ]
+                }]
+        };
+        
+        var ctx = document.getElementById("trenchgraph");
+        
+        // And for a doughnut chart
+        var myDoughnutChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: data,
+            options: {
+                rotation: 1 * Math.PI,
+              circumference: 1 * Math.PI,
+              legend: {
+                display: false
+            },
+            }
+        });
+
 
 
 
