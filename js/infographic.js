@@ -276,7 +276,8 @@ $(document).ready(function() {
             scale: {
                 ticks: {
                     beginAtZero: true,
-                    max: 2
+                    max: 2,
+                    display: false
                 }
             },
             legend: {
