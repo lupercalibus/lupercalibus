@@ -237,7 +237,7 @@ $(document).ready(function() {
 
 
         var dataN11= {
-            labels: [["Engine", NdataN11[0]], ["Speed" , NdataN11[1]], ["Max Take-off Weight" , NdataN11[2]], ["Lenght", NdataN11[3]] , ["Span", NdataN11[4]]],
+            labels: [["Engine", NdataN11[0]+ " hp"], ["Speed" , NdataN11[1] + " km/h"], ["Max Take-off Weight" , NdataN11[2] + " kg"], ["Lenght", NdataN11[3] + " m"] , ["Span", NdataN11[4] + " m"]],
             datasets: [{
                 label: "Nieuport XI",
                 data: newn11
