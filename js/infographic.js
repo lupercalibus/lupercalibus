@@ -203,33 +203,69 @@ $(document).ready(function() {
     });
 
 
+    //normalizzazione.js
+    NdataN11= [80, 155, 408, 5.8, 7.55]
+    NdataN17= [110, 170, 560, 5.96, 8.2]
+    NdataS7= [180, 192, 740, 6.08, 7.8]
+    NdataS13= [220, 224, 845, 6.3, 8.1]
+
+    var engine= engine.push(NdataN11[0], NdataN17[0],NdataS7[0], NdataS13[0])
+    var speed= speed.push(NdataN11[1], NdataN17[1],NdataS7[1], NdataS13[1])
+    var weight= weight.push(NdataN11[2], NdataN17[2],NdataS7[2], NdataS13[2])
+    var len = len.push(NdataN11[3], NdataN17[3],NdataS7[3], NdataS13[3])
+    var span = span.push(NdataN11[4], NdataN17[4],NdataS7[4], NdataS13[4])
+
+    console.log("nieuport11: " + [normalize(engine)[0], normalize(speed)[0], normalize(weight)[0], normalize(len)[0], normalize(span)[0]])
+
+    
+    function normalize(array){
+    var result = []
+    for (var x in array){
+        dat = normalizeData(x, array)
+        result.push(dat)
+    }
+    return result
+    }
+
+
+
+
+
+    function normalizeData(val, my_array) {
+        var val_max = _.max(my_array); // underscore max and min functions
+        var val_min = _.min(my_array);
+        var new_val = val == 0 ? 0 : ((val - val_min) / (val_max - val_min)).toFixed(2);
+        return new_val;
+    }
+
+
 
         var dataN11= {
-            labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
+            labels: ["Engine", "Speed", "Max Take-off Weight", "Lenght", "Span"],
             datasets: [{
-                label: "Risultati Camera Zona",
-                data: [1, 2, 3, 4, 5, 6]
+                label: "Nieuport XI",
+                data: [80, 155, 408, 5.8, 7.55]
             }]
         };
         var dataN17= {
-            labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
+            labels: ["Engine", "Speed", "Max Take-off Weight", "Lenght", "Span"],
             datasets: [{
-                label: "Risultati Camera Zona",
-                data: [2, 2, 3, 4, 5, 6]
+                label: "Nieuport XVII",
+                data: [110, 170, 560, 5.96, 8.2]
             }]
         };
         var dataS7= {
-            labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
+            labels: ["Engine", "Speed", "Max Take-off Weight", "Lenght", "Span"],
             datasets: [{
-                label: "Risultati Camera Zona",
-                data: [3, 2, 3, 4, 5, 6]
+                label: "Spad VII",
+                data: [180, 192, 740, 6.08, 7.8]
             }]
         };
         var dataS13= {
-            labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali"],
+            labels: ["Engine", "Speed", "Max Take-off Weight", "Lenght", "Span"],
             datasets: [{
-                label: "Risultati Camera Zona",
-                data: [4, 2, 3, 4, 5, 6]
+                label: "Spad XIII",
+                data: [220, 224, 845, 6.3, 8.1]
             }]
         };
 
@@ -237,12 +273,11 @@ $(document).ready(function() {
             responsiveAnimationDuration: 1000,
             scale: {
                 ticks: {
-                    beginAtZero: true,
-                    max: 35
+                    beginAtZero: true
                 }
             },
             legend: {
-                display: true
+                display: false
             },
         };
         function planegraphfun(datirad) {
