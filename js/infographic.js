@@ -216,30 +216,15 @@ $(document).ready(function() {
     var len = [NdataN11[3], NdataN17[3],NdataS7[3], NdataS13[3]]
     var span = [NdataN11[4], NdataN17[4],NdataS7[4], NdataS13[4]]
 
-    console.log("nieuport11: " + [normalize(engine)[0], normalize(speed)[0], normalize(weight)[0], normalize(len)[0], normalize(span)[0]])
-
+    function normalize(min, max) {
+        var delta = max - min;
+        return function (val) {
+            return (val - min) / delta;
+        };
+    }
     
-    function normalize(array){
-    var result = []
-    for (var x in array){
-        dat = normalizeData(x, array)
-        result.push(dat)
-    }
-    console.log(result)
-    return result
-    }
+    console.log(eninge.map(normalize(80, 220)));
 
-
-
-
-
-    function normalizeData(val, my_array) {
-        var val_max = Math.max(my_array); // underscore max and min functions
-        var val_min = Math.min(my_array);
-        var new_val = ((val - val_min) / (val_max - val_min)).toFixed(2);
-        console.log(new_val)
-        return new_val;
-    }
 
 
 
