@@ -457,7 +457,7 @@ $(document).ready(function() {
               
               $('#words').jQCloud(words, {
                 width: 500,
-                height: 350
+                height: 500
               });
 
 
