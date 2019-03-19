@@ -427,7 +427,7 @@ $(document).ready(function() {
                 window.dispatchEvent(resizeEvent);
 
 
-                var optionenemy = {
+                var optionwing = {
                     responsiveAnimationDuration: 1000,
                     responsive: true,
                     elements: {
