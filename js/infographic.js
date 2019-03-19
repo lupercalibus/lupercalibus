@@ -382,9 +382,9 @@ $(document).ready(function() {
         //WINGMEN
       
             var datwing = {
-                labels: ['Giuliano Parvis', 'Fulco Ruffo di Calabria', 'Goffredo Gorini', 'Pier Ruggero Piccio', "Mario D'Urso", 'Luigi Olivari', 'Guido Nardini', 'Giulio Poli', 'Giovanni Sabelli', 'Gastone Novelli', 'Gaetano Aliperta', 'Flavio Torello Baracchini', 'Attilio Imolesi', 'Alessandro Buzio'],          
+                labels: ['Giuliano Parvis', 'Fulco Ruffo di Calabria', 'Goffredo Gorini'],
                 datasets: [{
-                    data: [5, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                    data: [5, 3, 2],
                 }
             ]
             };
@@ -426,6 +426,44 @@ $(document).ready(function() {
               var resizeEvent = new Event('resize');
                 window.dispatchEvent(resizeEvent);
 
+
+                var optionenemy = {
+                    responsiveAnimationDuration: 1000,
+                    responsive: true,
+                    elements: {
+                        imgcenter: {
+                            imgsrc: 'css/Cavallino.png',
+                        }
+                    },
+                    plugins: {
+                        outlabels: {
+                            display: false,
+                        },
+                        labels: [{
+                            render: 'label',
+                            position: 'outside',
+                            fontSize: 14,
+                            fontStyle: 'bold',
+                            fontColor: '#000'
+                        },
+                        {
+                            //render: 'value',
+                            fontSize: 16,
+                            fontStyle: 'bold',
+                            fontColor: '#fff'
+                        }
+                    ]
+                    },
+                    legend: {
+                        display: false
+                    }
+                };
+                var wingraph = document.getElementById("wingraph").getContext("2d");
+                new Chart(wingraph, {
+                    type: 'doughnut',
+                    data: datwing,
+                    options: optionwing
+                });
 
 
 
