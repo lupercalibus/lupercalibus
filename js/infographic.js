@@ -416,6 +416,11 @@ $(document).ready(function() {
                 edges: edges
               };
               var options = {
+                nodes:{
+                    font: {
+                        size: 16
+                    }
+                },
                 interaction:{
                     dragNodes:false,
                     dragView: false,
