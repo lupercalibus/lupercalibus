@@ -417,8 +417,8 @@ $(document).ready(function() {
               };
               var options = {
                 interaction:{
-                    dragNodes:true,
-                    dragView: true,
+                    dragNodes:false,
+                    dragView: false,
                 },
                  "physics": {
                    "barnesHut": {
