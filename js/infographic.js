@@ -437,6 +437,12 @@ $(document).ready(function() {
               network.fit()
               network.stabilize(2000)
 
+              window.onresize = function() { 
+                  network.fit()
+                  network.stabilize(2000)
+              }
+
+
 
 
 })
