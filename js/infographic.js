@@ -426,6 +426,7 @@ $(document).ready(function() {
                  }
                };
               var network = new vis.Network(container, data, options);
+              network.fit()
 
 
 
