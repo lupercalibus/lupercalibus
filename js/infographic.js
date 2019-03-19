@@ -420,7 +420,7 @@ $(document).ready(function() {
                     shape: 'box',
                     margin: 10,
                     font: {
-                        size: 18
+                        size: 20
                     }
                 },
                 interaction:{
