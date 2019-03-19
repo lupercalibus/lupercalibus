@@ -389,14 +389,14 @@ $(document).ready(function() {
             ]
             };
     
-            var nodes = new vis.DataSet([{id: 1, label: 'F. Baracca'}, {id: 2, label: 'G. Parvis'}, 
-            {id: 3, label: 'F. Ruffo'}, 
-            {id: 4, label: 'G. Gorini'}, {id: 5, label: 'P. R. Piccio'}, 
-            {id: 6, label: "M. D'Urso"}, {id: 7, label: 'L. Olivari'},
-             {id: 8, label: 'G. Nardini'}, {id: 9, label: 'G. Poli'},
-              {id: 10, label: 'G. Sabelli'}, {id: 11, label: 'G. Novelli'},
-               {id: 12, label: 'G. Aliperta'}, {id: 13, label: 'F. T. Baracchini'},
-                {id: 14, label: 'A. Imolesi'}, {id: 15, label: 'A. Buzio'}]);
+            var nodes = new vis.DataSet([{id: 1, label: 'F. Baracca', image: "css/air.svg.png"}, {id: 2, label: 'G. Parvis', image: "css/air.svg.png"}, 
+            {id: 3, label: 'F. Ruffo', image: "css/air.svg.png"}, 
+            {id: 4, label: 'G. Gorini', image: "css/air.svg.png"}, {id: 5, label: 'P. R. Piccio', image: "css/air.svg.png"}, 
+            {id: 6, label: "M. D'Urso", image: "css/air.svg.png"}, {id: 7, label: 'L. Olivari', image: "css/air.svg.png"},
+             {id: 8, label: 'G. Nardini', image: "css/air.svg.png"}, {id: 9, label: 'G. Poli', image: "css/air.svg.png"},
+              {id: 10, label: 'G. Sabelli', image: "css/air.svg.png"}, {id: 11, label: 'G. Novelli', image: "css/air.svg.png"},
+               {id: 12, label: 'G. Aliperta', image: "css/air.svg.png"}, {id: 13, label: 'F. T. Baracchini', image: "css/air.svg.png"},
+                {id: 14, label: 'A. Imolesi', image: "css/air.svg.png"}, {id: 15, label: 'A. Buzio', image: "css/air.svg.png"}]);
             
               // create an array with edges
               var edges = new vis.DataSet([{from: 1, to: 2, value: 5},
@@ -417,8 +417,6 @@ $(document).ready(function() {
               };
               var options = {
                 nodes:{
-                    shape: 'box',
-                    margin: 10,
                     font: {
                         size: 20
                     }
