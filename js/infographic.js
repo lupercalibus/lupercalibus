@@ -380,45 +380,7 @@ $(document).ready(function() {
         });
 
         //WINGMEN
-        var optionwing = {
-            responsiveAnimationDuration: 1000,
-            responsive: true,
-            elements: {
-                /* center: {
-                    text: "a",
-                    color: '#000000', // Default is #000000
-                    fontStyle: 'Planes', // Default is Arial
-                    fontSize: 40,
-                    sidePadding: 20, // Defualt is 20 (as a percentage)
-                } */
-                imgcenter: {
-                    imgsrc: 'css/plane.png',
-                }
-            },
-            plugins: {
-                outlabels: {
-                    display: false,
-                },
-                labels: [{
-                    render: 'label',
-                    position: 'outside',
-                    fontSize: 14,
-                    fontStyle: 'bold',
-                    fontColor: '#000'
-                },
-                {
-                    render: 'value',
-                    fontSize: 16,
-                    fontStyle: 'bold',
-                    fontColor: '#fff'
-                }
-            ]
-            },
-            legend: {
-                display: false
-            }
-        };
-    
+      
             var datwing = {
                 labels: ['Giuliano Parvis', 'Fulco Ruffo di Calabria', 'Goffredo Gorini', 'Pier Ruggero Piccio', "Mario D'Urso", 'Luigi Olivari', 'Guido Nardini', 'Giulio Poli', 'Giovanni Sabelli', 'Gastone Novelli', 'Gaetano Aliperta', 'Flavio Torello Baracchini', 'Attilio Imolesi', 'Alessandro Buzio'],          
                 datasets: [{
@@ -427,12 +389,32 @@ $(document).ready(function() {
             ]
             };
     
-        var wingraph = document.getElementById("wingmengraph").getContext("2d");
-        new Chart(wingraph, {
-            type: 'doughnut',
-            data: datwing,
-            options: optionwing
-        });
+            var nodes = new vis.DataSet([{id: 1, label: 'None'}, {id: 2, label: 'Giuliano Parvis'}, 
+            {id: 3, label: 'Fulco Ruffo di Calabria'}, 
+            {id: 4, label: 'Goffredo Gorini'}, {id: 5, label: 'Pier Ruggero Piccio'}, 
+            {id: 6, label: "Mario D'Urso"}, {id: 7, label: 'Luigi Olivari'},
+             {id: 8, label: 'Guido Nardini'}, {id: 9, label: 'Giulio Poli'},
+              {id: 10, label: 'Giovanni Sabelli'}, {id: 11, label: 'Gastone Novelli'},
+               {id: 12, label: 'Gaetano Aliperta'}, {id: 13, label: 'Flavio Torello Baracchini'},
+                {id: 14, label: 'Attilio Imolesi'}, {id: 15, label: 'Alessandro Buzio'}]);
+            
+              // create an array with edges
+              var edges = new vis.DataSet([
+                {from: 1, to: 3},
+                {from: 1, to: 2},
+                {from: 2, to: 4},
+                {from: 2, to: 5},
+                {from: 3, to: 3}
+              ]);
+            
+              // create a network
+              var container = document.getElementById('wingmengraph');
+              var data = {
+                nodes: nodes,
+                //edges: edges
+              };
+              var options = {};
+              var network = new vis.Network(container, data, options);
 
 
 
