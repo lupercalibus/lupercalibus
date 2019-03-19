@@ -429,7 +429,7 @@ $(document).ready(function() {
                 physics:{
                     enabled: true,
                     barnesHut: {
-                        avoidOverlap: 0.2
+                        avoidOverlap: 0.5
                     }
                  }
                };
