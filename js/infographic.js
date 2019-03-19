@@ -423,8 +423,7 @@ $(document).ready(function() {
                 width: "100%",
                 height: "100%"
               });
-              new_words =[]
-              $('#words').jQCloud('update', new_words);
+              $('#words').jQCloud('update', words);
 
 
 
