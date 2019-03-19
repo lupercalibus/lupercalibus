@@ -417,6 +417,8 @@ $(document).ready(function() {
               };
               var options = {
                 nodes:{
+                    shape: 'box',
+                    margin: 10,
                     font: {
                         size: 18
                     }
