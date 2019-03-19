@@ -422,8 +422,8 @@ $(document).ready(function() {
                     }
                 },
                 interaction:{
-                    dragNodes:false,
-                    dragView: false,
+                    dragNodes:true,
+                    dragView: true,
                     zoomView: true
                 },
                 physics:{
