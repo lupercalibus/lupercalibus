@@ -399,6 +399,11 @@ $(document).ready(function() {
             beginAtZero: true
         }
         }],
+        xAxes: [{
+            ticks: {
+                beginAtZero: true
+            }
+            }],
         legend: {
             display: false
         },
