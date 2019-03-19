@@ -418,7 +418,7 @@ $(document).ready(function() {
               var options = {
                  "physics": {
                    "barnesHut": {
-                     "avoidOverlap": 1
+                     "avoidOverlap": 0.5
                    },
                  }
                };
