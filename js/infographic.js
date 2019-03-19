@@ -416,6 +416,10 @@ $(document).ready(function() {
                 edges: edges
               };
               var options = {
+                interaction:{
+                    dragNodes:true,
+                    dragView: true,
+                },
                  "physics": {
                    "barnesHut": {
                      "avoidOverlap": 0.2
