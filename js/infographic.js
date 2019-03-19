@@ -456,6 +456,7 @@ $(document).ready(function() {
                                      {text: 'subito', weight: 6}];
               
               $('#words').jQCloud(words, {
+                autoResize: true,
                 width: 500,
                 height: 500
               });
