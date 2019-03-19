@@ -394,16 +394,11 @@ $(document).ready(function() {
         tooltips: {
             enabled: false
        },
-        scale: {
-            pointLabels :{
-                fontStyle: "bold",
-            },
-            ticks: {
-                beginAtZero: true,
-                max: 2,
-                display: false
-            }
-        },
+       xAxes: [{
+        ticks: {
+            beginAtZero: true
+        }
+        }],
         legend: {
             display: false
         },
