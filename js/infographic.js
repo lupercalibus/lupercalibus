@@ -422,7 +422,10 @@ $(document).ready(function() {
                     zoomView: false
                 },
                 physics:{
-                    enabled: false
+                    enabled: false,
+                    barnesHut: {
+                        avoidOverlap: 0.5
+                    }
                  }
                };
               var network = new vis.Network(container, data, options);
