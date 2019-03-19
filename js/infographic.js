@@ -389,14 +389,14 @@ $(document).ready(function() {
             ]
             };
     
-            var nodes = new vis.DataSet([{id: 1, label: 'Francesco Baracca'}, {id: 2, label: 'Giuliano Parvis'}, 
-            {id: 3, label: 'Fulco Ruffo di Calabria'}, 
-            {id: 4, label: 'Goffredo Gorini'}, {id: 5, label: 'Pier Ruggero Piccio'}, 
-            {id: 6, label: "Mario D'Urso"}, {id: 7, label: 'Luigi Olivari'},
-             {id: 8, label: 'Guido Nardini'}, {id: 9, label: 'Giulio Poli'},
-              {id: 10, label: 'Giovanni Sabelli'}, {id: 11, label: 'Gastone Novelli'},
-               {id: 12, label: 'Gaetano Aliperta'}, {id: 13, label: 'Flavio Torello Baracchini'},
-                {id: 14, label: 'Attilio Imolesi'}, {id: 15, label: 'Alessandro Buzio'}]);
+            var nodes = new vis.DataSet([{id: 1, label: 'F. Baracca'}, {id: 2, label: 'G. Parvis'}, 
+            {id: 3, label: 'F. Ruffo'}, 
+            {id: 4, label: 'G. Gorini'}, {id: 5, label: 'P. R. Piccio'}, 
+            {id: 6, label: "M. D'Urso"}, {id: 7, label: 'L. Olivari'},
+             {id: 8, label: 'G. Nardini'}, {id: 9, label: 'G. Poli'},
+              {id: 10, label: 'G. Sabelli'}, {id: 11, label: 'G. Novelli'},
+               {id: 12, label: 'G. Aliperta'}, {id: 13, label: 'F. T. Baracchini'},
+                {id: 14, label: 'A. Imolesi'}, {id: 15, label: 'A. Buzio'}]);
             
               // create an array with edges
               var edges = new vis.DataSet([{from: 1, to: 2, value: 5},
