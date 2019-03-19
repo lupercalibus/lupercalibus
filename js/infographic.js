@@ -457,8 +457,8 @@ $(document).ready(function() {
               
               $('#words').jQCloud(words, {
                 autoResize: true,
-                width: 500,
-                height: 500
+                width: "100%",
+                height: "100%"
               });
 
 
