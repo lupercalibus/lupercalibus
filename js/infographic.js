@@ -378,4 +378,57 @@ $(document).ready(function() {
                 }
             }
         });
+
+        //WINGMEN
+      
+            var datwing = {
+                labels: ['Giuliano Parvis', 'Fulco Ruffo di Calabria', 'Goffredo Gorini', 'Pier Ruggero Piccio', "Mario D'Urso", 'Luigi Olivari', 'Guido Nardini', 'Giulio Poli', 'Giovanni Sabelli', 'Gastone Novelli', 'Gaetano Aliperta', 'Flavio Torello Baracchini', 'Attilio Imolesi', 'Alessandro Buzio'],          
+                datasets: [{
+                    data: [5, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                }
+            ]
+            };
+    
+            var nodes = new vis.DataSet([{id: 1, label: 'F. Baracca',shape: 'circularImage', image: "css/Cavallino.png"}, {id: 2, label: 'G. Parvis',shape: 'circularImage', image: "css/air.svg.png"}, 
+            {id: 3, label: 'F. Ruffo',shape: 'circularImage', image: "css/air.svg.png"}, 
+            {id: 4, label: 'G. Gorini',shape: 'circularImage', image: "css/air.svg.png"}]);
+            
+              // create an array with edges
+              var edges = new vis.DataSet([{from: 1, to: 2, value: 5, label: '5 victories'},
+                {from: 1, to: 3, value: 3, label: '3 victories'}, {from: 1, to: 4, value: 2, label: '2 victories'}]
+             );
+            
+              // create a network
+              var container = document.getElementById('wingmengraph');
+              var data = {
+                nodes: nodes,
+                edges: edges
+              };
+              var options = {
+                nodes:{
+                    font: {
+                        size: 20
+                    }
+                },
+                interaction:{
+                    dragNodes:true,
+                    dragView: true,
+                    zoomView: true
+                },
+                physics:{
+                    enabled: true,
+                 }
+               };
+              var network = new vis.Network(container, data, options);
+              network.fit()
+              network.stabilize(1)
+
+              window.onresize = function() { 
+                  network.fit()
+                  network.stabilize(1)
+              }
+
+
+
+
 })
