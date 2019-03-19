@@ -389,7 +389,7 @@ $(document).ready(function() {
             ]
             };
     
-            var nodes = new vis.DataSet([{id: 1, label: 'F. Baracca',shape: 'circularImage', image: "css/air.svg.png"}, {id: 2, label: 'G. Parvis',shape: 'circularImage', image: "css/air.svg.png"}, 
+            var nodes = new vis.DataSet([{id: 1, label: 'F. Baracca',shape: 'circularImage', image: "css/Cavallino.png"}, {id: 2, label: 'G. Parvis',shape: 'circularImage', image: "css/air.svg.png"}, 
             {id: 3, label: 'F. Ruffo',shape: 'circularImage', image: "css/air.svg.png"}, 
             {id: 4, label: 'G. Gorini',shape: 'circularImage', image: "css/air.svg.png"}, {id: 5, label: 'P. R. Piccio',shape: 'circularImage', image: "css/air.svg.png"}, 
             {id: 6, label: "M. D'Urso",shape: 'circularImage', image: "css/air.svg.png"}, {id: 7, label: 'L. Olivari',shape: 'circularImage', image: "css/air.svg.png"},
