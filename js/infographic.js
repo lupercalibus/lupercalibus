@@ -447,7 +447,7 @@ $(document).ready(function() {
                             fontColor: '#000'
                         },
                         {
-                            //render: 'value',
+                            render: 'value',
                             fontSize: 16,
                             fontStyle: 'bold',
                             fontColor: '#fff'
