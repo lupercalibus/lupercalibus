@@ -424,23 +424,23 @@ $(document).ready(function() {
                 interaction:{
                     dragNodes:false,
                     dragView: false,
-                    zoomView: false
+                    zoomView: true
                 },
                 physics:{
                     enabled: true,
                     barnesHut: {
-                        avoidOverlap: 0.5
+                        avoidOverlap: 0.3
                     }
                  }
                };
-              //var network = new vis.Network(container, data, options);
-              //network.fit()
-              //network.stabilize(1)
+              var network = new vis.Network(container, data, options);
+              network.fit()
+              network.stabilize(1)
 
-              //window.onresize = function() { 
-              //    network.fit()
-              //    network.stabilize(1)
-             // }
+              window.onresize = function() { 
+                  network.fit()
+                  network.stabilize(1)
+              }
 
 
 
