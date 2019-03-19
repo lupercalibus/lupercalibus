@@ -455,7 +455,10 @@ $(document).ready(function() {
                                     {text: 'ali', weight: 6},
                                      {text: 'subito', weight: 6}];
               
-              $('#words').jQCloud(words);
+              $('#words').jQCloud(words, {
+                width: 500,
+                height: 350
+              });
 
 
 
