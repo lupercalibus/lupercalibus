@@ -381,68 +381,48 @@ $(document).ready(function() {
 
         //WINGMEN
       
-    var datwing = {
-        datasets: [
-                {label: 'Giuliano Parvis', data: 5, //backgroundColor': 'ciaoooo'
-                },
-                 {label: 'Fulco Ruffo di Calabria', data: 3, //backgroundColor': 'ciaoooo'
-                 },
-                  {label: 'Goffredo Gorini', data: 2, //backgroundColor': 'ciaoooo'
-                  },
-                   {label: 'Pier Ruggero Piccio', data: 1, //backgroundColor': 'ciaoooo'
-                   },
-                    {label: "Mario D'Urso", data: 1, //backgroundColor': 'ciaoooo'
-                    },
-                     {label: 'Luigi Olivari', data: 1, //backgroundColor': 'ciaoooo'
-                     },
-                      {label: 'Guido Nardini', data: 1, //backgroundColor': 'ciaoooo'
-                      },
-                       {label: 'Giulio Poli', data: 1, //backgroundColor': 'ciaoooo'
-                       },
-                        {label: 'Giovanni Sabelli', data: 1, //backgroundColor': 'ciaoooo'
-                        },
-                         {label: 'Gastone Novelli', data: 1, //backgroundColor': 'ciaoooo'
-                         },
-                          {label: 'Gaetano Aliperta', data: 1, //backgroundColor': 'ciaoooo'
-                          },
-                           {label: 'Flavio Torello Baracchini', data: 1, //backgroundColor': 'ciaoooo'
-                           }
-                           , {label: 'Attilio Imolesi', data: 1, //backgroundColor': 'ciaoooo'
-                           },
-                            {label: 'Alessandro Buzio', data: 1, //backgroundColor': 'ciaoooo'
-                            }]
-                        };
-
-    var optionwing = {
-        responsiveAnimationDuration: 1000,
-        tooltips: {
-            enabled: false
-       },
-       scales: {
-        xAxes: [{
-            stacked: true,
-            ticks: {
-                beginAtZero: true
-            }
-            }],
-            yAxes: [{
-                stacked: true,
-                ticks: {
-                    beginAtZero: true
+            var datwing = {
+                labels: ['Giuliano Parvis', 'Fulco Ruffo di Calabria', 'Goffredo Gorini', 'Pier Ruggero Piccio', "Mario D'Urso", 'Luigi Olivari', 'Guido Nardini', 'Giulio Poli', 'Giovanni Sabelli', 'Gastone Novelli', 'Gaetano Aliperta', 'Flavio Torello Baracchini', 'Attilio Imolesi', 'Alessandro Buzio'],          
+                datasets: [{
+                    data: [5, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
                 }
-                }]
-        },
-        legend: {
-            display: false
-        },
-    };
-
-    var wingraph = document.getElementById("wingmengraph").getContext("2d");
-    new Chart(wingraph, {
-        type: 'horizontalBar',
-        data: datwing,
-        options: optionwing
-    });
+            ]
+            };
+    
+            var nodes = new vis.DataSet([{id: 1, label: 'Francesco Baracca'}, {id: 2, label: 'Giuliano Parvis'}, 
+            {id: 3, label: 'Fulco Ruffo di Calabria'}, 
+            {id: 4, label: 'Goffredo Gorini'}, {id: 5, label: 'Pier Ruggero Piccio'}, 
+            {id: 6, label: "Mario D'Urso"}, {id: 7, label: 'Luigi Olivari'},
+             {id: 8, label: 'Guido Nardini'}, {id: 9, label: 'Giulio Poli'},
+              {id: 10, label: 'Giovanni Sabelli'}, {id: 11, label: 'Gastone Novelli'},
+               {id: 12, label: 'Gaetano Aliperta'}, {id: 13, label: 'Flavio Torello Baracchini'},
+                {id: 14, label: 'Attilio Imolesi'}, {id: 15, label: 'Alessandro Buzio'}]);
+            
+              // create an array with edges
+              var edges = new vis.DataSet([{from: 1, to: 2, value: 5},
+                {from: 1, to: 3, value: 3}, {from: 1, to: 4, value: 2},
+                 {from: 1, to: 5, value: 1}, {from: 1, to: 6, value: 1},
+                  {from: 1, to: 7, value: 1}, {from: 1, to: 8, value: 1},
+                   {from: 1, to: 9, value: 1}, {from: 1, to: 10, value: 1},
+                    {from: 1, to: 11, value: 1}, {from: 1, to: 12, value: 1},
+                     {from: 1, to: 13, value: 1}, {from: 1, to: 14, value: 1},
+                      {from: 1, to: 15, value: 1}]
+             );
+            
+              // create a network
+              var container = document.getElementById('wingmengraph');
+              var data = {
+                nodes: nodes,
+                edges: edges
+              };
+              var options = {
+                 "physics": {
+                   "barnesHut": {
+                     "avoidOverlap": 0.2
+                   },
+                 }
+               };
+              var network = new vis.Network(container, data, options);
 
 
 
