@@ -411,7 +411,7 @@ $(document).ready(function() {
 
     var wingraph = document.getElementById("wingmengraph").getContext("2d");
     new Chart(wingraph, {
-        type: 'pie',
+        type: 'polar-area',
         data: datwing,
         options: optionwing
     });
