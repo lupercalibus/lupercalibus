@@ -415,7 +415,13 @@ $(document).ready(function() {
                 nodes: nodes,
                 edges: edges
               };
-              var options = {};
+              var options = {
+                 "physics": {
+                   "barnesHut": {
+                     "avoidOverlap": 1
+                   },
+                 }
+               };
               var network = new vis.Network(container, data, options);
 
 
