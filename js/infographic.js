@@ -394,16 +394,18 @@ $(document).ready(function() {
         tooltips: {
             enabled: false
        },
-       xAxes: [{
-        ticks: {
-            beginAtZero: true
-        }
-        }],
+       scales: {
         xAxes: [{
             ticks: {
                 beginAtZero: true
             }
             }],
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+                }]
+        },
         legend: {
             display: false
         },
