@@ -22,7 +22,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-piechart-outlabels@0.1.4/dist/chartjs-plugin-piechart-outlabels.min.js"></script>
-        <!--FONTS-->
+        <!--tagCloud-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqcloud/1.0.4/jqcloud-1.0.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqcloud/1.0.4/jqcloud.css"></script>
 
 
     </head>
@@ -58,6 +60,7 @@
         <div class="container">
 
                 <!--Trench-->
+                <div class="row">
                 <div class="col-md-6" style="margin-bottom: 20px;">
                         <div class="row">
                                         <canvas id="trenchgraph"><canvas>
@@ -67,6 +70,10 @@
                                         <img style="width:100%; height: auto;" src="css\trench.png">
                                 </div>
                         </div>
+                </div>
+                <div class="col-md-6" style="margin-bottom: 20px;">
+                        <div class="words"></div>
+                </div>
                 </div>
                 <!-- ENEMIES-->
                 <div class="col-md-12" style="padding: 0; background-image: url('css/sky.jpg'); background-size: cover; background-repeat: no-repeat; display: inline-block; margin-bottom: 20px">

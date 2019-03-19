@@ -428,6 +428,35 @@ $(document).ready(function() {
                   network.stabilize(1)
               }
 
+              //Wordcloud
+              var words = [{text: 'metri', weight: 13},
+              {text: 'nemico', weight: 13},
+               {text: 'apparecchio', weight: 12},
+                {text: 'fuoco', weight: 12},
+                 {text: 'caccia', weight: 12},
+                  {text: 'verso', weight: 11},
+                   {text: 'dopo', weight: 11},
+                    {text: 'dietro', weight: 10},
+                     {text: 'albatros', weight: 10},
+                      {text: 'quota', weight: 10},
+                       {text: 'linee', weight: 10},
+                        {text: 'colpi', weight: 10},
+                         {text: 'terra', weight: 9},
+                          {text: 'distanza', weight: 9},
+                           {text: 'fiamme', weight: 9},
+                            {text: 'nostre', weight: 8},
+                             {text: 'colpito', weight: 8},
+                              {text: 'tempo', weight: 7},
+                               {text: 'sotto', weight: 7},
+                                {text: 'ore', weight: 7},
+                                 {text: 'sopra', weight: 6},
+                                  {text: 'mitragliatrice', weight: 6},
+                                   {text: 'pilota', weight: 6},
+                                    {text: 'ali', weight: 6},
+                                     {text: 'subito', weight: 6}];
+              
+              $('#words').jQCloud(words);
+
 
 
 
