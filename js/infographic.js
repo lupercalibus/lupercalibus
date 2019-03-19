@@ -437,11 +437,11 @@ $(document).ready(function() {
                };
               var network = new vis.Network(container, data, options);
               network.fit()
-              network.stabilize(2000)
+              network.stabilize(1)
 
               window.onresize = function() { 
                   network.fit()
-                  network.stabilize(2000)
+                  network.stabilize(1)
               }
 
 
