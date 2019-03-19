@@ -418,7 +418,7 @@ $(document).ready(function() {
               var options = {
                 nodes:{
                     font: {
-                        size: 16
+                        size: 18
                     }
                 },
                 interaction:{
