@@ -399,14 +399,14 @@ $(document).ready(function() {
                 {id: 14, label: 'Attilio Imolesi'}, {id: 15, label: 'Alessandro Buzio'}]);
             
               // create an array with edges
-              var edges = new vis.DataSet([
-                {from: 1, to: 1, value: 5}, {from: 1, to: 2, value: 3},
-                 {from: 1, to: 3, value: 2}, {from: 1, to: 4, value: 1},
-                  {from: 1, to: 5, value: 1}, {from: 1, to: 6, value: 1},
-                   {from: 1, to: 7, value: 1}, {from: 1, to: 8, value: 1},
-                    {from: 1, to: 9, value: 1}, {from: 1, to: 10, value: 1},
-                     {from: 1, to: 11, value: 1}, {from: 1, to: 12, value: 1},
-                      {from: 1, to: 13, value: 1}, {from: 1, to: 14, value: 1}]
+              var edges = new vis.DataSet([{from: 1, to: 2, value: 5},
+                {from: 1, to: 3, value: 3}, {from: 1, to: 4, value: 2},
+                 {from: 1, to: 5, value: 1}, {from: 1, to: 6, value: 1},
+                  {from: 1, to: 7, value: 1}, {from: 1, to: 8, value: 1},
+                   {from: 1, to: 9, value: 1}, {from: 1, to: 10, value: 1},
+                    {from: 1, to: 11, value: 1}, {from: 1, to: 12, value: 1},
+                     {from: 1, to: 13, value: 1}, {from: 1, to: 14, value: 1},
+                      {from: 1, to: 15, value: 1}]
              );
             
               // create a network
