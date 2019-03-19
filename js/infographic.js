@@ -419,11 +419,10 @@ $(document).ready(function() {
                 interaction:{
                     dragNodes:false,
                     dragView: false,
+                    zoomView: false
                 },
-                 "physics": {
-                   "barnesHut": {
-                     "avoidOverlap": 0.2
-                   },
+                physics:{
+                    enabled: false
                  }
                };
               var network = new vis.Network(container, data, options);
