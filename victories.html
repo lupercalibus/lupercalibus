@@ -77,8 +77,20 @@
             <div class="row">
                     <div class="card col-md-6 pl-0 pr-0" >
                             <div class="card-header">
-                                    STATS
-                                  </div>
+                                    <ul class="nav nav-tabs card-header-tabs">
+                                        <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#statspanel">Stats</a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#letterpanel">Letters</a>
+                                        </li>
+                                        <!-- <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#mappanel">Map</a>
+                                        </li> -->
+                                    </ul>
+                                    </div>
+                                    <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="statspanel">
                                     <div class="card-body">
                                             <div class= "mb-3">
                                                     <div class= "row">
@@ -120,6 +132,12 @@
                                                 <div class= "row">
                                                     <div class="col-3">Rival Pilots</div><div class="col-9 victimsstat"></div>
                                                 </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                    <div role="tabpanel" class="tab-pane fade in" id="planespanel">
+                                            <div class="card-body card-plane">
+                                                <h5 class="card-title">PLANES</h5>
                                             </div>
                                     </div>
                             </div>
