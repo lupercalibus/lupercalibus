@@ -129,7 +129,13 @@
                 <div class="col-md-12">
                                 <div class="row">
                                                 <div class="col-md-6" style= "background-image: url('css/caporetto.jpg'); background-size: 100%; background-repeat: no-repeat; background-position:center; display: inline-block">
-                                                        <canvas id="caporettograph"></canvas>
+                                                        <div class="gi  output">
+                                                                        <ul class="lost" id="output">
+                                                                           <li class="lost__info" v-for="item in lostData" v-bind:style="{ transform: 'rotate(' + item.rotation + 'deg)' }" transition"fade">
+                                                                              <p>{{ item.label }} - <strong>{{ item.value }}</strong></p>
+                                                                           </li>
+                                                                        </ul>
+                                                                </div>
                                                 </div>
                                 <div class="col-md-6">
                                         <canvas id="darkgraph"></canvas>                                       
