@@ -458,12 +458,22 @@ $(document).ready(function() {
                         display: false
                     }
                 };
-                var wingraph = document.getElementById("wingraph").getContext("2d");
+                /* var wingraph = document.getElementById("wingraph").getContext("2d");
                 new Chart(wingraph, {
                     type: 'doughnut',
                     data: datwing,
                     options: optionwing
-                });
+                }); */
+                
+                new Chart(document.getElementById("darkgraph"),
+                {"type":"line",
+                "data":{
+                    "labels":["VII Isonzo Battle", "X Isonzo Battle", "XI Isonzo Battle", "XII Isonzo Battle (Caporetto)", "Solstice Battle"],
+                    "datasets":[{"label":"Victories","data":[1, 3, 3, 6, 2],
+                    "fill":false,
+                    "borderColor":"rgb(75, 192, 192)",
+                    "lineTension":0.1}]},
+                "options":{}});
 
 
 
