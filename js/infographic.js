@@ -360,6 +360,25 @@ $(document).ready(function() {
                                     fontColor: "black",
                                     display: false
                                 },
+                                plugins: {
+                                    outlabels: {
+                                        display: false,
+                                    },
+                                   labels: [{
+                                            render: 'label',
+                                            position: 'outside',
+                                            fontSize: 18,
+                                            fontStyle: 'bold',
+                                            fontColor: '#000'
+                                        },
+                                        {
+                                            render: 'value',
+                                            fontSize: 18,
+                                            fontStyle: 'bold',
+                                            fontColor: '#fff'
+                                        }
+                                    ] 
+                                },
                                 "scales": {
                                     "xAxes": [{
                                          stacked: true,
