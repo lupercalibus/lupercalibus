@@ -367,38 +367,6 @@ $(document).ready(function() {
               var resizeEvent = new Event('resize');
                 window.dispatchEvent(resizeEvent);
 
-
-                var optionwing = {
-                    responsiveAnimationDuration: 1000,
-                    responsive: true,
-                    elements: {
-                        imgcenter: {
-                            imgsrc: 'css/Cavallino.png',
-                        }
-                    },
-                    plugins: {
-                        outlabels: {
-                            display: false,
-                        },
-                        labels: [{
-                            render: 'label',
-                            position: 'outside',
-                            fontSize: 14,
-                            fontStyle: 'bold',
-                            fontColor: '#000'
-                        },
-                        {
-                            render: 'value',
-                            fontSize: 16,
-                            fontStyle: 'bold',
-                            fontColor: '#fff'
-                        }
-                    ]
-                    },
-                    legend: {
-                        display: false
-                    }
-                };
                 
                 new Chart(document.getElementById("darkgraph"),
                 {"type":"line",
