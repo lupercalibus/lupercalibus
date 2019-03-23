@@ -371,11 +371,11 @@ $(document).ready(function() {
                                         }
                                     }],
                                 "yAxes": [{
-                                        max: 100,
                                         stacked: true,
                                         "ticks": {
                                             fontColor: "black",
-                                            //display: false
+                                            max: 25,
+                                            display: false
                                         }
                                     }]
                                 },
