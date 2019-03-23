@@ -92,7 +92,9 @@ $.ajax({
         var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
         map.flyTo(actualplace.getBounds().getCenter(), 9);
 
-        actualplace.eachLayer(function(l) {
+        markerino(actualplace)
+        function markerino (pointino){
+        pointino.eachLayer(function(l) {
             var props = l.feature.properties;
             var m = L.icon({
                 iconUrl: 'css/dogfight.png',
@@ -100,6 +102,7 @@ $.ajax({
             });
             l.setIcon(m);
         });
+    }
         
         base_SCaterina = [46.0341, 13.1857,]
         base_Padova = [45.4054, 11.8839]
