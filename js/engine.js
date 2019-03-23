@@ -208,6 +208,7 @@ $.ajax({
             
             var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
             map.flyTo(actualplace.getBounds().getCenter(), 9);
+            markerino(actualplace)
 
 
             if (actualid <= 24){
