@@ -331,53 +331,60 @@ $(document).ready(function() {
 
 //Trench graph
 
-        var data = {
-            labels: [
-                "Defense Victories over Italian territories",
-                "Raid Victories over Enemy territories"
-            ],
+        var datatrench = {
             datasets: [
                 {
-                    data: [15, 19],
-                    backgroundColor: [
-                        "#FF6384",
-                        "#36A2EB"
-                    ],
-                    hoverBackgroundColor: [
-                        "#FF6384",
-                        "#36A2EB"
-                    ]
-                }]
+                    "label": "Defense Victories over Italian territories",
+                    fontColor: "black",
+                    data: 15,
+                    backgroundColor: "#7ecc8c"
+                    },
+                    {
+                        "label": "Raid Victories over Enemy territories",
+                        fontColor: "black",
+                        data: 19,
+                        backgroundColor: "#5a9164"
+                        },]
         };
         
-        var ctx = document.getElementById("trenchgraph");
-        
-        // And for a doughnut chart
-        var myDoughnutChart = new Chart(ctx, {
-            type: 'doughnut',
-            data: data,
-            options: {
-                rotation: 1 * Math.PI,
-              circumference: 1 * Math.PI,
-              legend: {
-                display: false
-                },
-                plugins: {
-                    outlabels: {
-                        display: false,
-                    },
-                labels: [{
-                            render:"",
-                        },
-                        {
-                            //render: 'value',
-                            fontSize: 18,
-                            fontStyle: 'bold',
-                            fontColor: '#fff'
-                        }]
-                }
-            }
-        });
+    
+            var optiontrench = {
+                                responsiveAnimationDuration: 1000,
+                                "tooltips": {
+                                    "enabled": true,
+                                    "mode": 'single',
+                                },
+                                legend: {
+                                    fontColor: "black"
+                                },
+                                "scales": {
+                                    "xAxes": [{
+                                         stacked: true,
+                                        "ticks": {
+                                            fontColor: "black",
+                                            "beginAtZero": true,
+                                            autoSkip: false
+                                        }
+                                    }],
+                                "yAxes": [{
+                                        stacked: true,
+                                        "ticks": {
+                                            fontColor: "black"}
+                                    }]
+                                }
+            };
+    
+    
+    
+            var trenchgr = document.getElementById("trenchgraph").getContext("2d");
+    
+            new Chart(trenchgr,{
+                                        "type": "horizontalBar",
+                                        "data": datatrench,
+                                        "options": optiontrench
+                                    });
+
+      
 
         //WINGMEN
       
