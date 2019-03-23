@@ -371,6 +371,7 @@ $(document).ready(function() {
                                         }
                                     }],
                                 "yAxes": [{
+                                        max: 22,
                                         stacked: true,
                                         "ticks": {
                                             fontColor: "black",
