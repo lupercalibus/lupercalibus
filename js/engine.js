@@ -94,7 +94,7 @@ $.ajax({
 
         actualplace.eachLayer(function(l) {
             var props = l.feature.properties;
-            var m = L.divIcon({
+            var m = L.icon({
                 iconUrl: 'css/dogfight.png',
                 iconSize: [50,50],
             });
