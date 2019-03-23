@@ -85,20 +85,21 @@ $.ajax({
         itemfirst.add(itembattles)
         var layerGroup = L.layerGroup().addTo(map);
 
-        let myLayerOptions = {
-            pointToLayer: createCustomIcon
-          }
-        function createCustomIcon (feature, latlng) {
-            let myIcon = L.icon({
-              iconUrl: 'css/dogfight.png',
-            })
-            return L.marker(latlng, { icon: myIcon })
-          }
+
 
         var actualborder 
         actualborder = L.geoJson(border1916.responseJSON).addTo(map);
-        var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}, myLayerOptions).addTo(layerGroup);
+        var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
         map.flyTo(actualplace.getBounds().getCenter(), 9);
+
+        actualplace.eachLayer(function(l) {
+            var props = l.feature.properties;
+            var m = L.divIcon({
+                iconUrl: 'css/dogfight.png',
+                iconSize: [50,50],
+            });
+            l.setIcon(m);
+        });
         
         base_SCaterina = [46.0341, 13.1857,]
         base_Padova = [45.4054, 11.8839]
