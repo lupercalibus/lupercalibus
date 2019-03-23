@@ -374,6 +374,7 @@ $(document).ready(function() {
                                         stacked: true,
                                         "ticks": {
                                             fontColor: "black",
+                                            min: -25,
                                             max: 25,
                                             display: false
                                         }
