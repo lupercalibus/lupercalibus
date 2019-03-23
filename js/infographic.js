@@ -331,19 +331,20 @@ $(document).ready(function() {
 
 //Trench graph
 
+
         var datatrench = {
             labels:["Victories"],
             datasets: [
                 {
                     "label": "Defense Victories over Italian territories",
                     fontColor: "black",
-                    data: 15,
+                    data: [-15],
                     backgroundColor: "#7ecc8c"
                     },
                     {
                         "label": "Raid Victories over Enemy territories",
                         fontColor: "black",
-                        data: 19,
+                        data: [19],
                         backgroundColor: "#5a9164"
                         },]
         };
