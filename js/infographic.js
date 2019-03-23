@@ -371,7 +371,7 @@ $(document).ready(function() {
                 new Chart(document.getElementById("darkgraph"),
                 {"type":"line",
                 "data":{
-                    "labels":["VII Isonzo Battle", "X Isonzo Battle", "XI Isonzo Battle", "XII Isonzo Battle (Caporetto)", "Solstice Battle"],
+                    "labels":["VII Isonzo Battle", "X Isonzo Battle", "XI Isonzo Battle", "Caporetto", "Solstice Battle"],
                     "datasets":[{"label":"Victories","data":[1, 3, 3, 6, 2],
                     "fill":false,
                     "borderColor":"rgb(75, 192, 192)",
