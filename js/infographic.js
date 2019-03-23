@@ -329,99 +329,6 @@ $(document).ready(function() {
             }
         });
 
-//Trench graph
-
-
-        var datatrench = {
-            labels:["Victories"],
-            datasets: [
-                {
-                    "label": "Defense: Victories over Italian territories",
-                    fontColor: "black",
-                    data: [-15],
-                    backgroundColor: "#7ecc8c"
-                    },
-                    {
-                        "label": "Raid: Victories over Enemy territories",
-                        fontColor: "black",
-                        data: [19],
-                        backgroundColor: "#5a9164"
-                        },]
-        };
-        
-    
-            var optiontrench = {
-                                responsiveAnimationDuration: 1000,
-                                "tooltips": {
-                                    "enabled": false,
-                                    "mode": 'single',
-                                },
-                                legend: {
-                                    fontColor: "black",
-                                    display: false
-                                },
-                                plugins: {
-                                    outlabels: {
-                                        display: false,
-                                    },
-                                   labels: [{
-                                            render: 'label',
-                                            position: 'outside',
-                                            fontSize: 18,
-                                            fontStyle: 'bold',
-                                            fontColor: '#000'
-                                        },
-                                        {
-                                            render: 'value',
-                                            fontSize: 18,
-                                            fontStyle: 'bold',
-                                            fontColor: '#fff'
-                                        }
-                                    ] 
-                                },
-                                "scales": {
-                                    "xAxes": [{
-                                         stacked: true,
-                                        "ticks": {
-                                            fontColor: "black",
-                                            "beginAtZero": true,
-                                            autoSkip: false,
-                                            display: false
-                                        }
-                                    }],
-                                "yAxes": [{
-                                        stacked: true,
-                                        "ticks": {
-                                            fontColor: "black",
-                                            min: -25,
-                                            max: 25,
-                                            display: false
-                                        }
-                                    }]
-                                },
-            };
-    
-    
-    
-            var trenchgr = document.getElementById("trenchgraph").getContext("2d");
-    
-            new Chart(trenchgr, {
-                                        type: 'bar',
-                                        data: datatrench,
-                                        options: optiontrench
-                                    });
-
-      
-
-        //WINGMEN
-      
-            var datwing = {
-                labels: ['Giuliano Parvis', 'Fulco Ruffo di Calabria', 'Goffredo Gorini'],
-                datasets: [{
-                    data: [5, 3, 2],
-                }
-            ]
-            };
     
     
 
@@ -492,12 +399,6 @@ $(document).ready(function() {
                         display: false
                     }
                 };
-                /* var wingraph = document.getElementById("wingraph").getContext("2d");
-                new Chart(wingraph, {
-                    type: 'doughnut',
-                    data: datwing,
-                    options: optionwing
-                }); */
                 
                 new Chart(document.getElementById("darkgraph"),
                 {"type":"line",

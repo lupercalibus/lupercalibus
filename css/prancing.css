@@ -58,14 +58,3 @@ div.jqcloud span.w2 { font-size: 150%; }
 div.jqcloud span.w1 { font-size: 100%; }
 
 
-
-.imgcenternow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100px;
-    height: 100px;
-    margin-top: -55px; /* Half the height */
-    margin-left: -45px;
-
-}
