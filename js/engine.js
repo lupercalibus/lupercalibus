@@ -97,6 +97,7 @@ $.ajax({
         var BaseIcon = L.icon({
             iconUrl: 'css/base.png',
             iconSize:     [50, 50], // size of the icon
+            iconAnchor:   [50, 25]
         });
 
         var actualbase = base_SCaterina
