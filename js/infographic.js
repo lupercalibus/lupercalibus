@@ -381,7 +381,9 @@ $(document).ready(function() {
                         "xAxes": [{
                                 "ticks": {
                                     fontColor: "black",
-                                    autoSkip: false
+                                    autoSkip: false,
+                                    maxRotation: 90,
+                                    minRotation: 90
                                     }
                             }],
                         }},});
