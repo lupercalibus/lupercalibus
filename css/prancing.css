@@ -58,3 +58,7 @@ div.jqcloud span.w2 { font-size: 150%; }
 div.jqcloud span.w1 { font-size: 100%; }
 
 
+.legend {
+    line-height: 18px;
+    color: #555;
+}
