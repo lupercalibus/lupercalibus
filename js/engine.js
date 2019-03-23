@@ -199,7 +199,7 @@ $.ajax({
             if (actualid <= 24){
                 var actualbase = base_SCaterina
                 var basename = "Santa Caterina (UD)"
-                var basemarker =L.marker(actualbase).addTo(layerGroup);
+                var basemarker =L.marker(actualbase, {icon: BaseIcon}).addTo(layerGroup);
                 var arrow = L.polyline([actualbase, actualplace.getBounds().getCenter()]).addTo(layerGroup);
                 var arrowHead = L.polylineDecorator(arrow, {
                 patterns: [
@@ -214,7 +214,7 @@ $.ajax({
             if (actualid >= 25 && actualid < 31){
                 var actualbase = base_Padova
                 var basename = "Padova"
-                var basemarker =L.marker(actualbase).addTo(layerGroup);
+                var basemarker =L.marker(actualbase, {icon: BaseIcon}).addTo(layerGroup);
                 var arrow = L.polyline([actualbase, actualplace.getBounds().getCenter()]).addTo(layerGroup);
                 var arrowHead = L.polylineDecorator(arrow, {
                 patterns: [
@@ -229,7 +229,7 @@ $.ajax({
             if (actualid >= 31){
                 var actualbase = baseQuinto
                 var basename = "Quinto (TV)"
-                var basemarker =L.marker(actualbase).addTo(layerGroup);
+                var basemarker =L.marker(actualbase, {icon: BaseIcon}).addTo(layerGroup);
                 var arrow = L.polyline([actualbase, actualplace.getBounds().getCenter()]).addTo(layerGroup);
                 var arrowHead = L.polylineDecorator(arrow, {
                 patterns: [
