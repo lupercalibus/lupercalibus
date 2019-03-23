@@ -10,7 +10,7 @@ map.setView([46.0160, 13.1611], 9);
 var osm = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 }).addTo(map);
 
-var legend = L.control({position: 'bottomright'});
+var legend = L.control({position: 'topright'});
 
 legend.onAdd = function (map) {
 
