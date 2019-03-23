@@ -16,7 +16,7 @@ legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend');
      div.innerHTML =
-            '<ul><li><h2 style="color: #FF0000">-</h2> Border</li> <li><h2 style="color: blue">-</h2> Flight</li> <li><img src="css/base.png" height="30"> Base</li> <li><img src="css/dogfight.png" height="30"> Dogfight</li></ul> ';
+            '<ul><li><h1 style="color: #FF0000">-</h1> Border</li> <li><h1 style="color: blue">-</h1> Flight</li> <li><img src="css/base.png" height="30"> Base</li> <li><img src="css/dogfight.png" height="30"> Dogfight</li></ul> ';
     return div;
 };
 
