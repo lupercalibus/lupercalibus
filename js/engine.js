@@ -10,6 +10,18 @@ map.setView([46.0160, 13.1611], 9);
 var osm = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 }).addTo(map);
 
+var legend = L.control({position: 'bottomright'});
+
+legend.onAdd = function (map) {
+
+    var div = L.DomUtil.create('div', 'info legend');
+     div.innerHTML =
+            '<ul><li>Border</li> <li>Flight</li> <li>Base</li> <li>Dogfight</li></ul> ';
+    return div;
+};
+
+legend.addTo(map);
+
 
 //'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 //per caricare il geojson serve un procedimento diverso
