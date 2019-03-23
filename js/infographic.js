@@ -379,7 +379,7 @@ $(document).ready(function() {
     
             var trenchgr = document.getElementById("trenchgraph").getContext("2d");
     
-            new Chart(trenchgr,{
+            new Chart(trenchgr, {
                                         type: 'bar',
                                         data: datatrench,
                                         options: optiontrench
