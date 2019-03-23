@@ -376,7 +376,15 @@ $(document).ready(function() {
                     "fill":false,
                     "borderColor":"rgb(75, 192, 192)",
                     "lineTension":0.1}]},
-                "options":{}});
+                "options":{
+                "scales": {
+                        "xAxes": [{
+                                "ticks": {
+                                    fontColor: "black",
+                                    autoSkip: false
+                                    }
+                            }],
+                        }},});
 
 
                 
