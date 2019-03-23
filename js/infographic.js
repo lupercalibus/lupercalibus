@@ -332,6 +332,7 @@ $(document).ready(function() {
 //Trench graph
 
         var datatrench = {
+            labels:["Victories"],
             datasets: [
                 {
                     "label": "Defense Victories over Italian territories",
