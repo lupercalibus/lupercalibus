@@ -367,40 +367,5 @@ $(document).ready(function() {
               var resizeEvent = new Event('resize');
                 window.dispatchEvent(resizeEvent);
 
-                
-                new Chart(document.getElementById("darkgraph"),
-                {"type":"line",
-                "data":{
-                    "labels":["VII Isonzo Battle", "X Isonzo Battle", "XI Isonzo Battle", "Caporetto", "Solstice Battle"],
-                    "datasets":[{"label":"Victories","data":[1, 3, 3, 6, 2],
-                    "fill":false,
-                    "borderColor":"rgb(75, 192, 192)",
-                    "lineTension":0.1}]},
-                "options":{
-                    legend: {
-                        display: false
-                    },
-                    "scales": {
-                        "xAxes": [{
-                                "ticks": {
-                                    fontColor: "black",
-                                    autoSkip: false,
-                                    maxRotation: 90,
-                                    minRotation: 90
-                                    }
-                            }],
-                        "yAxes": [{
-                            ticks: {
-                                beginAtZero: true
-                            }
-                        }]
-                        }
-                },});
-
-
-                
-                
-
-
 
 })
