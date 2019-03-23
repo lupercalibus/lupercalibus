@@ -353,11 +353,12 @@ $(document).ready(function() {
             var optiontrench = {
                                 responsiveAnimationDuration: 1000,
                                 "tooltips": {
-                                    "enabled": true,
+                                    "enabled": false,
                                     "mode": 'single',
                                 },
                                 legend: {
-                                    fontColor: "black"
+                                    fontColor: "black",
+                                    display: false
                                 },
                                 "scales": {
                                     "xAxes": [{
@@ -365,15 +366,17 @@ $(document).ready(function() {
                                         "ticks": {
                                             fontColor: "black",
                                             "beginAtZero": true,
-                                            autoSkip: false
+                                            autoSkip: false,
+                                            display: false
                                         }
                                     }],
                                 "yAxes": [{
                                         stacked: true,
                                         "ticks": {
-                                            fontColor: "black"}
+                                            fontColor: "black",
+                                            display: false}
                                     }]
-                                }
+                                },
             };
     
     
