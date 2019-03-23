@@ -367,7 +367,7 @@ $(document).ready(function() {
                                             fontColor: "black",
                                             "beginAtZero": true,
                                             autoSkip: false,
-                                            //display: false
+                                            display: false
                                         }
                                     }],
                                 "yAxes": [{
