@@ -94,10 +94,15 @@ $.ajax({
         base_Padova = [45.4054, 11.8839]
         baseQuinto = [45.6496, 12.196]
 
+        var BaseIcon = L.icon({
+            iconUrl: 'css/base.png',
+            iconSize:     [50, 50], // size of the icon
+        });
+
         var actualbase = base_SCaterina
 
-        var basemarker =L.marker(actualbase).addTo(layerGroup);
-        //L.marker([51.5, -0.09], {icon: greenIcon}).addTo(map);
+        var basemarker =L.marker(actualbase, {icon: BaseIcon}).addTo(layerGroup);
+   
 
         var arrow = L.polyline([actualbase, actualplace.getBounds().getCenter()]).addTo(layerGroup);
         var arrowHead = L.polylineDecorator(arrow, {
