@@ -88,7 +88,7 @@ $.ajax({
 
         var styleborder = {
             color: '#FF0000',
-            dashArray: '20,15'
+            //dashArray: '20,15'
         }
 
         var actualborder 
