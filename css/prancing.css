@@ -62,6 +62,7 @@ div.jqcloud span.w1 { font-size: 100%; }
     line-height: 18px;
     background-color: whitesmoke;
     margin-right: 0 !important;
-    padding-right: 10px
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
