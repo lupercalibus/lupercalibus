@@ -85,9 +85,19 @@ $.ajax({
         itemfirst.add(itembattles)
         var layerGroup = L.layerGroup().addTo(map);
 
+        let myLayerOptions = {
+            pointToLayer: createCustomIcon
+          }
+        function createCustomIcon (feature, latlng) {
+            let myIcon = L.icon({
+              iconUrl: 'css/dogfight.png',
+            })
+            return L.marker(latlng, { icon: myIcon })
+          }
+
         var actualborder 
         actualborder = L.geoJson(border1916.responseJSON).addTo(map);
-        var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}).addTo(layerGroup);
+        var actualplace= L.geoJson(places.responseJSON, {filter: FirstPlaceFilter}, myLayerOptions).addTo(layerGroup);
         map.flyTo(actualplace.getBounds().getCenter(), 9);
         
         base_SCaterina = [46.0341, 13.1857,]
