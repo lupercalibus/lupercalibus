@@ -128,14 +128,14 @@
                 </div>
                 <div class="col-md-12">
                                 <div class="row">
-                                                <div class="col-md-6" style= "background-image: url('css/caporetto.jpg'); background-size: 100%; background-repeat: no-repeat; background-position:center; display: inline-block">
-                                                        <div class="gi  output">
-                                                                        <ul class="lost" id="output">
-                                                                           <li class="lost__info" v-for="item in lostData" v-bind:style="{ transform: 'rotate(' + item.rotation + 'deg)' }" transition"fade">
-                                                                              <p>{{ item.label }} - <strong>{{ item.value }}</strong></p>
-                                                                           </li>
-                                                                        </ul>
-                                                                </div>
+                                                <div class="col-md-6" style= "padding-right: 0; height: 300px; background-image: url('css/caporetto.jpg'); background-size: 100%; background-repeat: no-repeat; background-position:cover; display: inline-block">
+                                                        <ul style="margin-top: 25px; width: 100%;" align:right>
+                                                                <li style="transform: rotate(-5deg); background-color: red">20.000 KM/q persi</li>
+                                                                <li style="transform: rotate(-10deg); background-color: red">150 km di arretramento</li>
+                                                                <li style="transform: rotate(-15deg); background-color: red">11.000 morti</li>
+                                                                <li style="transform: rotate(-20deg); background-color: red">29.000 feriti</li>
+                                                                <li style="transform: rotate(-25deg); background-color: red">300.000 prigionieri</li>
+                                                        </ul>
                                                 </div>
                                 <div class="col-md-6">
                                         <canvas id="darkgraph"></canvas>                                       
