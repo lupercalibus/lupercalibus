@@ -377,7 +377,7 @@ $(document).ready(function() {
                     "borderColor":"rgb(75, 192, 192)",
                     "lineTension":0.1}]},
                 "options":{
-                "scales": {
+                    "scales": {
                         "xAxes": [{
                                 "ticks": {
                                     fontColor: "black",
@@ -386,7 +386,13 @@ $(document).ready(function() {
                                     minRotation: 90
                                     }
                             }],
-                        }},});
+                        "yAxes": [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                        }
+                },});
 
 
                 
