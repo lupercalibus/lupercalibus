@@ -375,7 +375,8 @@ $(document).ready(function() {
                                         stacked: true,
                                         "ticks": {
                                             fontColor: "black",
-                                            display: false}
+                                            //display: false
+                                        }
                                     }]
                                 },
             };
