@@ -336,13 +336,13 @@ $(document).ready(function() {
             labels:["Victories"],
             datasets: [
                 {
-                    "label": "Defense Victories over Italian territories",
+                    "label": "Defense: Victories over Italian territories",
                     fontColor: "black",
                     data: [-15],
                     backgroundColor: "#7ecc8c"
                     },
                     {
-                        "label": "Raid Victories over Enemy territories",
+                        "label": "Raid: Victories over Enemy territories",
                         fontColor: "black",
                         data: [19],
                         backgroundColor: "#5a9164"
@@ -367,7 +367,7 @@ $(document).ready(function() {
                                             fontColor: "black",
                                             "beginAtZero": true,
                                             autoSkip: false,
-                                            display: false
+                                            //display: false
                                         }
                                     }],
                                 "yAxes": [{
