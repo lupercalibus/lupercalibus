@@ -377,6 +377,9 @@ $(document).ready(function() {
                     "borderColor":"rgb(75, 192, 192)",
                     "lineTension":0.1}]},
                 "options":{
+                    legend: {
+                        display: false
+                    },
                     "scales": {
                         "xAxes": [{
                                 "ticks": {
