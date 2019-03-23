@@ -63,9 +63,9 @@ div.jqcloud span.w1 { font-size: 100%; }
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 500px;
-    height: 500px;
-    margin-top: -250px; /* Half the height */
-    margin-left: -250px;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px; /* Half the height */
+    margin-left: -50px;
 
 }
