@@ -193,11 +193,11 @@ $.ajax({
                 var rivalname = document.createElement('li');
                 var rivalstatus = document.createElement('li');
                 ul.append(rivalname)
-                rivalname.innerHTML += ('<div class="row"><div class="col-md-3 col-5">Name</div><div class="col-md-9 col-7">'+ victimsarrayitem.name +'</div></div>');
+                rivalname.innerHTML += ('<div class="row"><div class="col-md-3 col-4">Name</div><div class="col-md-9 col-8">'+ victimsarrayitem.name +'</div></div>');
                 ul.append(rivalgrade)
-                rivalgrade.innerHTML += ('<div class="row"><div class="col-md-3 col-5">Grade</div><div class="col-md-9 col-7">'+ victimsarrayitem.grade +'</div></div>');
+                rivalgrade.innerHTML += ('<div class="row"><div class="col-md-3 col-4">Grade</div><div class="col-md-9 col-8">'+ victimsarrayitem.grade +'</div></div>');
                 ul.append(rivalstatus)
-                rivalstatus.innerHTML += ('<div class="row"><div class="col-md-3 col-5">Status</div><div class="col-md-9 col-7">'+ victimsarrayitem.status +'</div></div>');
+                rivalstatus.innerHTML += ('<div class="row"><div class="col-md-3 col-4">Status</div><div class="col-md-9 col-8">'+ victimsarrayitem.status +'</div></div>');
             }
         });
 
