@@ -181,11 +181,12 @@ $(document).ready(function() {
                     position: 'outside',
                     fontSize: 18,
                     fontStyle: 'bold',
+                    color: '#000',
                     fontColor: '#000'
                 },
                 {
                     render: 'value',
-                    fontSize: 18,
+                    fontSize: 24,
                     fontStyle: 'bold',
                     fontColor: '#000'
                 }
