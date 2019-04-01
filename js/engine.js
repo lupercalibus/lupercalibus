@@ -141,7 +141,7 @@ $.ajax({
                 {
                     offset: '100%',
                     repeat: 0,
-                    //symbol: L.Symbol.arrowHead({pixelSize: 15, polygon: false, pathOptions: {stroke: true}})
+                    symbol: L.Symbol.arrowHead({pixelSize: 15, polygon: false, pathOptions: {stroke: true}})
                 }
             ]
         }).addTo(layerGroup);
@@ -237,7 +237,7 @@ $.ajax({
                 {
                     offset: '100%',
                     repeat: 0,
-                    //symbol: L.Symbol.arrowHead({pixelSize: 15, polygon: false, pathOptions: {stroke: true}})
+                    symbol: L.Symbol.arrowHead({pixelSize: 15, polygon: false, pathOptions: {stroke: true}})
                 }
             ]
             }).addTo(layerGroup);
@@ -252,7 +252,7 @@ $.ajax({
                 {
                     offset: '100%',
                     repeat: 0,
-                    //symbol: L.Symbol.arrowHead({pixelSize: 15, polygon: false, pathOptions: {stroke: true}})
+                    symbol: L.Symbol.arrowHead({pixelSize: 15, polygon: false, pathOptions: {stroke: true}})
                 }
             ]
             }).addTo(layerGroup);
@@ -267,7 +267,7 @@ $.ajax({
                 {
                     offset: '100%',
                     repeat: 0,
-                    //symbol: L.Symbol.arrowHead({pixelSize: 15, polygon: false, pathOptions: {stroke: true}})
+                    symbol: L.Symbol.arrowHead({pixelSize: 15, polygon: false, pathOptions: {stroke: true}})
                 }
             ]
             }).addTo(layerGroup);
