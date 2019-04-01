@@ -187,7 +187,7 @@ $(document).ready(function() {
                     render: 'value',
                     fontSize: 18,
                     fontStyle: 'bold',
-                    fontColor: '#fff'
+                    fontColor: '#000'
                 }
             ] 
         },
