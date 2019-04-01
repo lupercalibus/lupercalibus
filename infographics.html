@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>Prancing Horse</title>
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!--JSengine-->
+        <script src="js/infographic.js"></script>
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="css/prancing.css">
+        <!--Chartjs-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
+        <!--<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-piechart-outlabels@0.1.4/dist/chartjs-plugin-piechart-outlabels.min.js"></script>-->
+        <!--tagCloud-->
+        <script src="https://cdn.jsdelivr.net/npm/jqcloud2@2.0.3/dist/jqcloud.min.js"></script>
+
+
+    </head>
+    <body>
+        <div class="container-fluid">
+        <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6" align="center">
+                    <h1>Prancing Horse</h1>
+                    <ul style="display: inline-block; padding:0" align:"center">
+                        <li style="display: inline-block; padding:8">
+                                <a href="index.html">
+                                HOME
+                                </a>
+                        </li>
+                        <li style="display: inline-block; padding:8">
+                            <a href="infographics.html">
+                                INFOGRAPHICS
+                            </a>
+                        </li>
+                        <li style="display: inline-block; padding:8">
+                            <a href="victories.html">
+                                VICTORIES
+                            </a>
+                        </li>
+                        <li style="display: inline-block; padding:8">
+                            <a>
+                                METASTORYTELLING
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                </div>
+        </div>
+        
+        <div class="container">
+
+                <!--Trench-->
+                <div class="row">
+                <div class="col-md-6" style="margin-bottom: 20px; border-radius: 25px;border: 1px solid #000;padding-top: 20px;padding-bottom: 20px;">
+                        <h1>Did you Know?</h1>
+                        <img style="width:100%; height: auto;" src="css\ferrari.jpg">
+                        <h3>"Ferrari, put my son's <b>prancing horse</b> on your cars. It will bring you luck."</h3>
+                        <h5 align= "right">(Baracca's mother to Enzo Ferrari)</h5>
+
+                </div>
+
+                <div class="col-md-6" style="width: 100%; margin-bottom: 20px;">
+                        <h1 style="text-align:center">Words frequency in Baracca's letters</h1>
+                        <div id="words"></div>
+                </div>
+                </div>
+                <!-- ENEMIES-->
+                <div class="col-md-12" style="padding: 0; background-image: url('css/sky.jpg'); background-size: cover; background-repeat: no-repeat; display: inline-block; margin-bottom: 20px">
+                            <div class="row">
+                                    <div class="col-md-3" style="padding:0"></div>
+                                    <div class="col-md-6" style="padding:0">
+                                            <canvas id="enemiesgraph"><canvas>
+                                    </div>
+                                    <div class="col-md-3" style="padding:0"></div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-md-12" style ="width:100%"> 
+                                        <img style="width:100%; height: auto;" src="css\cockpit.png">
+                                    </div>
+                            </div>
+                </div>
+
+                <!--planes-->
+                <div class="col-md-12">
+                        <div class="col-md-12" style="padding: 0; background-image: url('css/aereofront.png'); background-size: 100%; background-repeat: no-repeat; background-position:center; display: inline-block">
+                                <canvas id="planesgraph"></canvas>
+                        </div>
+                </div>
+                <div class="col-md-12" style="margin-bottom: 20px;">
+                        <div class="row justify-content-center">
+                                        <form style="margin-bottom: 0 !important">
+                                        <div class="radio-inline btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn btn-secondary active">
+                                                          <input type="radio" name="planes" id="N11" value="N11" autocomplete="off" checked> Nieuport XI
+                                                        </label>
+                                                        <label class="btn btn-secondary">
+                                                          <input type="radio" name="planes" id="N17" value="N17" autocomplete="off"> Nieuport XVII
+                                                        </label>
+                                                        <label class="btn btn-secondary">
+                                                          <input type="radio" name="planes" id="S7" value="S7" autocomplete="off"> SPAD VII
+                                                        </label>
+                                                        <label class="btn btn-secondary">
+                                                          <input type="radio" name="planes" id="S13" value="S13" autocomplete="off"> SPAD XIII
+                                                        </label>
+                                                </div>
+                                                </form>
+                                        
+                                        </div>
+                        <div class="row" style="border-radius: 25px;border: 2px solid #000;padding: 20px;" >
+                                <div class="col-md-6">
+                                        <div id="planesstatscontainer">
+                                                <canvas id="planesstats"></canvas>
+                                        </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                        <div id="planesimgcontainer" style ="width:100%"></div>
+                                        
+                                </div>
+                        </div>
+                </div>
+        </div>
+    </div>
+    <footer class="footer bg-dark text-white" style="bottom: 0;margin-top: 60;">
+            CIAU
+     </footer>
+
+    </body>   
+</html>
