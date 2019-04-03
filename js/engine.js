@@ -1,20 +1,15 @@
 $(document).ready(function() {
 
 
-var check = function(){
-    var width = screen.width
-
-    console.log(width)
-    if (screen.width < 320) { 
+    var width = $( window ).width();
+    if (width < 620) { 
     $('.mapmd').remove();
     }
-    if (screen.width >= 320) { 
+    if (width >= 620) { 
     $('.mapsm').remove();
     $('#mappanel').remove();
     }
-}
-
-$.when(check).done(function() {
+console.log(width)
 
 var map = L.map('map', {
  maxZoom: 11,
@@ -36,7 +31,7 @@ legend.onAdd = function (map) {
 };
 
 legend.addTo(map);
-})
+
 
 //'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 //per caricare il geojson serve un procedimento diverso
