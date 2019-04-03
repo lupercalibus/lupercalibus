@@ -34,12 +34,6 @@ legend.onAdd = function (map) {
 
 legend.addTo(map);
 
-$('.nav-tabs a').on('show.bs.tab', function(e){
-    console-console.log("oooooo");
-    var resizeEvent = new Event('resize');
-    window.dispatchEvent(resizeEvent);
-    map.setZoom(9);
-  });
 
 
 //'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
@@ -361,6 +355,13 @@ $.ajax({
                 $('#carouselTitle').carousel(properties.items - 1)
           });
 
+          $('.nav-tabs a').on('show.bs.tab', function(e){
+            console-console.log("oooooo");
+            var resizeEvent = new Event('resize');
+            window.dispatchEvent(resizeEvent);
+            map.setZoom(8);
+            map.flyTo(actualplace.getBounds().getCenter(), 9);
+          });
         })
     }})
 })
