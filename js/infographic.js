@@ -149,8 +149,8 @@ $(document).ready(function() {
 
     var datplan = {
         labels: [
-            "Nieuport XI",
-            "Nieuport XVII",
+            "Nieuport 11",
+            "Nieuport 17",
             "SPAD VII",
             "SPAD XIII",
             "Unknown"
@@ -179,14 +179,14 @@ $(document).ready(function() {
            labels: [{
                     render: 'label',
                     position: 'outside',
-                    fontSize: 18,
+                    fontSize: 16,
                     fontStyle: 'bold',
                     color: '#000',
                     fontColor: '#000'
                 },
                 {
                     render: 'value',
-                    fontSize: 24,
+                    fontSize: 20,
                     fontStyle: 'bold',
                     fontColor: '#000'
                 }
