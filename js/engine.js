@@ -355,6 +355,7 @@ $.ajax({
                 $('#carouselTitle').carousel(properties.items - 1)
           });
 
+
           $('.nav-tabs a').on('show.bs.tab', function(e){
             console-console.log("oooooo");
             var resizeEvent = new Event('resize');
