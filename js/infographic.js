@@ -117,7 +117,7 @@ $(document).ready(function() {
 
         var daten = {
             labels: [
-                "Kill",
+                "Killed",
                 "Wounded",
                 "Prisoner",
                 "Unhurted",
