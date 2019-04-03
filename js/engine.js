@@ -38,6 +38,7 @@ $('.nav-tabs a').on('show.bs.tab', function(e){
     console-console.log("oooooo");
     var resizeEvent = new Event('resize');
     window.dispatchEvent(resizeEvent);
+    map.invalidateSize(); 
   });
 
 
