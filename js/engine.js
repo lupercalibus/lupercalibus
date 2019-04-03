@@ -9,7 +9,7 @@ $(document).ready(function() {
     $('.mapsm').remove();
     $('#mappanel').remove();
     }
-console.log(width)
+
 
 var map = L.map('map', {
  maxZoom: 11,
@@ -19,6 +19,8 @@ var map = L.map('map', {
 map.setView([46.0160, 13.1611], 9);
 var osm = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 }).addTo(map);
+
+map.invalidateSize(true)
 
 var legend = L.control({position: 'topright'});
 
@@ -31,6 +33,12 @@ legend.onAdd = function (map) {
 };
 
 legend.addTo(map);
+
+$('.nav-tabs a').on('show.bs.tab', function(e){
+    console-console.log("oooooo");
+    var resizeEvent = new Event('resize');
+    window.dispatchEvent(resizeEvent);
+  });
 
 
 //'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
