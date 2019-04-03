@@ -1,6 +1,21 @@
 $(document).ready(function() {
 
 
+var check = function(){
+    var width = screen.width
+
+    console.log(width)
+    if (screen.width < 320) { 
+    $('.mapmd').remove();
+    }
+    if (screen.width >= 320) { 
+    $('.mapsm').remove();
+    $('#mappanel').remove();
+    }
+}
+
+$.when(check).done(function() {
+
 var map = L.map('map', {
  maxZoom: 11,
  minZoom: 8,
@@ -21,7 +36,7 @@ legend.onAdd = function (map) {
 };
 
 legend.addTo(map);
-
+})
 
 //'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 //per caricare il geojson serve un procedimento diverso
