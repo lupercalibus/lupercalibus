@@ -363,7 +363,7 @@ $(document).ready(function() {
               $('#words').jQCloud(words, {
                 autoResize: true,
                 width: "100%",
-                height: "80%"
+                height: "100%"
               });
               var resizeEvent = new Event('resize');
                 window.dispatchEvent(resizeEvent);
