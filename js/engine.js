@@ -110,6 +110,7 @@ $.ajax({
 
         var actualid = 1
 
+        Console.log(letters)
 
         timeline.setSelection(1, {focus: true})
 
