@@ -53,7 +53,9 @@ var border1917 = $.ajax({
 var letters = $.ajax({
                     url:"json/letters.json",
                     dataType: "json",
-                })           
+                })
+                
+letters = letters.responseJSON
 
                
 $.when(places, border1916, border1917).done(function() {
