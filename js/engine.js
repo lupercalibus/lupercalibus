@@ -361,6 +361,9 @@ $.ajax({
             function letterize(actid){
                 actualet = letters.find(function(letterize){return letters.id ==  actid})
                 Console.log(actualet)
+                if (actualet == null){
+                    Console.log("hihihih")
+                }
             }
 
           })
