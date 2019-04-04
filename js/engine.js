@@ -110,7 +110,7 @@ $.ajax({
 
         var actualid = 1
 
-        Console.log(letters)
+        console.log(letters)
 
         timeline.setSelection(1, {focus: true})
 
@@ -126,9 +126,9 @@ $.ajax({
 
         function letterize(actid){
             actualet = letters.find(function(letters){return letters.id ==  actid})
-            Console.log(actualet)
+            console.log(actualet)
             if (actualet == null){
-                Console.log("hihihih")
+                console.log("hihihih")
             }
         }
 
