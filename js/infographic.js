@@ -1,4 +1,14 @@
 $(document).ready(function() {
+    
+    var width = $( window ).width();
+    if (width < 620) { 
+        var canvas = document.getElementById("planesgraph");
+        canvas.height = 170;
+    }
+    else { 
+        var canvas = document.getElementById("planesgraph");
+        canvas.height = 120;
+    }
 
     Chart.pluginService.register({
         beforeDraw: function(chart) {
