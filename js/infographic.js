@@ -3,7 +3,7 @@ $(document).ready(function() {
     var width = $( window ).width();
     if (width < 620) { 
         var canvas = document.getElementById("planesgraph");
-        canvas.height = 170;
+        canvas.height = 200;
     }
     else { 
         var canvas = document.getElementById("planesgraph");
@@ -159,10 +159,10 @@ $(document).ready(function() {
 
     var datplan = {
         labels: [
-            "Nieuport 11",
-            "Nieuport 17",
-            "SPAD VII",
-            "SPAD XIII",
+            "Nieuport \n 11",
+            "Nieuport \n 17",
+            "SPAD \n VII",
+            "SPAD \n XIII",
             "Unknown"
         ],
         datasets: [{
