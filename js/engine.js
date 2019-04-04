@@ -49,6 +49,10 @@ var border1916 = $.ajax({
 var border1917 = $.ajax({
                     url:"json/linea_dic_1917.json",
                     dataType: "json",
+                })
+var letters = $.ajax({
+                    url:"json/letters.json",
+                    dataType: "json",
                 })           
 
                
@@ -104,6 +108,7 @@ $.ajax({
 
         var actualid = 1
 
+
         timeline.setSelection(1, {focus: true})
 
         itemfirst.add(items)
@@ -115,6 +120,8 @@ $.ajax({
             color: '#FF0000',
             //dashArray: '20,15'
         }
+
+        letterize(actualid)
 
         var actualborder 
         actualborder = L.geoJson(border1916.responseJSON, {style: styleborder}).addTo(map);
@@ -348,6 +355,13 @@ $.ajax({
 
                 }
             });
+
+            letterize(actualid)
+
+            function letterize(actid){
+                actualet = letters.find(function(letterize){return letters.id ==  actid})
+                Console.log(actualet)
+            }
 
           })
 
