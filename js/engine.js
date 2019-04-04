@@ -50,15 +50,15 @@ var border1917 = $.ajax({
                     url:"json/linea_dic_1917.json",
                     dataType: "json",
                 })
-var letters = $.ajax({
+var letterson = $.ajax({
                     url:"json/letters.json",
                     dataType: "json",
                 })
                 
-letters = letters.responseJSON
+var letters = letterson.responseJSON
 
                
-$.when(places, border1916, border1917).done(function() {
+$.when(places, border1916, border1917, letters).done(function() {
 
      var battles = $.ajax({
         url:"json/battles.json",
