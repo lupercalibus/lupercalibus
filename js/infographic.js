@@ -295,7 +295,7 @@ $(document).ready(function() {
 
         //first plane
         planegraphfun(dataN11)
-        $('#planesimgcontainer').append('<img id="planeimg" src="css/planes/Nieuport11.png" width="100%">')
+        $('#planesimgcontainer').append('<img id="planeimg" src="css/planes/Nieuport11.png" width="100%" style="margin-top:35px">')
 
         $('input[type=radio][name=planes]').change(function() {
             switch ($(this).val()) {
@@ -304,28 +304,28 @@ $(document).ready(function() {
                     $('#planesstatscontainer').append('<canvas id="planesstats" height=200><canvas>');
                     planegraphfun(dataN11)
                     $('#planeimg').remove();
-                    $('#planesimgcontainer').append('<img id="planeimg" src="css/planes/Nieuport11.png" width="100%">')
+                    $('#planesimgcontainer').append('<img id="planeimg" src="css/planes/Nieuport11.png" width="100%" style="margin-top:35px">')
                     break
                 case 'N17':
                     $('#planesstats').remove();
                     $('#planesstatscontainer').append('<canvas id="planesstats" height=200><canvas>');
                     planegraphfun(dataN17)
                     $('#planeimg').remove();
-                    $('#planesimgcontainer').append('<img id="planeimg" src="css/planes/Nieuport17.png" width="100%">')
+                    $('#planesimgcontainer').append('<img id="planeimg" src="css/planes/Nieuport17.png" width="100%" style="margin-top:35px">')
                     break
                 case 'S7':
                     $('#planesstats').remove();
                     $('#planesstatscontainer').append('<canvas id="planesstats" height=200><canvas>');
                     planegraphfun(dataS7)
                     $('#planeimg').remove();
-                    $('#planesimgcontainer').append('<img id="planeimg" src="css/planes/SPADVII.png" width="100%">')
+                    $('#planesimgcontainer').append('<img id="planeimg" src="css/planes/SPADVII.png" width="100%" style="margin-top:35px">')
                     break
                 case 'S13':
                     $('#planesstats').remove();
                     $('#planesstatscontainer').append('<canvas id="planesstats" height=200><canvas>');
                     planegraphfun(dataS13)
                     $('#planeimg').remove();
-                    $('#planesimgcontainer').append('<img id="planeimg" src="css/planes/SPADXIII.png" width="100%">')
+                    $('#planesimgcontainer').append('<img id="planeimg" src="css/planes/SPADXIII.png" width="100%" style="margin-top:35px">')
                     break
             }
         });
