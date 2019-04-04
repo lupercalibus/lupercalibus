@@ -55,7 +55,7 @@ var letterson = $.ajax({
                     dataType: "json",
                 })
                 
-var letters = (letterson.responseJSON)
+var letters = JSON.parse(letterson.responseJSON)
 
                
 $.when(places, border1916, border1917, letters).done(function() {
