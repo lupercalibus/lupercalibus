@@ -126,11 +126,11 @@ $.ajax({
         }
 
         function letterize(actid){
+            actualet =[]
             letters.forEach(function (letteritem) {
                 if( letteritem.id == actid){
                     actualet = letteritem
                 }
-                return actualet
             })
             console.log(actualet)
             if (actualet == null){
