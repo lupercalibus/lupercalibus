@@ -56,8 +56,11 @@ var letters =  $.ajax({
                     dataType: "json",
                     url:"json/letters.json",
                     success: function(dati) {
-                        console.log(dati)
-                        return(dati)
+                        var json
+                        dati.forEach(function(arrayItem) {
+                            json.push(arrayItem)
+                        })
+                        return(json)
                     }
                 })
 
