@@ -52,12 +52,7 @@ var border1917 = $.ajax({
                 })
 
  
-var lettefddsffdsrs =  $.ajax({
-                    dataType: "json",
-                    url:"json/letters.json",
-                })
 
-var letters = loadJSONArray("json/letters.json")
                
 $.when(places, border1916, border1917, letters).done(function() {
 
@@ -126,7 +121,12 @@ $.ajax({
         }
 
         function letterize(actid){
-            actualet = letters.find(function(letters){return letters.id ==  actid})
+            letters.forEach(function (letteritem) {
+                if( letteritem.id == actualid){
+                    actualet = letteritem
+                }
+                return actualet
+            })
             console.log(actualet)
             if (actualet == null){
                 console.log("hihihih")
