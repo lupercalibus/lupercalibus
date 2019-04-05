@@ -128,7 +128,7 @@ $.ajax({
             actualet =[]
             letters.forEach(function (letteritem) {
                 if( letteritem.id == actid){
-                    actualet = letteritem
+                    actualet = letteritem.letter
                 }
             })
             console.log(actualet)
