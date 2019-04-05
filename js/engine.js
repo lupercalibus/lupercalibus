@@ -133,7 +133,7 @@ $.ajax({
                 }
             })
             console.log(actualet)
-            if (actualet == null){
+            if (actualet == []){
                 console.log("hihihih")
             }
         }
