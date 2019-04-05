@@ -127,7 +127,7 @@ $.ajax({
 
         function letterize(actid){
             letters.forEach(function (letteritem) {
-                if( letteritem.id == actualid){
+                if( letteritem.id == actid){
                     actualet = letteritem
                 }
                 return actualet
