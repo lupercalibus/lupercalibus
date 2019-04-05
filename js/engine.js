@@ -50,12 +50,16 @@ var border1917 = $.ajax({
                     url:"json/linea_dic_1917.json",
                     dataType: "json",
                 })
-var letterson = $.ajax({
-                    url:"json/letters.json",
+
+ 
+var letters =  $.ajax({
                     dataType: "json",
+                    url:"json/letters.json",
+                    success: function(dati) {
+                        console.log(dati)
+                        return(dati)
+                    }
                 })
-                
-var letters = letterson.responseJSON
 
                
 $.when(places, border1916, border1917, letters).done(function() {
