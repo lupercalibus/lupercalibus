@@ -51,6 +51,11 @@ var border1917 = $.ajax({
                     dataType: "json",
                 })
 
+var letters = [];
+$.get( "json/letters.json", function( data){
+  letters = JSON.parse(data);
+  console.log(letters);
+});
  
 
                
