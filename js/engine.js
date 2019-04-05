@@ -52,17 +52,15 @@ var border1917 = $.ajax({
                 })
 
  
-var letters =  $.ajax({
+var letterson =  $.ajax({
                     dataType: "json",
                     url:"json/letters.json",
                     success: function(dati) {
-                        var json
-                        dati.forEach(function(arrayItem) {
-                            json.push(arrayItem)
-                        })
-                        return(json)
+                        console.log(dati)
+                        return(dati)
                     }
                 })
+var letters =  letterson.responseJSONS
 
                
 $.when(places, border1916, border1917, letters).done(function() {
