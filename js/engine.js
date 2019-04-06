@@ -131,6 +131,7 @@ $.ajax({
             letters.forEach(function (letteritem) {
                 if( letteritem.id == actid){
                     actualet = letteritem.letter
+                    $('#lettertext').append(actualet)
                 }
             })
             console.log(actualet)
