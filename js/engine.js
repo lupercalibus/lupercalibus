@@ -128,15 +128,17 @@ $.ajax({
 
         function letterize(actid){
             actualet =[]
+            $('#lettertext').html('')
             letters.forEach(function (letteritem) {
                 if( letteritem.id == actid){
+                    $('#lettertab').removeClass( "disabled" )
                     actualet = letteritem.letter
                     $('#lettertext').append(actualet)
                 }
             })
             console.log(actualet)
             if (actualet.length == 0){
-                console.log("hihihih")
+                $('#lettertab').addClass( "disabled" )
             }
         }
 
