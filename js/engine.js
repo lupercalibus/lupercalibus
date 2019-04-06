@@ -139,6 +139,7 @@ $.ajax({
             console.log(actualet)
             if (actualet.length == 0){
                 $('#lettertab').addClass( "disabled" )
+                $('#statstab').tab('show');
             }
         }
 
