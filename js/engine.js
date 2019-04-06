@@ -101,7 +101,7 @@ $.ajax({
         max: '1919-01-01',
         maxHeight: "150px",
         minHeight: "150px",
-        zoomMin: 1500000000, //1500000000 per il girono esatto
+        zoomMin: 3000000000, //1500000000 per il girono esatto
         zoomMax: 1500000000,
         type: 'point'
         };
