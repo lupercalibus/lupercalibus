@@ -389,6 +389,9 @@ $.ajax({
 
 
           $('.mapnav').on('show.bs.tab', function(e){
+            $timeout(function () {
+                map.invalidateSize();
+                });
             console-console.log("oooooo");
             var resizeEvent = new Event('resize');
             window.dispatchEvent(resizeEvent);
