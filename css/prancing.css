@@ -80,5 +80,9 @@ div.jqcloud span.w1 { font-size: 100%; padding:5px}
     opacity: 0.5;
 }
 
+@font-face {
+    font-family: "Typewriter";
+    src: url(css/TravelingTypewriter.ttf) format("truetype");
+}
 
 
