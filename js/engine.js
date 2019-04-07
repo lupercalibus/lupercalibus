@@ -279,7 +279,7 @@ $.ajax({
                 layerGroup.clearLayers();
                 var actualplace= L.geoJson(places.responseJSON, {filter: MontelloFilter}).addTo(layerGroup);
                 map.flyTo(actualplace.getBounds().getCenter(), 9);
-                markerino(actualplace)
+                //markerino(actualplace)
                 function MontelloFilter(feature) {
                     if (feature.properties.name === "Montello") return true
                     }
