@@ -47,16 +47,16 @@ div.jqcloud {
     
     div.jqcloud span { padding: 0; }
 
-div.jqcloud span.w10 { font-size: 280%; padding:10px}
-div.jqcloud span.w9 { font-size: 260%; padding:10px}
-div.jqcloud span.w8 { font-size: 240%; padding:10px}
-div.jqcloud span.w7 { font-size: 220%; padding:10px}
-div.jqcloud span.w6 { font-size: 200%; padding:10px}
-div.jqcloud span.w5 { font-size: 180%; padding:10px}
-div.jqcloud span.w4 { font-size: 160%; padding:10px}
-div.jqcloud span.w3 { font-size: 140%; padding:10px}
-div.jqcloud span.w2 { font-size: 120%; padding:10px}
-div.jqcloud span.w1 { font-size: 100%; padding:10px}
+div.jqcloud span.w10 { font-size: 280%; padding:5px}
+div.jqcloud span.w9 { font-size: 260%; padding:5px}
+div.jqcloud span.w8 { font-size: 240%; padding:5px}
+div.jqcloud span.w7 { font-size: 220%; padding:5px}
+div.jqcloud span.w6 { font-size: 200%; padding:5px}
+div.jqcloud span.w5 { font-size: 180%; padding:5px}
+div.jqcloud span.w4 { font-size: 160%; padding:5px}
+div.jqcloud span.w3 { font-size: 140%; padding:5px}
+div.jqcloud span.w2 { font-size: 120%; padding:5px}
+div.jqcloud span.w1 { font-size: 100%; padding:5px}
 
 
 .legend {
@@ -83,6 +83,28 @@ div.jqcloud span.w1 { font-size: 100%; padding:10px}
 @font-face {
     font-family: "Typewriter";
     src: url(TravelingTypewriter.ttf) format("truetype");
+}
+
+
+.titlenew {
+    position: relative;
+    z-index: 1;
+}
+    .titlenew:before {
+        border-top: 2px solid #dfdfdf;
+        content:"";
+        margin: 0 auto; /* this centers the line to the full width specified */
+        position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+        top: 50%; left: 0; right: 0; bottom: 0;
+        width: 95%;
+        z-index: -1;
+    }
+
+    .bi { 
+        /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
+        background: #fff; 
+        padding: 0 15px; 
+    }
 }
 
 
