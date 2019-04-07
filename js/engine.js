@@ -254,23 +254,30 @@ $.ajax({
             actualid= $( ".active" ).find( ".actualcard").attr('id')
             timeline.setSelection(actualid, {focus: true})
             //json del nuovo oggetto
-            var actualitem
-            layerGroup.clearLayers();
-            actualitem = dati.find(function(dati){return dati.number ==  actualid})
-            if (actualid == 25){
-                actualborder.remove(); 
-                actualborder = L.geoJson(border1917.responseJSON, {style: styleborder}).addTo(map);
-            }
-            if (actualid == 24){
-                actualborder.remove(); 
-                actualborder = L.geoJson(border1916.responseJSON, {style: styleborder}).addTo(map);
-            }
+            if (actualid != 35){
+                var actualitem
+                layerGroup.clearLayers();
+                actualitem = dati.find(function(dati){return dati.number ==  actualid})
+                if (actualid == 25){
+                    actualborder.remove(); 
+                    actualborder = L.geoJson(border1917.responseJSON, {style: styleborder}).addTo(map);
+                }
+                if (actualid == 24){
+                    actualborder.remove(); 
+                    actualborder = L.geoJson(border1916.responseJSON, {style: styleborder}).addTo(map);
+                }
 
-            
-            var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
-            map.flyTo(actualplace.getBounds().getCenter(), 9);
-            markerino(actualplace)
-
+                
+                var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
+                map.flyTo(actualplace.getBounds().getCenter(), 9);
+                markerino(actualplace)
+            }
+            if (actualid == 35){
+                layerGroup.clearLayers();
+                var actualplace= L.geoJson([45.80817, 12.09731]).addTo(layerGroup);
+                map.flyTo(actualplace.getBounds().getCenter(), 9);
+                markerino(actualplace)
+            }
 
             if (actualid <= 24){
                 var actualbase = base_SCaterina
