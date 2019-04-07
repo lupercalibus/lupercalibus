@@ -88,6 +88,7 @@ $.ajax({
             }
         })
         datesarray.push({id: 35, title: 'Montello 1918-06-19', start: 1918-06-19 , className: "dogfight"})
+        console.log(datesarray)
         $('<div class="carousel-item"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="35" align="center"> Last Flight </h1><h2>Montello <br> 1918-06-19 </h2> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
 
         $.when(battles).done(function() {
@@ -394,7 +395,7 @@ $.ajax({
 
             var distance = (L.latLng(actualbase).distanceTo(actualplace.getBounds().getCenter())) / 1000
             
-            $('.statscontainer').append('<div class= "mb-3"> <div class= "row"> <div class="col-md-3 col-4"><b>Pilot</b></div><div class="col-md-9 col-8">Francesco Baracca</div> </div> <div class= "row"> <div class="col-md-3 col-4"><b>Nation</b></div><div class="col-md-9 col-8">Italy</div> </div> <div class= "row"> <div class="col-md-3 col-4"><b>Plane</b></div><div class="col-md-9 col-8">SPAD VII</div> </div> <div class= "row"> <div class="col-md-3 col-4"><b>Squad</b></div><div class="col-md-9 col-8 squadstat"></div> </div> </div> <div class= "mb-3"> <div class= "row"> <div class="col-md-3 col-4"><b>Base</b></div><div class="col-md-9 col-8 basestat"></div> </div> <div class= "row"> <div class="col-md-3 col-4"><b>Dist Flight</b></div><div class="col-md-9 col-8 distancestat"></div> </div> </div> <div class= "mb-3"> <div class= "row"> <div class="col-md-3 col-5"><b>Status</b></div><div class="col-md-9 col-7">Killed in Action</div> </div> </div>')
+            $('.statscontainer').append('<div class= "mb-3"> <div class= "row"> <div class="col-md-3 col-4"><b>Pilot</b></div><div class="col-md-9 col-8">Francesco Baracca</div> </div> <div class= "row"> <div class="col-md-3 col-4"><b>Nation</b></div><div class="col-md-9 col-8">Italy</div> </div> <div class= "row"> <div class="col-md-3 col-4"><b>Plane</b></div><div class="col-md-9 col-8">SPAD VII</div> </div> <div class= "row"> <div class="col-md-3 col-4"><b>Squad</b></div><div class="col-md-9 col-8 squadstat"></div> </div> </div> <div class= "mb-3"> <div class= "row"> <div class="col-md-3 col-4"><b>Base</b></div><div class="col-md-9 col-8 basestat"></div> </div> <div class= "row"> <div class="col-md-3 col-4"><b>Dist Flight</b></div><div class="col-md-9 col-8 distancestat"></div> </div> </div> <div class= "mb-3"> <div class= "row"> <div class="col-md-3 col-4"><b>Status</b></div><div class="col-md-9 col-8">Killed in Action</div> </div> </div>')
             $('.basestat').append(basename)
             $('.distancestat').append(distance.toFixed(1) + " km")
             }
