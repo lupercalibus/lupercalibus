@@ -327,7 +327,7 @@
             "type": "Feature",
             "geometry": {
               "type": "Point",
-              "coordinates": [ 12.09731,45.80817]
+              "coordinates": [12.09731,45.80817]
             },
             "properties": {
               "name": "Montello"
