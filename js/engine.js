@@ -274,9 +274,12 @@ $.ajax({
             }
             if (actualid == 35){
                 layerGroup.clearLayers();
-                var actualplace= L.geoJson(places.responseJSON, {filter: PlaceFilter}).addTo(layerGroup);
+                var actualplace= L.geoJson(places.responseJSON, {filter: MontelloFilter}).addTo(layerGroup);
                 map.flyTo(actualplace.getBounds().getCenter(), 9);
                 markerino(actualplace)
+                function MontelloFilter(feature) {
+                    if (feature.properties.name === "Montello") return true
+                    }
             }
 
             if (actualid <= 24){
