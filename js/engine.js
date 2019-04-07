@@ -87,7 +87,7 @@ $.ajax({
                 $('<div class="carousel-item"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="'+ arrayItem["number"] + '" align="center"> Victory #'+ arrayItem["number"]+ '</h1><h2>'+  arrayItem["place"] + " <br> "+ (arrayItem["date"]) + '</h2> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
             }
         })
-        datesarray.push({id: 35, title: 'Montello 1918-06-19', start: 1918-06-19 , className: "dogfight"})
+        datesarray.push({id: 35, title: 'Montello 1918-06-19', start: "1918-06-19" , className: "dogfight"})
         console.log(datesarray)
         $('<div class="carousel-item"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="35" align="center"> Last Flight </h1><h2>Montello <br> 1918-06-19 </h2> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
 
