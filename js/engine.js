@@ -323,15 +323,9 @@ $.ajax({
             
             if (actualid !=35){
 
-            $('.planestat').html('')
-            $('.squadstat').html('')
-            $('.wingmenstat').html('')
-            $('.nationstat').html('')
-            $('.rivalplanestat').html('')
-            $('.rivalsquadstat').html('')
-            $('.victimsstat').html('')
-            $('.basestat').html('')
-            $('.distancestat').html('')
+            $('.statscontainer').html('')
+
+            $('.statscontainer').append('<div class= "mb-3"> <div class= "row"> <div class="col-md-3 col-4"><b>Pilot</b></div><div class="col-md-9 col-8">Francesco Baracca</div> </div> <div class= "row"> <div class="col-md-3 col-4"><b>Nation</b></div><div class="col-md-9 col-8">Italy</div> </div> <div class= "row"> <div class="col-md-3 col-4"><b>Plane</b></div><div class="col-md-9 col-8 planestat"></div> </div> <div class= "row"> <div class="col-md-3 col-4"><b>Squad</b></div><div class="col-md-9 col-8 squadstat"></div> </div> <div class= "row"> <div class="col-md-3 col-4"><b>Wingmen</b></div><div class="col-md-9 col-8"><ul class="wingmenstat"></ul></div> </div> </div> <div class= "mb-3"> <div class= "row"> <div class="col-md-3 col-4"><b>Base</b></div><div class="col-md-9 col-8 basestat"></div> </div> <div class= "row"> <div class="col-md-3 col-4"><b>Dist Flight</b></div><div class="col-md-9 col-8 distancestat"></div> </div> </div> <div class= "mb-3"> <div class= "row"> <div class="col-md-3 col-5"><b>Rival Nation</b></div><div class="col-md-9 col-7 nationstat"></div> </div> <div class= "row"> <div class="col-md-3 col-5"><b>Rival Plane</b></div><div class="col-md-9 col-7 rivalplanestat"></div> </div> <div class= "row"> <div class="col-md-3 col-5"><b>Rival Squad</b></div><div class="col-md-9 col-7 rivalsquadstat"></div> </div> </div> <div class= "mb-3"> <div class= "row"> <div class="col-md-3 col-5"><b>Rival Pilots</b></div><div class="col-md-9 col-7 victimsstat"></div> </div> </div>')
 
 
 
@@ -384,6 +378,13 @@ $.ajax({
 
             letterize(actualid)
 
+            }
+            else if (actualid == 35){
+            $('.statscontainer').html('')
+
+            $('.statscontainer').append('<div class= "mb-3"> <div class= "row"> <div class="col-md-3 col-4"><b>Pilot</b></div><div class="col-md-9 col-8">Francesco Baracca</div> </div> <div class= "row"> <div class="col-md-3 col-4"><b>Nation</b></div><div class="col-md-9 col-8">Italy</div> </div> <div class= "row"> <div class="col-md-3 col-4"><b>Plane</b></div><div class="col-md-9 col-8">SPAD VII</div> </div> <div class= "row"> <div class="col-md-3 col-4"><b>Squad</b></div><div class="col-md-9 col-8 squadstat"></div> </div> </div> <div class= "mb-3"> <div class= "row"> <div class="col-md-3 col-4"><b>Base</b></div><div class="col-md-9 col-8 basestat"></div> </div> <div class= "row"> <div class="col-md-3 col-4"><b>Dist Flight</b></div><div class="col-md-9 col-8 distancestat"></div> </div> </div> <div class= "mb-3"> <div class= "row"> <div class="col-md-3 col-5"><b>Status</b></div><div class="col-md-9 col-7">Killed in Action</div> </div> </div>')
+            $('.basestat').append(basename)
+            $('.distancestat').append(distance.toFixed(1) + " km")
             }
 
           })
