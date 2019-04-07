@@ -414,8 +414,8 @@ $.ajax({
             //console.log("oooooo");
             var resizeEvent = new Event('resize');
             window.dispatchEvent(resizeEvent);
-            //map.setZoom(8);
-            map.flyTo(actualplace.getBounds().getCenter(), 9);
+            map.flyTo(actualplace.getBounds().getCenter(), 8);
+            map.setZoom(9);
           });
         })
     }})
