@@ -88,7 +88,7 @@ $.ajax({
             }
         })
         datesarray.push({id: 35, title: 'Montello 1918-06-19', start: "1918-06-19" , className: "dogfight"})
-        console.log(datesarray)
+        
         $('<div class="carousel-item"> <div class="row"> <div class="col-md-3"></div> <div class="col-md-6 mx-1"> <div class="card alert-secondary" align="center"> <h1 class="actualcard" id="35" align="center"> Last Flight </h1><h2>Montello <br> 1918-06-19 </h2> </div> </div> <div class="col-md-3"></div> </div> </div>').appendTo('.carousel-inner');
 
         $.when(battles).done(function() {
@@ -409,10 +409,11 @@ $.ajax({
 
 
           $('.mapnav').on('shown.bs.tab', function(e){
-            //console-console.log("oooooo");
+            //console.log("oooooo");
             var resizeEvent = new Event('resize');
             window.dispatchEvent(resizeEvent);
             map.setZoom(8);
+            console.log(actualplace)
             map.flyTo(actualplace.getBounds().getCenter(), 9);
           });
         })
