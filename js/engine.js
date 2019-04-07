@@ -133,7 +133,7 @@ $.ajax({
                 if( letteritem.id == actid){
                     $('#lettertab').removeClass( "disabled" )
                     actualet = letteritem.letter
-                    $('#lettertext').append(actualet)
+                    $('#lettertext').append('"' + actualet + '"')
                 }
             })
             console.log(actualet)
