@@ -389,12 +389,10 @@ $.ajax({
 
 
           $('.mapnav').on('show.bs.tab', function(e){
-            $timeout(function () {
-                map.invalidateSize();
-                });
+            $(window).trigger('resize');
             console-console.log("oooooo");
-            var resizeEvent = new Event('resize');
-            window.dispatchEvent(resizeEvent);
+            //var resizeEvent = new Event('resize');
+            //window.dispatchEvent(resizeEvent);
             map.setZoom(8);
             map.flyTo(actualplace.getBounds().getCenter(), 9);
           });
