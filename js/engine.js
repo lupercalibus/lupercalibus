@@ -388,11 +388,10 @@ $.ajax({
           });
 
 
-          $('.mapnav').on('show.bs.tab', function(e){
-            $(window).trigger('resize');
+          $('.mapnav').on('shown.bs.tab', function(e){
             console-console.log("oooooo");
-            //var resizeEvent = new Event('resize');
-            //window.dispatchEvent(resizeEvent);
+            var resizeEvent = new Event('resize');
+            window.dispatchEvent(resizeEvent);
             map.setZoom(8);
             map.flyTo(actualplace.getBounds().getCenter(), 9);
           });
