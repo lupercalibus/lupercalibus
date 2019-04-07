@@ -321,6 +321,7 @@ $.ajax({
                 if (feature.properties.name === actualitem["place"]) return true
                 }
             
+            if (actualid !=35){
 
             $('.planestat').html('')
             $('.squadstat').html('')
@@ -383,6 +384,7 @@ $.ajax({
 
             letterize(actualid)
 
+            }
 
           })
 
