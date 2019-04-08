@@ -105,7 +105,6 @@ div.jqcloud span.w1 { font-size: 130%; padding:5px}
     .bi { 
         /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
         background: #fff; 
-        padding: 0 15px; 
     }
 
 
