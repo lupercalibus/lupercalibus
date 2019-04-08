@@ -172,7 +172,7 @@ $.ajax({
             var props = l.feature.properties;
             var m = L.icon({
                 iconUrl: 'css/death.png',
-                iconSize: [40,50],
+                iconSize: [40,40],
             });
             l.setIcon(m);
         });
