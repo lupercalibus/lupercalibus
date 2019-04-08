@@ -74,4 +74,8 @@
     left: 50%;
     top: calc(50% - 3px);
   }
+
+  .card{
+    margin-left: 0 !important
+  }
   
