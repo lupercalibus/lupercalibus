@@ -167,6 +167,17 @@ $.ajax({
             l.setIcon(m);
         });
     }
+    markermont(actualplace)
+        function markermont (pointino){
+        pointino.eachLayer(function(l) {
+            var props = l.feature.properties;
+            var m = L.icon({
+                iconUrl: 'css/death.png',
+                iconSize: [50,60],
+            });
+            l.setIcon(m);
+        });
+    }
         
         base_SCaterina = [46.0341, 13.1857,]
         base_Padova = [45.4054, 11.8839]
@@ -279,7 +290,7 @@ $.ajax({
                 layerGroup.clearLayers();
                 var actualplace= L.geoJson(places.responseJSON, {filter: MontelloFilter}).addTo(layerGroup);
                 map.flyTo(actualplace.getBounds().getCenter(), 9);
-                //markerino(actualplace)
+                markermont(actualplace)
                 function MontelloFilter(feature) {
                     if (feature.properties.name === "Montello") return true
                     }
