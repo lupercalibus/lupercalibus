@@ -167,13 +167,12 @@ $.ajax({
             l.setIcon(m);
         });
     }
-    markermont(actualplace)
         function markermont (pointino){
         pointino.eachLayer(function(l) {
             var props = l.feature.properties;
             var m = L.icon({
                 iconUrl: 'css/death.png',
-                iconSize: [50,60],
+                iconSize: [40,50],
             });
             l.setIcon(m);
         });
