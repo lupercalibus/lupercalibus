@@ -78,4 +78,13 @@
   .card{
     margin-left: 0 !important
   }
+
+  @media only screen and (max-width: 768px) {
+  .allstuff  p {
+      font-size: 0.8rem;
+    }
+    .allstuff  li {
+        font-size: 0.8rem;
+      }
+  }
   
