@@ -149,22 +149,24 @@
                                   <!--4 section-->
                                   <div class="row align-items-center justify-content-end how-it-works d-flex">
                                         <div class="col-8 text-right">
-                                          <h5>CAREER GRAPH</h5>
-                                          <h6>(GeoTime Data Storytelling)</h6>
+                                          <h5>DATASET</h5>
                                           <div align="justify">
                                           <p>In studied bibliography, life and successes of Baracca are always summarized through a table. 
                                               It was decided to follow this narrative style and improve it thanks to digital media.
                                             </p><p>
                                                 First, data of 34 Baracca victories were collected in json format.
-                                                 Later a visualization of the dataset was created: a card for each Baracca victory and a section dedicated to text of pilot's lettes describing each battle.
-                                                 </p><p>
-                                                This Dataset Storytelling Platform focus on 3 factors:</p>
-                                                <ul>
-                                                <li>TIME: data has been arranged along a timeline</li>
-                                                <li>SPACE: every victory is depicted on the map</li>
-                                                <li>ACTION: a carousel allows space-time navigation</li>
-                                                </ul>
-                                                <p>Aristotle would be proud of it!</p>
+                                                Subsequently battles places coordinates have been retrieved and stored in a geojson file, in order to have digital information about places.
+                                            </p>
+                                            <p>
+                                                    Finally, new information were retrieved to increase dataset. For each battle:
+                                                    <ul>
+                                                            <li>Context, the historical battles fought by Italian army during Great War.</li>
+                                                            <li>Squadron to which Baracca belongs</li>
+                                                            <li>Flight departure airport</li>
+                                                            <li>Flight distance (calculated with an algorithm)</li>
+                                                            <li>Frontline Geographical data (data taken from <a href="http://luoghigrandeguerra.iia.cnr.it/">CNR</a>)</li>
+                                                    </ul>
+                                            </p>
                                         </div></div>
                                         <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
                                           <div class="circle font-weight-bold">4</div>
@@ -189,7 +191,17 @@
                                         </div>
                                         <div class="col-6">
                                           <h5>Now with Pug and Sass</h5>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus.</p>
+                                          <p>
+                                                Later a visualization of the dataset was created: a card for each Baracca victory and a section dedicated to text of pilot's lettes describing each battle.
+                                            </p><p>
+                                           This Dataset Storytelling Platform focus on 3 factors:</p>
+                                           <ul>
+                                           <li>TIME: data has been arranged along a timeline</li>
+                                           <li>SPACE: every victory is depicted on the map</li>
+                                           <li>ACTION: a carousel allows space-time navigation</li>
+                                           </ul>
+                                           <p>Aristotle would be proud of it!</p>
+                                            
                                         </div>
                                       </div>
                                        <!--path between 5-6-->

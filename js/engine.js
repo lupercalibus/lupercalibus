@@ -30,7 +30,7 @@ legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend');
      div.innerHTML =
-            '<ul><li><div style="background-color: #FF0000; width: 30px; height: 5px; display: inline-block"></div> Border</li> <li><div style="background-color: #3388ff;  width: 30px; height: 5px; display: inline-block"></div> Flight</li> <li><img src="css/base.png" height="30"> Base</li> <li><img src="css/dogfight.png" height="30"> Dogfight</li></ul> ';
+            '<ul><li><div style="background-color: #FF0000; width: 30px; height: 5px; display: inline-block"></div> Frontline</li> <li><div style="background-color: #3388ff;  width: 30px; height: 5px; display: inline-block"></div> Flight</li> <li><img src="css/base.png" height="30"> Base</li> <li><img src="css/dogfight.png" height="30"> Dogfight</li></ul> ';
     return div;
 };
 
